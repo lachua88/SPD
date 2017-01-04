@@ -18,13 +18,13 @@
             - @users.each do |user|
               %tr
                 %td{ :style => 'width: 30%' }
-                  #{user.username}                  
+                  #{user.pUsername}                  
                 %td{:style => 'width: 30%'}
-                  #{user.type} / #{user.auth_type}
+                  #{user.pType} / #{user.pAuth_type}
                 %td{:style => 'width: 40%'}
-                  %a{ :class => "btn btn-danger", :href => "/admin/delete/#{user.id}"}
+                  %a{ :class => "btn btn-danger", :href => "/admin/delete/#{user.pId}"}
                     %i{:class => 'icon-trash icon-white', :title => 'Delete User'}
-                  %a{ :class => "btn btn-warning", :href => "/admin/edit_user/#{user.id}"}
+                  %a{ :class => "btn btn-warning", :href => "/admin/edit_user/#{user.pId}"}
                     %i{:class => 'icon-pencil icon-white', :title => 'Edit Password'}
           - else
             No Users. How Curious. Who are you?

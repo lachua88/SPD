@@ -188,13 +188,13 @@
               - options.effort.each do |effort|
                 %option #{effort}
       .control-group
-        %label{ :class => "control-label", :for => "risk" } Vulnerability Risk Level
+        %label{ :class => "control-label", :for => "risk_rating" } Risk Rating
         .controls
-          %select{ :name => "risk" }
-            %option{:value => 1}= "Low"
-            %option{:value => 2}= "Moderate"
-            %option{:value => 3}= "High"
-            %option{:value => 4}= "Critical"
+          %select{ :name => "risk_rating" }
+            %option{:value => 1}= "High"
+            %option{:value => 2}= "Medium"
+            %option{:value => 3}= "Low"
+            %option{:value => 4}= "INFO"
     .control-group
       %label{ :class => "control-label", :for => "overview" }
         %a{:href=> '#mymodal', "data-toggle"=>'modal', :class=>'btn btn-info'}
@@ -278,14 +278,23 @@
         %label{ :class => "control-label", :for => "affected_hosts" } Affected Hosts
         .controls
           %textarea{ :rows => '10', :class => 'input-xxlarge', :id => 'affected_hosts', :name => 'affected_hosts'}
+    
     .control-group
-      %label{ :class => "control-label", :for => "remediation" } Remediation
+      %label{ :class => "control-label", :for => "observation" } Observation
       .controls
-        %textarea{ :rows => '10', :class => 'input-xxlarge', :name => 'remediation'}
+        %textarea{ :rows => '10', :class => 'input-xxlarge', :name => 'pObservation'}
+    .control-group
+      %label{ :class => "control-label", :for => "likelihood" } Likelihood
+      .controls
+        %textarea{ :rows => '10', :class => 'input-xxlarge', :name => 'pLikelihood'}
+    .control-group
+      %label{ :class => "control-label", :for => "recommendation" } Recommendation
+      .controls
+        %textarea{ :rows => '10', :class => 'input-xxlarge', :name => 'pRecommendation'}
     .control-group
       %label{ :class => "control-label", :for => "references" } References (One Per Line)
       .controls
-        %textarea{ :rows => '5', :class => 'input-xxlarge', :name => 'references'}
+        %textarea{ :rows => '5', :class => 'input-xxlarge', :name => 'pReferences'}
     - if !@master
       .control-group
         %label{ :class => "control-label", :for => "notes" } Notes

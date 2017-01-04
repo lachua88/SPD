@@ -9,7 +9,7 @@
           Username &nbsp;
         %td
           - if @user
-            %input{:type => 'text', :name => 'username', :value => "#{@user.username}"}
+            %input{:type => 'text', :name => 'username', :value => "#{@user.pUsername}"}
           - else
             %input{:type => 'text', :name => 'username'}
       %tr
@@ -23,11 +23,11 @@
         %td
           - if @user
             %select{ :name => "auth_type" }
-              - if @user.auth_type == "AD"
+              - if @user.pAuth_type == "AD"
                 %option{ :selected => "selected" }AD
               - else
                 %option AD
-              - if @user.auth_type == "Local"
+              - if @user.pAuth_type == "Local"
                 %option{ :selected => "selected" } Local
               - else
                 %option Local
@@ -41,11 +41,11 @@
         %td
           - if @user
             %select{ :name => "type" }
-              - if @user.type == "Administrator"
+              - if @user.pType == "Administrator"
                 %option{ :selected => "selected" }Administrator
               - else
                 %option Administrator
-              - if @user.type == "User"
+              - if @user.pType == "User"
                 %option{ :selected => "selected" } User
               - else
                 %option User

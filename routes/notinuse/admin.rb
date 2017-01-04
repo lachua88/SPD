@@ -7,20 +7,20 @@ config_options = JSON.parse(File.read('./config.json'))
 # Admin Interfaces
 ######
 
-get '/admin/' do
-    redirect to("/no_access") if not is_administrator?
-    @admin = true
+# # get '/admin/' do
+#     redirect to("/no_access") if not is_administrator?
+#     @admin = true
 
-    haml :admin, :encode_html => true
-end
+#     haml :admin, :encode_html => true
+# end
 
-get '/admin/add_user' do
-    redirect to("/no_access") if not is_administrator?
+# get '/admin/add_user' do
+#     redirect to("/no_access") if not is_administrator?
 
-    @admin = true
+#     @admin = true
 
-    haml :add_user, :encode_html => true
-end
+#     haml :add_user, :encode_html => true
+# end
 
 # serve a copy of the code
 get '/admin/pull' do
@@ -62,102 +62,102 @@ get '/admin/attacments_backup' do
 end
 
 # Create a new user
-post '/admin/add_user' do
-    redirect to("/no_access") if not is_administrator?
+# post '/admin/add_user' do
+#     redirect to("/no_access") if not is_administrator?
 
-    user = User.first(:username => params[:username])
+#     user = User.first(:username => params[:username])
 
-    if user
-        if params[:password] and params[:password].size > 1
-            # we have to hardcode the input params to prevent param pollution
-            user.update(:type => params[:type], :auth_type => params[:auth_type], :password => params[:password])
-        else
-            # we have to hardcode the params to prevent param pollution
-            user.update(:type => params[:type], :auth_type => params[:auth_type])
-        end
-    else
-        user = User.new
-        user.username = params[:username]
-        user.password = params[:password]
-        user.type = params[:type]
-        user.auth_type = params[:auth_type]
-        user.save
-    end
+#     if user
+#         if params[:password] and params[:password].size > 1
+#             # we have to hardcode the input params to prevent param pollution
+#             user.update(:type => params[:type], :auth_type => params[:auth_type], :password => params[:password])
+#         else
+#             # we have to hardcode the params to prevent param pollution
+#             user.update(:type => params[:type], :auth_type => params[:auth_type])
+#         end
+#     else
+#         user = User.new
+#         user.username = params[:username]
+#        user.password = params[:password]
+#        user.type = params[:type]
+#        user.auth_type = params[:auth_type]
+#        user.save
+#    end
+#
+#    redirect to('/admin/list_user')
+#end
 
-    redirect to('/admin/list_user')
-end
+# get '/admin/list_user' do
+#     redirect to("/no_access") if not is_administrator?
+#     @admin = true
+#     @users = User.all
+#     @plugin = is_plugin?
 
-get '/admin/list_user' do
-    redirect to("/no_access") if not is_administrator?
-    @admin = true
-    @users = User.all
-    @plugin = is_plugin?
+#     haml :list_user, :encode_html => true
+# end
 
-    haml :list_user, :encode_html => true
-end
+# get '/admin/edit_user/:id' do
+#     redirect to("/no_access") if not is_administrator?
 
-get '/admin/edit_user/:id' do
-    redirect to("/no_access") if not is_administrator?
+#     @user = User.first(:id => params[:id])
 
-    @user = User.first(:id => params[:id])
+#     haml :add_user, :encode_html => true
+# end
 
-    haml :add_user, :encode_html => true
-end
+# get '/admin/delete/:id' do
+#     redirect to("/no_access") if not is_administrator?
 
-get '/admin/delete/:id' do
-    redirect to("/no_access") if not is_administrator?
+#     @user = User.first(:id => params[:id])
+#     @user.destroy if @user
 
-    @user = User.first(:id => params[:id])
-    @user.destroy if @user
+#     redirect to('/admin/list_user')
+# end
 
-    redirect to('/admin/list_user')
-end
+# get '/admin/add_user/:id' do
+#     if not is_administrator?
+#         id = params[:id]
+#         unless get_report(id)
+#             redirect to("/no_access")
+#         end
+#     end
 
-get '/admin/add_user/:id' do
-    if not is_administrator?
-        id = params[:id]
-        unless get_report(id)
-            redirect to("/no_access")
-        end
-    end
+#     @users = User.all(:order => [:username.asc])
+#     @report = Reports.first(:id => params[:id])
 
-    @users = User.all(:order => [:username.asc])
-    @report = Reports.first(:id => params[:id])
+#     if is_administrator?
+#       @admin = true
+#     end
 
-    if is_administrator?
-      @admin = true
-    end
+#     haml :add_user_report, :encode_html => true
+# end
 
-    haml :add_user_report, :encode_html => true
-end
+# post '/admin/add_user/:id' do
+#     if not is_administrator?
+#         id = params[:id]
+#         unless get_report(id)
+#             redirect to("/no_access")
+#         end
+#     end
 
-post '/admin/add_user/:id' do
-    if not is_administrator?
-        id = params[:id]
-        unless get_report(id)
-            redirect to("/no_access")
-        end
-    end
+#     report = Reports.first(:id => params[:id])
 
-    report = Reports.first(:id => params[:id])
+#     if report == nil
+#         return "No Such Report"
+#     end
 
-    if report == nil
-        return "No Such Report"
-    end
+#     authors = report.authors
 
-    authors = report.authors
+#     if authors
+#         authors = authors.push(params[:author])
+#     else
+#         authors = ["#{params[:author]}"]
+#     end
 
-    if authors
-        authors = authors.push(params[:author])
-    else
-        authors = ["#{params[:author]}"]
-    end
+#     report.authors = authors
+#     report.save
 
-    report.authors = authors
-    report.save
-
-    redirect to("/reports/list")
-end
+#     redirect to("/reports/list")
+# end
 
 get '/admin/del_user_report/:id/:author' do
     if not is_administrator?

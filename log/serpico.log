@@ -1,0 +1,2347 @@
+DL is deprecated, please use Fiddle
+[2017-01-01 01:14:43] INFO  WEBrick 1.3.1
+[2017-01-01 01:14:43] INFO  ruby 2.1.8 (2015-12-16) [i386-mingw32]
+[2017-01-01 01:14:43] INFO  
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 1490952327 (0x58de2087)
+    Signature Algorithm: sha1WithRSAEncryption
+        Issuer: C=US, ST=MD, L=MD, O=MD, CN=serpico
+        Validity
+            Not Before: Dec 30 08:57:48 2016 GMT
+            Not After : Dec 30 08:57:48 2017 GMT
+        Subject: C=US, ST=MD, L=MD, O=MD, CN=serpico
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                Public-Key: (1024 bit)
+                Modulus:
+                    00:d6:63:c8:8f:23:fe:80:31:55:61:b0:bd:00:1c:
+                    61:f3:b3:3a:c4:2d:68:e0:32:ab:4c:69:af:07:cc:
+                    3f:d6:24:11:06:ba:8e:d4:b0:cd:9b:ae:6e:fe:b3:
+                    e1:4d:d4:8b:25:ff:4e:ce:b9:f6:3e:94:93:af:b4:
+                    78:48:9b:50:ef:a4:20:a9:87:90:5e:29:82:fe:22:
+                    db:4e:05:52:dd:f2:48:6d:20:4f:a6:b6:a2:6e:80:
+                    be:75:98:07:2d:27:25:92:75:b1:ce:58:40:75:3e:
+                    85:d6:8c:dd:82:7c:b0:49:40:1b:66:0d:e8:e2:57:
+                    bc:f5:5b:5c:cc:e2:f9:0f:23
+                Exponent: 65537 (0x10001)
+        X509v3 extensions:
+            X509v3 Basic Constraints: critical
+                CA:TRUE
+            X509v3 Subject Key Identifier: 
+                0A:4D:41:64:36:DD:1A:8F:EA:6A:5D:1C:B8:CE:B7:12:BC:4E:72:78
+            X509v3 Authority Key Identifier: 
+                keyid:0A:4D:41:64:36:DD:1A:8F:EA:6A:5D:1C:B8:CE:B7:12:BC:4E:72:78
+                DirName:/C=US/ST=MD/L=MD/O=MD/CN=serpico
+                serial:58:DE:20:87
+
+    Signature Algorithm: sha1WithRSAEncryption
+         5a:85:08:0d:79:40:f3:24:c7:c9:33:35:e7:8e:39:f6:7a:f1:
+         a9:bd:85:55:9f:28:4a:bc:98:24:39:ec:fa:a1:ad:bf:3d:f9:
+         83:78:44:b9:38:35:c9:7b:7e:80:3e:05:d0:7e:99:d8:fe:7e:
+         0f:98:6d:39:a3:d3:40:eb:e3:15:46:b9:8b:9e:a3:7c:c7:a9:
+         62:fd:5e:51:bd:bd:80:e7:ac:ea:ff:1c:f5:c7:dd:a9:d3:c7:
+         bb:72:3a:0e:53:87:48:1e:8a:44:d5:ba:1c:9c:1b:e1:eb:2a:
+         25:96:b8:30:4b:d7:fc:5a:e2:bf:5d:f8:b5:dd:df:b2:ea:ca:
+         07:a8
+[2017-01-01 01:14:43] INFO  WEBrick::HTTPServer#start: pid=38552 port=8443
+127.0.0.1 - - [01/Jan/2017 01:14:46] "GET / HTTP/1.1" 302 - 0.0095
+Owner-PC - - [01/Jan/2017:01:14:46 Malay Peninsula Standard Time] "GET / HTTP/1.1" 302 0
+- -> /
+[2017-01-01 01:14:46] ERROR Errno::ECONNABORTED: An established connection was aborted by the software in your host machine.
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/openssl/buffering.rb:61:in `sysread'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/openssl/buffering.rb:61:in `fill_rbuff'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/openssl/buffering.rb:301:in `eof?'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:80:in `run'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+127.0.0.1 - - [01/Jan/2017 01:14:46] "GET / HTTP/1.1" 302 - 0.0020
+Owner-PC - - [01/Jan/2017:01:14:46 Malay Peninsula Standard Time] "GET / HTTP/1.1" 302 0
+- -> /
+WARN: tilt autoloading 'tilt/haml' in a non thread-safe way; explicit require 'tilt/haml' suggested.
+127.0.0.1 - - [01/Jan/2017 01:14:46] "GET /reports/list HTTP/1.1" 200 2147 0.2688
+Owner-PC - - [01/Jan/2017:01:14:46 Malay Peninsula Standard Time] "GET /reports/list HTTP/1.1" 200 2147
+- -> /reports/list
+127.0.0.1 - - [01/Jan/2017 01:14:46] "GET /js/jquery-3.1.1.js HTTP/1.1" 200 277414 0.0245
+Owner-PC - - [01/Jan/2017:01:14:46 Malay Peninsula Standard Time] "GET /js/jquery-3.1.1.js HTTP/1.1" 200 277414
+https://127.0.0.1:8443/reports/list -> /js/jquery-3.1.1.js
+127.0.0.1 - - [01/Jan/2017 01:14:46] "GET /css/bootstrap-responsive.css HTTP/1.1" 200 22843 0.0205
+Owner-PC - - [01/Jan/2017:01:14:46 Malay Peninsula Standard Time] "GET /css/bootstrap-responsive.css HTTP/1.1" 200 22843
+https://127.0.0.1:8443/reports/list -> /css/bootstrap-responsive.css
+127.0.0.1 - - [01/Jan/2017 01:14:46] "GET /css/bootstrap.css HTTP/1.1" 200 130262 0.0275
+Owner-PC - - [01/Jan/2017:01:14:46 Malay Peninsula Standard Time] "GET /css/bootstrap.css HTTP/1.1" 200 130262
+https://127.0.0.1:8443/reports/list -> /css/bootstrap.css
+127.0.0.1 - - [01/Jan/2017 01:14:46] "GET /css/signin.css HTTP/1.1" 200 1145 0.0030
+Owner-PC - - [01/Jan/2017:01:14:46 Malay Peninsula Standard Time] "GET /css/signin.css HTTP/1.1" 200 1145
+https://127.0.0.1:8443/reports/list -> /css/signin.css
+127.0.0.1 - - [01/Jan/2017 01:14:49] "POST /login HTTP/1.1" 303 - 0.0345
+Owner-PC - - [01/Jan/2017:01:14:49 Malay Peninsula Standard Time] "POST /login HTTP/1.1" 303 0
+https://127.0.0.1:8443/reports/list -> /login
+127.0.0.1 - - [01/Jan/2017 01:14:49] "GET / HTTP/1.1" 302 - 0.0025
+Owner-PC - - [01/Jan/2017:01:14:49 Malay Peninsula Standard Time] "GET / HTTP/1.1" 302 0
+https://127.0.0.1:8443/reports/list -> /
+127.0.0.1 - - [01/Jan/2017 01:14:49] "GET /reports/list HTTP/1.1" 200 8084 0.0480
+Owner-PC - - [01/Jan/2017:01:14:49 Malay Peninsula Standard Time] "GET /reports/list HTTP/1.1" 200 8084
+https://127.0.0.1:8443/reports/list -> /reports/list
+127.0.0.1 - - [01/Jan/2017 01:14:49] "GET /img/glyphicons-halflings-white.png HTTP/1.1" 200 4352 0.0015
+Owner-PC - - [01/Jan/2017:01:14:49 Malay Peninsula Standard Time] "GET /img/glyphicons-halflings-white.png HTTP/1.1" 200 4352
+https://127.0.0.1:8443/css/bootstrap.css -> /img/glyphicons-halflings-white.png
+2017-01-01 01:14:51 - NameError - uninitialized constant CL_Library_finding:
+	C:/Users/Owner/Desktop/P/Serpico/routes/finding/finding.rb:13:in `block in <top (required)>'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/sinatra-1.4.6/lib/sinatra/base.rb:1610:in `call'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/sinatra-1.4.6/lib/sinatra/base.rb:1610:in `block in compile!'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/sinatra-1.4.6/lib/sinatra/base.rb:974:in `[]'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/sinatra-1.4.6/lib/sinatra/base.rb:974:in `block (3 levels) in route!'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/sinatra-1.4.6/lib/sinatra/base.rb:993:in `route_eval'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/sinatra-1.4.6/lib/sinatra/base.rb:974:in `block (2 levels) in route!'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/sinatra-1.4.6/lib/sinatra/base.rb:1014:in `block in process_route'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/sinatra-1.4.6/lib/sinatra/base.rb:1012:in `catch'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/sinatra-1.4.6/lib/sinatra/base.rb:1012:in `process_route'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/sinatra-1.4.6/lib/sinatra/base.rb:972:in `block in route!'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/sinatra-1.4.6/lib/sinatra/base.rb:971:in `each'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/sinatra-1.4.6/lib/sinatra/base.rb:971:in `route!'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/sinatra-1.4.6/lib/sinatra/base.rb:984:in `route!'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/sinatra-1.4.6/lib/sinatra/base.rb:1084:in `block in dispatch!'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/sinatra-1.4.6/lib/sinatra/base.rb:1066:in `block in invoke'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/sinatra-1.4.6/lib/sinatra/base.rb:1066:in `catch'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/sinatra-1.4.6/lib/sinatra/base.rb:1066:in `invoke'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/sinatra-1.4.6/lib/sinatra/base.rb:1081:in `dispatch!'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/sinatra-1.4.6/lib/sinatra/base.rb:906:in `block in call!'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/sinatra-1.4.6/lib/sinatra/base.rb:1066:in `block in invoke'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/sinatra-1.4.6/lib/sinatra/base.rb:1066:in `catch'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/sinatra-1.4.6/lib/sinatra/base.rb:1066:in `invoke'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/sinatra-1.4.6/lib/sinatra/base.rb:906:in `call!'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/sinatra-1.4.6/lib/sinatra/base.rb:894:in `call'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/rack-protection-1.5.3/lib/rack/protection/xss_header.rb:18:in `call'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/rack-protection-1.5.3/lib/rack/protection/base.rb:49:in `call'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/rack-protection-1.5.3/lib/rack/protection/base.rb:49:in `call'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/rack-protection-1.5.3/lib/rack/protection/path_traversal.rb:16:in `call'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/rack-protection-1.5.3/lib/rack/protection/json_csrf.rb:18:in `call'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/rack-protection-1.5.3/lib/rack/protection/base.rb:49:in `call'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/rack-protection-1.5.3/lib/rack/protection/base.rb:49:in `call'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/rack-protection-1.5.3/lib/rack/protection/frame_options.rb:31:in `call'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/rack-1.5.5/lib/rack/session/abstract/id.rb:225:in `context'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/rack-1.5.5/lib/rack/session/abstract/id.rb:220:in `call'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/rack-1.5.5/lib/rack/logger.rb:15:in `call'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/rack-1.5.5/lib/rack/commonlogger.rb:33:in `call'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/sinatra-1.4.6/lib/sinatra/base.rb:218:in `call'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/sinatra-1.4.6/lib/sinatra/base.rb:211:in `call'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/rack-1.5.5/lib/rack/head.rb:11:in `call'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/rack-1.5.5/lib/rack/methodoverride.rb:21:in `call'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/sinatra-1.4.6/lib/sinatra/base.rb:181:in `call'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/sinatra-1.4.6/lib/sinatra/base.rb:2021:in `call'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/sinatra-1.4.6/lib/sinatra/base.rb:1486:in `block in call'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/sinatra-1.4.6/lib/sinatra/base.rb:1795:in `synchronize'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/sinatra-1.4.6/lib/sinatra/base.rb:1486:in `call'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/rack-1.5.5/lib/rack/handler/webrick.rb:60:in `service'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/server.rb:170:in `select': Interrupt
+	from C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/server.rb:170:in `block in start'
+	from C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/server.rb:32:in `start'
+	from C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/server.rb:160:in `start'
+	from C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/rack-1.5.5/lib/rack/handler/webrick.rb:14:in `run'
+	from serpico.rb:30:in `<main>'
+
+127.0.0.1 - - [01/Jan/2017 01:14:51] "GET /master/findings HTTP/1.1" 500 101 0.0100
+Owner-PC - - [01/Jan/2017:01:14:50 Malay Peninsula Standard Time] "GET /master/findings HTTP/1.1" 500 101
+https://127.0.0.1:8443/reports/list -> /master/findings
+[2017-01-01 01:14:53] FATAL Interrupt: 
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/server.rb:170:in `select'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/server.rb:170:in `block in start'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/server.rb:32:in `start'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/server.rb:160:in `start'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/rack-1.5.5/lib/rack/handler/webrick.rb:14:in `run'
+	serpico.rb:30:in `<main>'
+[2017-01-01 01:14:53] INFO  going to shutdown ...
+[2017-01-01 01:14:54] INFO  WEBrick::HTTPServer#start done.
+DL is deprecated, please use Fiddle
+[2017-01-01 01:22:18] INFO  WEBrick 1.3.1
+[2017-01-01 01:22:18] INFO  ruby 2.1.8 (2015-12-16) [i386-mingw32]
+[2017-01-01 01:22:18] INFO  
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 1490952327 (0x58de2087)
+    Signature Algorithm: sha1WithRSAEncryption
+        Issuer: C=US, ST=MD, L=MD, O=MD, CN=serpico
+        Validity
+            Not Before: Dec 30 08:57:48 2016 GMT
+            Not After : Dec 30 08:57:48 2017 GMT
+        Subject: C=US, ST=MD, L=MD, O=MD, CN=serpico
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                Public-Key: (1024 bit)
+                Modulus:
+                    00:d6:63:c8:8f:23:fe:80:31:55:61:b0:bd:00:1c:
+                    61:f3:b3:3a:c4:2d:68:e0:32:ab:4c:69:af:07:cc:
+                    3f:d6:24:11:06:ba:8e:d4:b0:cd:9b:ae:6e:fe:b3:
+                    e1:4d:d4:8b:25:ff:4e:ce:b9:f6:3e:94:93:af:b4:
+                    78:48:9b:50:ef:a4:20:a9:87:90:5e:29:82:fe:22:
+                    db:4e:05:52:dd:f2:48:6d:20:4f:a6:b6:a2:6e:80:
+                    be:75:98:07:2d:27:25:92:75:b1:ce:58:40:75:3e:
+                    85:d6:8c:dd:82:7c:b0:49:40:1b:66:0d:e8:e2:57:
+                    bc:f5:5b:5c:cc:e2:f9:0f:23
+                Exponent: 65537 (0x10001)
+        X509v3 extensions:
+            X509v3 Basic Constraints: critical
+                CA:TRUE
+            X509v3 Subject Key Identifier: 
+                0A:4D:41:64:36:DD:1A:8F:EA:6A:5D:1C:B8:CE:B7:12:BC:4E:72:78
+            X509v3 Authority Key Identifier: 
+                keyid:0A:4D:41:64:36:DD:1A:8F:EA:6A:5D:1C:B8:CE:B7:12:BC:4E:72:78
+                DirName:/C=US/ST=MD/L=MD/O=MD/CN=serpico
+                serial:58:DE:20:87
+
+    Signature Algorithm: sha1WithRSAEncryption
+         5a:85:08:0d:79:40:f3:24:c7:c9:33:35:e7:8e:39:f6:7a:f1:
+         a9:bd:85:55:9f:28:4a:bc:98:24:39:ec:fa:a1:ad:bf:3d:f9:
+         83:78:44:b9:38:35:c9:7b:7e:80:3e:05:d0:7e:99:d8:fe:7e:
+         0f:98:6d:39:a3:d3:40:eb:e3:15:46:b9:8b:9e:a3:7c:c7:a9:
+         62:fd:5e:51:bd:bd:80:e7:ac:ea:ff:1c:f5:c7:dd:a9:d3:c7:
+         bb:72:3a:0e:53:87:48:1e:8a:44:d5:ba:1c:9c:1b:e1:eb:2a:
+         25:96:b8:30:4b:d7:fc:5a:e2:bf:5d:f8:b5:dd:df:b2:ea:ca:
+         07:a8
+[2017-01-01 01:22:18] INFO  WEBrick::HTTPServer#start: pid=45544 port=8443
+127.0.0.1 - - [01/Jan/2017 01:22:39] "GET / HTTP/1.1" 302 - 0.0125
+Owner-PC - - [01/Jan/2017:01:22:39 Malay Peninsula Standard Time] "GET / HTTP/1.1" 302 0
+- -> /
+127.0.0.1 - - [01/Jan/2017 01:22:39] "GET / HTTP/1.1" 302 - 0.0025
+Owner-PC - - [01/Jan/2017:01:22:39 Malay Peninsula Standard Time] "GET / HTTP/1.1" 302 0
+- -> /
+WARN: tilt autoloading 'tilt/haml' in a non thread-safe way; explicit require 'tilt/haml' suggested.
+WARN: tilt autoloading 'tilt/haml' in a non thread-safe way; explicit require 'tilt/haml' suggested.
+127.0.0.1 - - [01/Jan/2017 01:22:39] "GET /reports/list HTTP/1.1" 200 2147 0.1226
+Owner-PC - - [01/Jan/2017:01:22:39 Malay Peninsula Standard Time] "GET /reports/list HTTP/1.1" 200 2147
+- -> /reports/list
+127.0.0.1 - - [01/Jan/2017 01:22:39] "GET /reports/list HTTP/1.1" 200 2147 0.2828
+[2017-01-01 01:22:39] ERROR Errno::ECONNABORTED: An established connection was aborted by the software in your host machine.
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/openssl/buffering.rb:326:in `syswrite'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/openssl/buffering.rb:326:in `do_write'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/openssl/buffering.rb:391:in `<<'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/httpresponse.rb:460:in `_write_data'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/httpresponse.rb:432:in `send_body_string'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/httpresponse.rb:306:in `send_body'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/httpresponse.rb:208:in `send_response'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:110:in `run'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+Owner-PC - - [01/Jan/2017:01:22:39 Malay Peninsula Standard Time] "GET /reports/list HTTP/1.1" 200 0
+- -> /reports/list
+127.0.0.1 - - [01/Jan/2017 01:22:39] "GET /js/jquery-3.1.1.js HTTP/1.1" 200 277414 0.0035
+Owner-PC - - [01/Jan/2017:01:22:39 Malay Peninsula Standard Time] "GET /js/jquery-3.1.1.js HTTP/1.1" 200 277414
+https://127.0.0.1:8443/reports/list -> /js/jquery-3.1.1.js
+127.0.0.1 - - [01/Jan/2017 01:22:39] "GET /css/bootstrap-responsive.css HTTP/1.1" 200 22843 0.0015
+Owner-PC - - [01/Jan/2017:01:22:39 Malay Peninsula Standard Time] "GET /css/bootstrap-responsive.css HTTP/1.1" 200 22843
+https://127.0.0.1:8443/reports/list -> /css/bootstrap-responsive.css
+127.0.0.1 - - [01/Jan/2017 01:22:39] "GET /css/signin.css HTTP/1.1" 200 1145 0.0010
+Owner-PC - - [01/Jan/2017:01:22:39 Malay Peninsula Standard Time] "GET /css/signin.css HTTP/1.1" 200 1145
+https://127.0.0.1:8443/reports/list -> /css/signin.css
+127.0.0.1 - - [01/Jan/2017 01:22:39] "GET /css/bootstrap.css HTTP/1.1" 200 130262 0.0020
+Owner-PC - - [01/Jan/2017:01:22:39 Malay Peninsula Standard Time] "GET /css/bootstrap.css HTTP/1.1" 200 130262
+https://127.0.0.1:8443/reports/list -> /css/bootstrap.css
+127.0.0.1 - - [01/Jan/2017 01:22:39] "GET /js/jquery-migrate-3.0.0.min.js HTTP/1.1" 200 7084 0.0015
+Owner-PC - - [01/Jan/2017:01:22:39 Malay Peninsula Standard Time] "GET /js/jquery-migrate-3.0.0.min.js HTTP/1.1" 200 7084
+https://127.0.0.1:8443/reports/list -> /js/jquery-migrate-3.0.0.min.js
+127.0.0.1 - - [01/Jan/2017 01:22:39] "GET /js/bootstrap-transition.js HTTP/1.1" 200 1815 0.0010
+Owner-PC - - [01/Jan/2017:01:22:39 Malay Peninsula Standard Time] "GET /js/bootstrap-transition.js HTTP/1.1" 200 1815
+https://127.0.0.1:8443/reports/list -> /js/bootstrap-transition.js
+127.0.0.1 - - [01/Jan/2017 01:22:39] "GET /js/bootstrap-alert.js HTTP/1.1" 200 2622 0.0010
+Owner-PC - - [01/Jan/2017:01:22:39 Malay Peninsula Standard Time] "GET /js/bootstrap-alert.js HTTP/1.1" 200 2622
+https://127.0.0.1:8443/reports/list -> /js/bootstrap-alert.js
+127.0.0.1 - - [01/Jan/2017 01:22:39] "GET /js/bootstrap-dropdown.js HTTP/1.1" 200 4396 0.0015
+Owner-PC - - [01/Jan/2017:01:22:39 Malay Peninsula Standard Time] "GET /js/bootstrap-dropdown.js HTTP/1.1" 200 4396
+https://127.0.0.1:8443/reports/list -> /js/bootstrap-dropdown.js
+127.0.0.1 - - [01/Jan/2017 01:22:39] "GET /js/bootstrap-tab.js HTTP/1.1" 200 3639 0.0010
+Owner-PC - - [01/Jan/2017:01:22:39 Malay Peninsula Standard Time] "GET /js/bootstrap-tab.js HTTP/1.1" 200 3639
+https://127.0.0.1:8443/reports/list -> /js/bootstrap-tab.js
+127.0.0.1 - - [01/Jan/2017 01:22:39] "GET /js/bootstrap-popover.js HTTP/1.1" 200 3260 0.0015
+Owner-PC - - [01/Jan/2017:01:22:39 Malay Peninsula Standard Time] "GET /js/bootstrap-popover.js HTTP/1.1" 200 3260
+https://127.0.0.1:8443/reports/list -> /js/bootstrap-popover.js
+127.0.0.1 - - [01/Jan/2017 01:22:39] "GET /js/bootstrap-button.js HTTP/1.1" 200 2945 0.0015
+Owner-PC - - [01/Jan/2017:01:22:39 Malay Peninsula Standard Time] "GET /js/bootstrap-button.js HTTP/1.1" 200 2945
+https://127.0.0.1:8443/reports/list -> /js/bootstrap-button.js
+127.0.0.1 - - [01/Jan/2017 01:22:39] "GET /js/bootstrap-collapse.js HTTP/1.1" 200 4784 0.0010
+Owner-PC - - [01/Jan/2017:01:22:39 Malay Peninsula Standard Time] "GET /js/bootstrap-collapse.js HTTP/1.1" 200 4784
+https://127.0.0.1:8443/reports/list -> /js/bootstrap-collapse.js
+127.0.0.1 - - [01/Jan/2017 01:22:39] "GET /js/bootstrap-modal.js HTTP/1.1" 200 6824 0.0025
+Owner-PC - - [01/Jan/2017:01:22:39 Malay Peninsula Standard Time] "GET /js/bootstrap-modal.js HTTP/1.1" 200 6824
+https://127.0.0.1:8443/reports/list -> /js/bootstrap-modal.js
+127.0.0.1 - - [01/Jan/2017 01:22:39] "GET /js/bootstrap-carousel.js HTTP/1.1" 200 5504 0.0015
+Owner-PC - - [01/Jan/2017:01:22:39 Malay Peninsula Standard Time] "GET /js/bootstrap-carousel.js HTTP/1.1" 200 5504
+https://127.0.0.1:8443/reports/list -> /js/bootstrap-carousel.js
+127.0.0.1 - - [01/Jan/2017 01:22:39] "GET /js/bootstrap-scrollspy.js HTTP/1.1" 200 4771 0.0030
+Owner-PC - - [01/Jan/2017:01:22:39 Malay Peninsula Standard Time] "GET /js/bootstrap-scrollspy.js HTTP/1.1" 200 4771
+https://127.0.0.1:8443/reports/list -> /js/bootstrap-scrollspy.js
+127.0.0.1 - - [01/Jan/2017 01:22:39] "GET /js/bootstrap-typeahead.js HTTP/1.1" 200 8308 0.0020
+Owner-PC - - [01/Jan/2017:01:22:39 Malay Peninsula Standard Time] "GET /js/bootstrap-typeahead.js HTTP/1.1" 200 8308
+https://127.0.0.1:8443/reports/list -> /js/bootstrap-typeahead.js
+127.0.0.1 - - [01/Jan/2017 01:22:39] "GET /js/bootstrap-tooltip.js HTTP/1.1" 200 8207 0.0015
+Owner-PC - - [01/Jan/2017:01:22:39 Malay Peninsula Standard Time] "GET /js/bootstrap-tooltip.js HTTP/1.1" 200 8207
+https://127.0.0.1:8443/reports/list -> /js/bootstrap-tooltip.js
+127.0.0.1 - - [01/Jan/2017 01:22:42] "POST /login HTTP/1.1" 303 - 0.0310
+Owner-PC - - [01/Jan/2017:01:22:42 Malay Peninsula Standard Time] "POST /login HTTP/1.1" 303 0
+https://127.0.0.1:8443/reports/list -> /login
+127.0.0.1 - - [01/Jan/2017 01:22:42] "GET / HTTP/1.1" 302 - 0.0025
+Owner-PC - - [01/Jan/2017:01:22:42 Malay Peninsula Standard Time] "GET / HTTP/1.1" 302 0
+https://127.0.0.1:8443/reports/list -> /
+127.0.0.1 - - [01/Jan/2017 01:22:42] "GET /reports/list HTTP/1.1" 200 8084 0.0360
+Owner-PC - - [01/Jan/2017:01:22:42 Malay Peninsula Standard Time] "GET /reports/list HTTP/1.1" 200 8084
+https://127.0.0.1:8443/reports/list -> /reports/list
+127.0.0.1 - - [01/Jan/2017 01:22:42] "GET /img/glyphicons-halflings-white.png HTTP/1.1" 200 4352 0.0015
+Owner-PC - - [01/Jan/2017:01:22:42 Malay Peninsula Standard Time] "GET /img/glyphicons-halflings-white.png HTTP/1.1" 200 4352
+https://127.0.0.1:8443/css/bootstrap.css -> /img/glyphicons-halflings-white.png
+Sinatra::Base#options is deprecated and will be removed, use #settings instead.
+127.0.0.1 - - [01/Jan/2017 01:22:44] "GET /master/findings HTTP/1.1" 200 11773 0.0656
+Owner-PC - - [01/Jan/2017:01:22:44 Malay Peninsula Standard Time] "GET /master/findings HTTP/1.1" 200 11773
+https://127.0.0.1:8443/reports/list -> /master/findings
+127.0.0.1 - - [01/Jan/2017 01:22:44] "GET /css/bootstrap-responsive.css HTTP/1.1" 200 22843 0.0040
+Owner-PC - - [01/Jan/2017:01:22:44 Malay Peninsula Standard Time] "GET /css/bootstrap-responsive.css HTTP/1.1" 200 22843
+https://127.0.0.1:8443/master/findings -> /css/bootstrap-responsive.css
+127.0.0.1 - - [01/Jan/2017 01:22:44] "GET /css/bootstrap.css HTTP/1.1" 200 130262 0.0030
+Owner-PC - - [01/Jan/2017:01:22:44 Malay Peninsula Standard Time] "GET /css/bootstrap.css HTTP/1.1" 200 130262
+https://127.0.0.1:8443/master/findings -> /css/bootstrap.css
+127.0.0.1 - - [01/Jan/2017 01:22:44] "GET /img/glyphicons-halflings.png HTTP/1.1" 200 4352 0.0030
+Owner-PC - - [01/Jan/2017:01:22:44 Malay Peninsula Standard Time] "GET /img/glyphicons-halflings.png HTTP/1.1" 200 4352
+https://127.0.0.1:8443/css/bootstrap.css -> /img/glyphicons-halflings.png
+Sinatra::Base#options is deprecated and will be removed, use #settings instead.
+127.0.0.1 - - [01/Jan/2017 01:22:50] "GET /master/findings HTTP/1.1" 200 11773 0.0566
+Owner-PC - - [01/Jan/2017:01:22:50 Malay Peninsula Standard Time] "GET /master/findings HTTP/1.1" 200 11773
+https://127.0.0.1:8443/master/findings -> /master/findings
+127.0.0.1 - - [01/Jan/2017 01:22:50] "GET /css/bootstrap-responsive.css HTTP/1.1" 200 22843 0.0065
+Owner-PC - - [01/Jan/2017:01:22:50 Malay Peninsula Standard Time] "GET /css/bootstrap-responsive.css HTTP/1.1" 200 22843
+https://127.0.0.1:8443/master/findings -> /css/bootstrap-responsive.css
+127.0.0.1 - - [01/Jan/2017 01:22:50] "GET /css/bootstrap.css HTTP/1.1" 200 130262 0.0035
+Owner-PC - - [01/Jan/2017:01:22:50 Malay Peninsula Standard Time] "GET /css/bootstrap.css HTTP/1.1" 200 130262
+https://127.0.0.1:8443/master/findings -> /css/bootstrap.css
+Sinatra::Base#options is deprecated and will be removed, use #settings instead.
+127.0.0.1 - - [01/Jan/2017 01:22:51] "GET /master/findings HTTP/1.1" 200 11773 0.0500
+Owner-PC - - [01/Jan/2017:01:22:51 Malay Peninsula Standard Time] "GET /master/findings HTTP/1.1" 200 11773
+https://127.0.0.1:8443/master/findings -> /master/findings
+Sinatra::Base#options is deprecated and will be removed, use #settings instead.
+127.0.0.1 - - [01/Jan/2017 01:22:52] "GET /master/findings HTTP/1.1" 200 11773 0.0495
+Owner-PC - - [01/Jan/2017:01:22:52 Malay Peninsula Standard Time] "GET /master/findings HTTP/1.1" 200 11773
+https://127.0.0.1:8443/master/findings -> /master/findings
+Sinatra::Base#options is deprecated and will be removed, use #settings instead.
+127.0.0.1 - - [01/Jan/2017 01:22:53] "GET /master/findings HTTP/1.1" 200 11773 0.0455
+Owner-PC - - [01/Jan/2017:01:22:53 Malay Peninsula Standard Time] "GET /master/findings HTTP/1.1" 200 11773
+https://127.0.0.1:8443/master/findings -> /master/findings
+Sinatra::Base#options is deprecated and will be removed, use #settings instead.
+127.0.0.1 - - [01/Jan/2017 01:22:53] "GET /master/findings HTTP/1.1" 200 11773 0.0616
+Owner-PC - - [01/Jan/2017:01:22:53 Malay Peninsula Standard Time] "GET /master/findings HTTP/1.1" 200 11773
+https://127.0.0.1:8443/master/findings -> /master/findings
+Sinatra::Base#options is deprecated and will be removed, use #settings instead.
+127.0.0.1 - - [01/Jan/2017 01:22:54] "GET /master/findings HTTP/1.1" 200 11773 0.0520
+Owner-PC - - [01/Jan/2017:01:22:54 Malay Peninsula Standard Time] "GET /master/findings HTTP/1.1" 200 11773
+https://127.0.0.1:8443/master/findings -> /master/findings
+Sinatra::Base#options is deprecated and will be removed, use #settings instead.
+127.0.0.1 - - [01/Jan/2017 01:22:55] "GET /master/findings HTTP/1.1" 200 11773 0.0480
+Owner-PC - - [01/Jan/2017:01:22:55 Malay Peninsula Standard Time] "GET /master/findings HTTP/1.1" 200 11773
+https://127.0.0.1:8443/master/findings -> /master/findings
+127.0.0.1 - - [01/Jan/2017 01:22:55] "GET /css/bootstrap-responsive.css HTTP/1.1" 200 22843 0.0010
+Owner-PC - - [01/Jan/2017:01:22:55 Malay Peninsula Standard Time] "GET /css/bootstrap-responsive.css HTTP/1.1" 200 22843
+https://127.0.0.1:8443/master/findings -> /css/bootstrap-responsive.css
+127.0.0.1 - - [01/Jan/2017 01:22:55] "GET /css/bootstrap.css HTTP/1.1" 200 130262 0.0050
+Owner-PC - - [01/Jan/2017:01:22:55 Malay Peninsula Standard Time] "GET /css/bootstrap.css HTTP/1.1" 200 130262
+https://127.0.0.1:8443/master/findings -> /css/bootstrap.css
+Sinatra::Base#options is deprecated and will be removed, use #settings instead.
+127.0.0.1 - - [01/Jan/2017 01:22:55] "GET /master/findings HTTP/1.1" 200 11773 0.0561
+Owner-PC - - [01/Jan/2017:01:22:55 Malay Peninsula Standard Time] "GET /master/findings HTTP/1.1" 200 11773
+https://127.0.0.1:8443/master/findings -> /master/findings
+Sinatra::Base#options is deprecated and will be removed, use #settings instead.
+127.0.0.1 - - [01/Jan/2017 01:23:00] "GET /master/findings HTTP/1.1" 200 11773 0.0510
+Owner-PC - - [01/Jan/2017:01:23:00 Malay Peninsula Standard Time] "GET /master/findings HTTP/1.1" 200 11773
+https://127.0.0.1:8443/master/findings -> /master/findings
+127.0.0.1 - - [01/Jan/2017 01:23:00] "GET /css/bootstrap-responsive.css HTTP/1.1" 200 22843 0.0015
+Owner-PC - - [01/Jan/2017:01:23:00 Malay Peninsula Standard Time] "GET /css/bootstrap-responsive.css HTTP/1.1" 200 22843
+https://127.0.0.1:8443/master/findings -> /css/bootstrap-responsive.css
+127.0.0.1 - - [01/Jan/2017 01:23:00] "GET /css/bootstrap.css HTTP/1.1" 200 130262 0.0015
+Owner-PC - - [01/Jan/2017:01:23:00 Malay Peninsula Standard Time] "GET /css/bootstrap.css HTTP/1.1" 200 130262
+https://127.0.0.1:8443/master/findings -> /css/bootstrap.css
+Sinatra::Base#options is deprecated and will be removed, use #settings instead.
+127.0.0.1 - - [01/Jan/2017 01:23:01] "GET /master/findings HTTP/1.1" 200 11773 0.0596
+Owner-PC - - [01/Jan/2017:01:23:01 Malay Peninsula Standard Time] "GET /master/findings HTTP/1.1" 200 11773
+https://127.0.0.1:8443/master/findings -> /master/findings
+Sinatra::Base#options is deprecated and will be removed, use #settings instead.
+127.0.0.1 - - [01/Jan/2017 01:23:01] "GET /master/findings HTTP/1.1" 200 11773 0.0455
+Owner-PC - - [01/Jan/2017:01:23:01 Malay Peninsula Standard Time] "GET /master/findings HTTP/1.1" 200 11773
+https://127.0.0.1:8443/master/findings -> /master/findings
+Sinatra::Base#options is deprecated and will be removed, use #settings instead.
+127.0.0.1 - - [01/Jan/2017 01:23:02] "GET /master/findings HTTP/1.1" 200 11773 0.0495
+Owner-PC - - [01/Jan/2017:01:23:02 Malay Peninsula Standard Time] "GET /master/findings HTTP/1.1" 200 11773
+C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/server.rb:170:in `select': Interrupt
+	from C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/server.rb:170:in `block in start'
+	from C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/server.rb:32:in `start'
+	from C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/server.rb:160:in `start'
+	from C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/rack-1.5.5/lib/rack/handler/webrick.rb:14:in `run'
+	from serpico.rb:30:in `<main>'
+https://127.0.0.1:8443/master/findings -> /master/findings
+Sinatra::Base#options is deprecated and will be removed, use #settings instead.
+127.0.0.1 - - [01/Jan/2017 01:23:02] "GET /master/findings HTTP/1.1" 200 11773 0.0480
+Owner-PC - - [01/Jan/2017:01:23:02 Malay Peninsula Standard Time] "GET /master/findings HTTP/1.1" 200 11773
+https://127.0.0.1:8443/master/findings -> /master/findings
+Sinatra::Base#options is deprecated and will be removed, use #settings instead.
+Sinatra::Base#options is deprecated and will be removed, use #settings instead.
+127.0.0.1 - - [01/Jan/2017 01:23:08] "GET /master/findings/new HTTP/1.1" 200 10450 0.0616
+Owner-PC - - [01/Jan/2017:01:23:08 Malay Peninsula Standard Time] "GET /master/findings/new HTTP/1.1" 200 10450
+https://127.0.0.1:8443/master/findings -> /master/findings/new
+127.0.0.1 - - [01/Jan/2017 01:23:08] "GET /css/bootstrap.css HTTP/1.1" 200 130262 0.0065
+Owner-PC - - [01/Jan/2017:01:23:08 Malay Peninsula Standard Time] "GET /css/bootstrap.css HTTP/1.1" 200 130262
+https://127.0.0.1:8443/master/findings/new -> /css/bootstrap.css
+127.0.0.1 - - [01/Jan/2017 01:23:08] "GET /css/bootstrap-responsive.css HTTP/1.1" 200 22843 0.0030
+Owner-PC - - [01/Jan/2017:01:23:08 Malay Peninsula Standard Time] "GET /css/bootstrap-responsive.css HTTP/1.1" 200 22843
+https://127.0.0.1:8443/master/findings/new -> /css/bootstrap-responsive.css
+127.0.0.1 - - [01/Jan/2017 01:23:08] "GET /css/bootstrap-suggest.css HTTP/1.1" 200 496 0.0010
+Owner-PC - - [01/Jan/2017:01:23:08 Malay Peninsula Standard Time] "GET /css/bootstrap-suggest.css HTTP/1.1" 200 496
+https://127.0.0.1:8443/master/findings/new -> /css/bootstrap-suggest.css
+127.0.0.1 - - [01/Jan/2017 01:23:08] "GET /js/bootstrap-suggest.js HTTP/1.1" 200 17798 0.0040
+Owner-PC - - [01/Jan/2017:01:23:08 Malay Peninsula Standard Time] "GET /js/bootstrap-suggest.js HTTP/1.1" 200 17798
+https://127.0.0.1:8443/master/findings/new -> /js/bootstrap-suggest.js
+[2017-01-01 02:42:26] FATAL Interrupt: 
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/server.rb:170:in `select'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/server.rb:170:in `block in start'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/server.rb:32:in `start'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/server.rb:160:in `start'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/rack-1.5.5/lib/rack/handler/webrick.rb:14:in `run'
+	serpico.rb:30:in `<main>'
+[2017-01-01 02:42:26] INFO  going to shutdown ...
+[2017-01-01 02:42:26] INFO  WEBrick::HTTPServer#start done.
+DL is deprecated, please use Fiddle
+[2017-01-01 02:42:34] INFO  WEBrick 1.3.1
+[2017-01-01 02:42:34] INFO  ruby 2.1.8 (2015-12-16) [i386-mingw32]
+[2017-01-01 02:42:34] INFO  
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 1490952327 (0x58de2087)
+    Signature Algorithm: sha1WithRSAEncryption
+        Issuer: C=US, ST=MD, L=MD, O=MD, CN=serpico
+        Validity
+            Not Before: Dec 30 08:57:48 2016 GMT
+            Not After : Dec 30 08:57:48 2017 GMT
+        Subject: C=US, ST=MD, L=MD, O=MD, CN=serpico
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                Public-Key: (1024 bit)
+                Modulus:
+                    00:d6:63:c8:8f:23:fe:80:31:55:61:b0:bd:00:1c:
+                    61:f3:b3:3a:c4:2d:68:e0:32:ab:4c:69:af:07:cc:
+                    3f:d6:24:11:06:ba:8e:d4:b0:cd:9b:ae:6e:fe:b3:
+                    e1:4d:d4:8b:25:ff:4e:ce:b9:f6:3e:94:93:af:b4:
+                    78:48:9b:50:ef:a4:20:a9:87:90:5e:29:82:fe:22:
+                    db:4e:05:52:dd:f2:48:6d:20:4f:a6:b6:a2:6e:80:
+                    be:75:98:07:2d:27:25:92:75:b1:ce:58:40:75:3e:
+                    85:d6:8c:dd:82:7c:b0:49:40:1b:66:0d:e8:e2:57:
+                    bc:f5:5b:5c:cc:e2:f9:0f:23
+                Exponent: 65537 (0x10001)
+        X509v3 extensions:
+            X509v3 Basic Constraints: critical
+                CA:TRUE
+            X509v3 Subject Key Identifier: 
+                0A:4D:41:64:36:DD:1A:8F:EA:6A:5D:1C:B8:CE:B7:12:BC:4E:72:78
+            X509v3 Authority Key Identifier: 
+                keyid:0A:4D:41:64:36:DD:1A:8F:EA:6A:5D:1C:B8:CE:B7:12:BC:4E:72:78
+                DirName:/C=US/ST=MD/L=MD/O=MD/CN=serpico
+                serial:58:DE:20:87
+
+    Signature Algorithm: sha1WithRSAEncryption
+         5a:85:08:0d:79:40:f3:24:c7:c9:33:35:e7:8e:39:f6:7a:f1:
+         a9:bd:85:55:9f:28:4a:bc:98:24:39:ec:fa:a1:ad:bf:3d:f9:
+         83:78:44:b9:38:35:c9:7b:7e:80:3e:05:d0:7e:99:d8:fe:7e:
+         0f:98:6d:39:a3:d3:40:eb:e3:15:46:b9:8b:9e:a3:7c:c7:a9:
+         62:fd:5e:51:bd:bd:80:e7:ac:ea:ff:1c:f5:c7:dd:a9:d3:c7:
+         bb:72:3a:0e:53:87:48:1e:8a:44:d5:ba:1c:9c:1b:e1:eb:2a:
+         25:96:b8:30:4b:d7:fc:5a:e2:bf:5d:f8:b5:dd:df:b2:ea:ca:
+         07:a8
+[2017-01-01 02:42:34] INFO  WEBrick::HTTPServer#start: pid=52876 port=8443
+127.0.0.1 - - [01/Jan/2017 02:42:43] "GET / HTTP/1.1" 302 - 0.0080
+Owner-PC - - [01/Jan/2017:02:42:43 Malay Peninsula Standard Time] "GET / HTTP/1.1" 302 0
+- -> /
+WARN: tilt autoloading 'tilt/haml' in a non thread-safe way; explicit require 'tilt/haml' suggested.
+127.0.0.1 - - [01/Jan/2017 02:42:44] "GET /reports/list HTTP/1.1" 200 2147 0.2132
+Owner-PC - - [01/Jan/2017:02:42:43 Malay Peninsula Standard Time] "GET /reports/list HTTP/1.1" 200 2147
+- -> /reports/list
+127.0.0.1 - - [01/Jan/2017 02:42:44] "GET /js/jquery-migrate-3.0.0.min.js HTTP/1.1" 200 7084 0.0025
+Owner-PC - - [01/Jan/2017:02:42:44 Malay Peninsula Standard Time] "GET /js/jquery-migrate-3.0.0.min.js HTTP/1.1" 200 7084
+https://127.0.0.1:8443/reports/list -> /js/jquery-migrate-3.0.0.min.js
+127.0.0.1 - - [01/Jan/2017 02:42:44] "GET /css/bootstrap-responsive.css HTTP/1.1" 200 22843 0.0020
+Owner-PC - - [01/Jan/2017:02:42:44 Malay Peninsula Standard Time] "GET /css/bootstrap-responsive.css HTTP/1.1" 200 22843
+https://127.0.0.1:8443/reports/list -> /css/bootstrap-responsive.css
+127.0.0.1 - - [01/Jan/2017 02:42:44] "GET /js/jquery-3.1.1.js HTTP/1.1" 200 277414 0.0130
+127.0.0.1 - - [01/Jan/2017 02:42:44] "GET /css/bootstrap.css HTTP/1.1" 200 130262 0.0255
+Owner-PC - - [01/Jan/2017:02:42:44 Malay Peninsula Standard Time] "GET /css/bootstrap.css HTTP/1.1" 200 130262
+https://127.0.0.1:8443/reports/list -> /css/bootstrap.css
+Owner-PC - - [01/Jan/2017:02:42:44 Malay Peninsula Standard Time] "GET /js/jquery-3.1.1.js HTTP/1.1" 200 277414
+https://127.0.0.1:8443/reports/list -> /js/jquery-3.1.1.js
+127.0.0.1 - - [01/Jan/2017 02:42:44] "GET /css/signin.css HTTP/1.1" 200 1145 0.0025
+Owner-PC - - [01/Jan/2017:02:42:44 Malay Peninsula Standard Time] "GET /css/signin.css HTTP/1.1" 200 1145
+https://127.0.0.1:8443/reports/list -> /css/signin.css
+127.0.0.1 - - [01/Jan/2017 02:42:44] "GET /js/bootstrap-transition.js HTTP/1.1" 200 1815 0.0045
+Owner-PC - - [01/Jan/2017:02:42:44 Malay Peninsula Standard Time] "GET /js/bootstrap-transition.js HTTP/1.1" 200 1815
+https://127.0.0.1:8443/reports/list -> /js/bootstrap-transition.js
+127.0.0.1 - - [01/Jan/2017 02:42:44] "GET /js/bootstrap-alert.js HTTP/1.1" 200 2622 0.0015
+Owner-PC - - [01/Jan/2017:02:42:44 Malay Peninsula Standard Time] "GET /js/bootstrap-alert.js HTTP/1.1" 200 2622
+https://127.0.0.1:8443/reports/list -> /js/bootstrap-alert.js
+127.0.0.1 - - [01/Jan/2017 02:42:44] "GET /js/bootstrap-modal.js HTTP/1.1" 200 6824 0.0010
+Owner-PC - - [01/Jan/2017:02:42:44 Malay Peninsula Standard Time] "GET /js/bootstrap-modal.js HTTP/1.1" 200 6824
+https://127.0.0.1:8443/reports/list -> /js/bootstrap-modal.js
+127.0.0.1 - - [01/Jan/2017 02:42:44] "GET /js/bootstrap-tab.js HTTP/1.1" 200 3639 0.0080
+Owner-PC - - [01/Jan/2017:02:42:44 Malay Peninsula Standard Time] "GET /js/bootstrap-tab.js HTTP/1.1" 200 3639
+https://127.0.0.1:8443/reports/list -> /js/bootstrap-tab.js
+127.0.0.1 - - [01/Jan/2017 02:42:44] "GET /js/bootstrap-scrollspy.js HTTP/1.1" 200 4771 0.0060
+Owner-PC - - [01/Jan/2017:02:42:44 Malay Peninsula Standard Time] "GET /js/bootstrap-scrollspy.js HTTP/1.1" 200 4771
+https://127.0.0.1:8443/reports/list -> /js/bootstrap-scrollspy.js
+127.0.0.1 - - [01/Jan/2017 02:42:44] "GET /js/bootstrap-popover.js HTTP/1.1" 200 3260 0.0030
+Owner-PC - - [01/Jan/2017:02:42:44 Malay Peninsula Standard Time] "GET /js/bootstrap-popover.js HTTP/1.1" 200 3260
+https://127.0.0.1:8443/reports/list -> /js/bootstrap-popover.js
+127.0.0.1 - - [01/Jan/2017 02:42:44] "GET /js/bootstrap-button.js HTTP/1.1" 200 2945 0.0020
+Owner-PC - - [01/Jan/2017:02:42:44 Malay Peninsula Standard Time] "GET /js/bootstrap-button.js HTTP/1.1" 200 2945
+https://127.0.0.1:8443/reports/list -> /js/bootstrap-button.js
+127.0.0.1 - - [01/Jan/2017 02:42:44] "GET /js/bootstrap-tooltip.js HTTP/1.1" 200 8207 0.0055
+Owner-PC - - [01/Jan/2017:02:42:44 Malay Peninsula Standard Time] "GET /js/bootstrap-tooltip.js HTTP/1.1" 200 8207
+https://127.0.0.1:8443/reports/list -> /js/bootstrap-tooltip.js
+127.0.0.1 - - [01/Jan/2017 02:42:44] "GET /js/bootstrap-typeahead.js HTTP/1.1" 200 8308 0.0045
+Owner-PC - - [01/Jan/2017:02:42:44 Malay Peninsula Standard Time] "GET /js/bootstrap-typeahead.js HTTP/1.1" 200 8308
+https://127.0.0.1:8443/reports/list -> /js/bootstrap-typeahead.js
+127.0.0.1 - - [01/Jan/2017 02:42:44] "GET /js/bootstrap-dropdown.js HTTP/1.1" 200 4396 0.0030
+Owner-PC - - [01/Jan/2017:02:42:44 Malay Peninsula Standard Time] "GET /js/bootstrap-dropdown.js HTTP/1.1" 200 4396
+https://127.0.0.1:8443/reports/list -> /js/bootstrap-dropdown.js
+127.0.0.1 - - [01/Jan/2017 02:42:44] "GET /js/bootstrap-carousel.js HTTP/1.1" 200 5504 0.0055
+Owner-PC - - [01/Jan/2017:02:42:44 Malay Peninsula Standard Time] "GET /js/bootstrap-carousel.js HTTP/1.1" 200 5504
+https://127.0.0.1:8443/reports/list -> /js/bootstrap-carousel.js
+127.0.0.1 - - [01/Jan/2017 02:42:44] "GET /js/bootstrap-collapse.js HTTP/1.1" 200 4784 0.0020
+Owner-PC - - [01/Jan/2017:02:42:44 Malay Peninsula Standard Time] "GET /js/bootstrap-collapse.js HTTP/1.1" 200 4784
+https://127.0.0.1:8443/reports/list -> /js/bootstrap-collapse.js
+127.0.0.1 - - [01/Jan/2017 02:42:46] "POST /login HTTP/1.1" 303 - 0.0195
+Owner-PC - - [01/Jan/2017:02:42:46 Malay Peninsula Standard Time] "POST /login HTTP/1.1" 303 0
+https://127.0.0.1:8443/reports/list -> /login
+127.0.0.1 - - [01/Jan/2017 02:42:46] "GET / HTTP/1.1" 302 - 0.0020
+Owner-PC - - [01/Jan/2017:02:42:46 Malay Peninsula Standard Time] "GET / HTTP/1.1" 302 0
+https://127.0.0.1:8443/reports/list -> /
+127.0.0.1 - - [01/Jan/2017 02:42:46] "GET /reports/list HTTP/1.1" 200 8084 0.0345
+Owner-PC - - [01/Jan/2017:02:42:46 Malay Peninsula Standard Time] "GET /reports/list HTTP/1.1" 200 8084
+https://127.0.0.1:8443/reports/list -> /reports/list
+127.0.0.1 - - [01/Jan/2017 02:42:46] "GET /img/glyphicons-halflings-white.png HTTP/1.1" 200 4352 0.0020
+Owner-PC - - [01/Jan/2017:02:42:46 Malay Peninsula Standard Time] "GET /img/glyphicons-halflings-white.png HTTP/1.1" 200 4352
+https://127.0.0.1:8443/css/bootstrap.css -> /img/glyphicons-halflings-white.png
+Sinatra::Base#options is deprecated and will be removed, use #settings instead.
+127.0.0.1 - - [01/Jan/2017 02:42:48] "GET /master/findings HTTP/1.1" 200 11773 0.0450
+Owner-PC - - [01/Jan/2017:02:42:48 Malay Peninsula Standard Time] "GET /master/findings HTTP/1.1" 200 11773
+https://127.0.0.1:8443/reports/list -> /master/findings
+127.0.0.1 - - [01/Jan/2017 02:42:48] "GET /img/glyphicons-halflings.png HTTP/1.1" 200 4352 0.0195
+Owner-PC - - [01/Jan/2017:02:42:48 Malay Peninsula Standard Time] "GET /img/glyphicons-halflings.png HTTP/1.1" 200 4352
+https://127.0.0.1:8443/css/bootstrap.css -> /img/glyphicons-halflings.png
+Sinatra::Base#options is deprecated and will be removed, use #settings instead.
+Sinatra::Base#options is deprecated and will be removed, use #settings instead.
+127.0.0.1 - - [01/Jan/2017 02:42:49] "GET /master/findings/new HTTP/1.1" 200 10450 0.0731
+Owner-PC - - [01/Jan/2017:02:42:49 Malay Peninsula Standard Time] "GET /master/findings/new HTTP/1.1" 200 10450
+https://127.0.0.1:8443/master/findings -> /master/findings/new
+127.0.0.1 - - [01/Jan/2017 02:42:49] "GET /css/bootstrap-responsive.css HTTP/1.1" 200 22843 0.0015
+Owner-PC - - [01/Jan/2017:02:42:49 Malay Peninsula Standard Time] "GET /css/bootstrap-responsive.css HTTP/1.1" 200 22843
+https://127.0.0.1:8443/master/findings/new -> /css/bootstrap-responsive.css
+127.0.0.1 - - [01/Jan/2017 02:42:49] "GET /css/bootstrap-suggest.css HTTP/1.1" 200 496 0.0050
+Owner-PC - - [01/Jan/2017:02:42:49 Malay Peninsula Standard Time] "GET /css/bootstrap-suggest.css HTTP/1.1" 200 496
+https://127.0.0.1:8443/master/findings/new -> /css/bootstrap-suggest.css
+127.0.0.1 - - [01/Jan/2017 02:42:49] "GET /js/bootstrap-suggest.js HTTP/1.1" 200 17798 0.0025
+Owner-PC - - [01/Jan/2017:02:42:49 Malay Peninsula Standard Time] "GET /js/bootstrap-suggest.js HTTP/1.1" 200 17798
+https://127.0.0.1:8443/master/findings/new -> /js/bootstrap-suggest.js
+127.0.0.1 - - [01/Jan/2017 02:42:49] "GET /css/bootstrap.css HTTP/1.1" 200 130262 0.0150
+Owner-PC - - [01/Jan/2017:02:42:49 Malay Peninsula Standard Time] "GET /css/bootstrap.css HTTP/1.1" 200 130262
+https://127.0.0.1:8443/master/findings/new -> /css/bootstrap.css
+2017-01-01 02:43:06 - ArgumentError - The attribute 'title' is not accessible in CL_Library_finding:
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/dm-core-1.2.1/lib/dm-core/resource.rb:338:in `block in attributes='
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/dm-core-1.2.1/lib/dm-core/resource.rb:332:in `each'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/dm-core-1.2.1/lib/dm-core/resource.rb:332:in `attributes='
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/dm-core-1.2.1/lib/dm-core/resource.rb:755:in `initialize'
+	C:/Users/Owner/Desktop/P/Serpico/routes/finding/finding.rb:50:in `new'
+	C:/Users/Owner/Desktop/P/Serpico/routes/finding/finding.rb:50:in `block in <top (required)>'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/sinatra-1.4.6/lib/sinatra/base.rb:1610:in `call'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/sinatra-1.4.6/lib/sinatra/base.rb:1610:in `block in compile!'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/sinatra-1.4.6/lib/sinatra/base.rb:974:in `[]'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/sinatra-1.4.6/lib/sinatra/base.rb:974:in `block (3 levels) in route!'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/sinatra-1.4.6/lib/sinatra/base.rb:993:in `route_eval'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/sinatra-1.4.6/lib/sinatra/base.rb:974:in `block (2 levels) in route!'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/sinatra-1.4.6/lib/sinatra/base.rb:1014:in `block in process_route'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/sinatra-1.4.6/lib/sinatra/base.rb:1012:in `catch'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/sinatra-1.4.6/lib/sinatra/base.rb:1012:in `process_route'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/sinatra-1.4.6/lib/sinatra/base.rb:972:in `block in route!'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/sinatra-1.4.6/lib/sinatra/base.rb:971:in `each'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/sinatra-1.4.6/lib/sinatra/base.rb:971:in `route!'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/sinatra-1.4.6/lib/sinatra/base.rb:984:in `route!'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/sinatra-1.4.6/lib/sinatra/base.rb:1084:in `block in dispatch!'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/sinatra-1.4.6/lib/sinatra/base.rb:1066:in `block in invoke'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/sinatra-1.4.6/lib/sinatra/base.rb:1066:in `catch'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/sinatra-1.4.6/lib/sinatra/base.rb:1066:in `invoke'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/sinatra-1.4.6/lib/sinatra/base.rb:1081:in `dispatch!'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/sinatra-1.4.6/lib/sinatra/base.rb:906:in `block in call!'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/sinatra-1.4.6/lib/sinatra/base.rb:1066:in `block in invoke'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/sinatra-1.4.6/lib/sinatra/base.rb:1066:in `catch'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/sinatra-1.4.6/lib/sinatra/base.rb:1066:in `invoke'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/sinatra-1.4.6/lib/sinatra/base.rb:906:in `call!'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/sinatra-1.4.6/lib/sinatra/base.rb:894:in `call'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/rack-protection-1.5.3/lib/rack/protection/xss_header.rb:18:in `call'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/rack-protection-1.5.3/lib/rack/protection/base.rb:49:in `call'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/rack-protection-1.5.3/lib/rack/protection/base.rb:49:in `call'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/rack-protection-1.5.3/lib/rack/protection/path_traversal.rb:16:in `call'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/rack-protection-1.5.3/lib/rack/protection/json_csrf.rb:18:in `call'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/rack-protection-1.5.3/lib/rack/protection/base.rb:49:in `call'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/rack-protection-1.5.3/lib/rack/protection/base.rb:49:in `call'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/rack-protection-1.5.3/lib/rack/protection/frame_options.rb:31:in `call'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/rack-1.5.5/lib/rack/session/abstract/id.rb:225:in `context'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/rack-1.5.5/lib/rack/session/abstract/id.rb:220:in `call'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/rack-1.5.5/lib/rack/logger.rb:15:in `call'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/rack-1.5.5/lib/rack/commonlogger.rb:33:in `call'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/sinatra-1.4.6/lib/sinatra/base.rb:218:in `call'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/sinatra-1.4.6/lib/sinatra/base.rb:211:in `call'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/rack-1.5.5/lib/rack/head.rb:11:in `call'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/rack-1.5.5/lib/rack/methodoverride.rb:21:in `call'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/sinatra-1.4.6/lib/sinatra/show_exceptions.rb:21:in `call'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/sinatra-1.4.6/lib/sinatra/base.rb:181:in `call'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/sinatra-1.4.6/lib/sinatra/base.rb:2021:in `call'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/sinatra-1.4.6/lib/sinatra/base.rb:1486:in `block in call'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/sinatra-1.4.6/lib/sinatra/base.rb:1795:in `synchronize'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/sinatra-1.4.6/lib/sinatra/base.rb:1486:in `call'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/rack-1.5.5/lib/rack/handler/webrick.rb:60:in `service'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/server.rb:170:in `select': Interrupt
+	from C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/server.rb:170:in `block in start'
+	from C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/server.rb:32:in `start'
+	from C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/server.rb:160:in `start'
+	from C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/rack-1.5.5/lib/rack/handler/webrick.rb:14:in `run'
+	from serpico.rb:30:in `<main>'
+
+Owner-PC - - [01/Jan/2017:02:43:06 Malay Peninsula Standard Time] "POST /master/findings/new HTTP/1.1" 500 168100
+https://127.0.0.1:8443/master/findings/new -> /master/findings/new
+127.0.0.1 - - [01/Jan/2017 02:43:06] "GET /__sinatra__/500.png HTTP/1.1" 200 24378 0.0045
+Owner-PC - - [01/Jan/2017:02:43:06 Malay Peninsula Standard Time] "GET /__sinatra__/500.png HTTP/1.1" 200 24378
+https://127.0.0.1:8443/master/findings/new -> /__sinatra__/500.png
+[2017-01-01 02:43:23] FATAL Interrupt: 
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/server.rb:170:in `select'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/server.rb:170:in `block in start'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/server.rb:32:in `start'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/server.rb:160:in `start'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/rack-1.5.5/lib/rack/handler/webrick.rb:14:in `run'
+	serpico.rb:30:in `<main>'
+[2017-01-01 02:43:23] INFO  going to shutdown ...
+[2017-01-01 02:43:24] INFO  WEBrick::HTTPServer#start done.
+DL is deprecated, please use Fiddle
+[2017-01-01 02:45:26] INFO  WEBrick 1.3.1
+[2017-01-01 02:45:26] INFO  ruby 2.1.8 (2015-12-16) [i386-mingw32]
+[2017-01-01 02:45:26] INFO  
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 1490952327 (0x58de2087)
+    Signature Algorithm: sha1WithRSAEncryption
+        Issuer: C=US, ST=MD, L=MD, O=MD, CN=serpico
+        Validity
+            Not Before: Dec 30 08:57:48 2016 GMT
+            Not After : Dec 30 08:57:48 2017 GMT
+        Subject: C=US, ST=MD, L=MD, O=MD, CN=serpico
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                Public-Key: (1024 bit)
+                Modulus:
+                    00:d6:63:c8:8f:23:fe:80:31:55:61:b0:bd:00:1c:
+                    61:f3:b3:3a:c4:2d:68:e0:32:ab:4c:69:af:07:cc:
+                    3f:d6:24:11:06:ba:8e:d4:b0:cd:9b:ae:6e:fe:b3:
+                    e1:4d:d4:8b:25:ff:4e:ce:b9:f6:3e:94:93:af:b4:
+                    78:48:9b:50:ef:a4:20:a9:87:90:5e:29:82:fe:22:
+                    db:4e:05:52:dd:f2:48:6d:20:4f:a6:b6:a2:6e:80:
+                    be:75:98:07:2d:27:25:92:75:b1:ce:58:40:75:3e:
+                    85:d6:8c:dd:82:7c:b0:49:40:1b:66:0d:e8:e2:57:
+                    bc:f5:5b:5c:cc:e2:f9:0f:23
+                Exponent: 65537 (0x10001)
+        X509v3 extensions:
+            X509v3 Basic Constraints: critical
+                CA:TRUE
+            X509v3 Subject Key Identifier: 
+                0A:4D:41:64:36:DD:1A:8F:EA:6A:5D:1C:B8:CE:B7:12:BC:4E:72:78
+            X509v3 Authority Key Identifier: 
+                keyid:0A:4D:41:64:36:DD:1A:8F:EA:6A:5D:1C:B8:CE:B7:12:BC:4E:72:78
+                DirName:/C=US/ST=MD/L=MD/O=MD/CN=serpico
+                serial:58:DE:20:87
+
+    Signature Algorithm: sha1WithRSAEncryption
+         5a:85:08:0d:79:40:f3:24:c7:c9:33:35:e7:8e:39:f6:7a:f1:
+         a9:bd:85:55:9f:28:4a:bc:98:24:39:ec:fa:a1:ad:bf:3d:f9:
+         83:78:44:b9:38:35:c9:7b:7e:80:3e:05:d0:7e:99:d8:fe:7e:
+         0f:98:6d:39:a3:d3:40:eb:e3:15:46:b9:8b:9e:a3:7c:c7:a9:
+         62:fd:5e:51:bd:bd:80:e7:ac:ea:ff:1c:f5:c7:dd:a9:d3:c7:
+         bb:72:3a:0e:53:87:48:1e:8a:44:d5:ba:1c:9c:1b:e1:eb:2a:
+         25:96:b8:30:4b:d7:fc:5a:e2:bf:5d:f8:b5:dd:df:b2:ea:ca:
+         07:a8
+[2017-01-01 02:45:26] INFO  WEBrick::HTTPServer#start: pid=52928 port=8443
+127.0.0.1 - - [01/Jan/2017 02:45:29] "GET / HTTP/1.1" 302 - 0.0085
+Owner-PC - - [01/Jan/2017:02:45:29 Malay Peninsula Standard Time] "GET / HTTP/1.1" 302 0
+- -> /
+[2017-01-01 02:45:29] ERROR Errno::ECONNABORTED: An established connection was aborted by the software in your host machine.
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/openssl/buffering.rb:61:in `sysread'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/openssl/buffering.rb:61:in `fill_rbuff'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/openssl/buffering.rb:301:in `eof?'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:80:in `run'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+127.0.0.1 - - [01/Jan/2017 02:45:29] "GET / HTTP/1.1" 302 - 0.0030
+Owner-PC - - [01/Jan/2017:02:45:29 Malay Peninsula Standard Time] "GET / HTTP/1.1" 302 0
+- -> /
+WARN: tilt autoloading 'tilt/haml' in a non thread-safe way; explicit require 'tilt/haml' suggested.
+127.0.0.1 - - [01/Jan/2017 02:45:29] "GET /reports/list HTTP/1.1" 200 2147 0.2162
+Owner-PC - - [01/Jan/2017:02:45:29 Malay Peninsula Standard Time] "GET /reports/list HTTP/1.1" 200 2147
+- -> /reports/list
+127.0.0.1 - - [01/Jan/2017 02:45:29] "GET /css/bootstrap-responsive.css HTTP/1.1" 200 22843 0.0025
+Owner-PC - - [01/Jan/2017:02:45:29 Malay Peninsula Standard Time] "GET /css/bootstrap-responsive.css HTTP/1.1" 200 22843
+https://127.0.0.1:8443/reports/list -> /css/bootstrap-responsive.css
+127.0.0.1 - - [01/Jan/2017 02:45:29] "GET /css/bootstrap.css HTTP/1.1" 200 130262 0.0105
+Owner-PC - - [01/Jan/2017:02:45:29 Malay Peninsula Standard Time] "GET /css/bootstrap.css HTTP/1.1" 200 130262
+https://127.0.0.1:8443/reports/list -> /css/bootstrap.css
+127.0.0.1 - - [01/Jan/2017 02:45:29] "GET /css/signin.css HTTP/1.1" 200 1145 0.0020
+Owner-PC - - [01/Jan/2017:02:45:29 Malay Peninsula Standard Time] "GET /css/signin.css HTTP/1.1" 200 1145
+https://127.0.0.1:8443/reports/list -> /css/signin.css
+127.0.0.1 - - [01/Jan/2017 02:45:34] "POST /login HTTP/1.1" 303 - 0.0385
+Owner-PC - - [01/Jan/2017:02:45:34 Malay Peninsula Standard Time] "POST /login HTTP/1.1" 303 0
+https://127.0.0.1:8443/reports/list -> /login
+127.0.0.1 - - [01/Jan/2017 02:45:34] "GET / HTTP/1.1" 302 - 0.0075
+Owner-PC - - [01/Jan/2017:02:45:34 Malay Peninsula Standard Time] "GET / HTTP/1.1" 302 0
+https://127.0.0.1:8443/reports/list -> /
+127.0.0.1 - - [01/Jan/2017 02:45:34] "GET /reports/list HTTP/1.1" 200 8084 0.0350
+Owner-PC - - [01/Jan/2017:02:45:34 Malay Peninsula Standard Time] "GET /reports/list HTTP/1.1" 200 8084
+https://127.0.0.1:8443/reports/list -> /reports/list
+127.0.0.1 - - [01/Jan/2017 02:45:34] "GET /css/bootstrap-responsive.css HTTP/1.1" 200 22843 0.0020
+Owner-PC - - [01/Jan/2017:02:45:34 Malay Peninsula Standard Time] "GET /css/bootstrap-responsive.css HTTP/1.1" 200 22843
+https://127.0.0.1:8443/reports/list -> /css/bootstrap-responsive.css
+127.0.0.1 - - [01/Jan/2017 02:45:34] "GET /css/bootstrap.css HTTP/1.1" 200 130262 0.0065
+Owner-PC - - [01/Jan/2017:02:45:34 Malay Peninsula Standard Time] "GET /css/bootstrap.css HTTP/1.1" 200 130262
+https://127.0.0.1:8443/reports/list -> /css/bootstrap.css
+127.0.0.1 - - [01/Jan/2017 02:45:34] "GET /img/glyphicons-halflings-white.png HTTP/1.1" 200 4352 0.0015
+Owner-PC - - [01/Jan/2017:02:45:34 Malay Peninsula Standard Time] "GET /img/glyphicons-halflings-white.png HTTP/1.1" 200 4352
+https://127.0.0.1:8443/css/bootstrap.css -> /img/glyphicons-halflings-white.png
+127.0.0.1 - - [01/Jan/2017 02:45:36] "GET /admin/ HTTP/1.1" 200 4166 0.0205
+Owner-PC - - [01/Jan/2017:02:45:35 Malay Peninsula Standard Time] "GET /admin/ HTTP/1.1" 200 4166
+https://127.0.0.1:8443/reports/list -> /admin/
+Sinatra::Base#options is deprecated and will be removed, use #settings instead.
+127.0.0.1 - - [01/Jan/2017 02:45:36] "GET /master/findings HTTP/1.1" 200 11773 0.0505
+Owner-PC - - [01/Jan/2017:02:45:36 Malay Peninsula Standard Time] "GET /master/findings HTTP/1.1" 200 11773
+https://127.0.0.1:8443/admin/ -> /master/findings
+127.0.0.1 - - [01/Jan/2017 02:45:36] "GET /img/glyphicons-halflings.png HTTP/1.1" 200 4352 0.0015
+Owner-PC - - [01/Jan/2017:02:45:36 Malay Peninsula Standard Time] "GET /img/glyphicons-halflings.png HTTP/1.1" 200 4352
+https://127.0.0.1:8443/css/bootstrap.css -> /img/glyphicons-halflings.png
+Sinatra::Base#options is deprecated and will be removed, use #settings instead.
+Sinatra::Base#options is deprecated and will be removed, use #settings instead.
+127.0.0.1 - - [01/Jan/2017 02:45:37] "GET /master/findings/new HTTP/1.1" 200 10450 0.0746
+Owner-PC - - [01/Jan/2017:02:45:37 Malay Peninsula Standard Time] "GET /master/findings/new HTTP/1.1" 200 10450
+https://127.0.0.1:8443/master/findings -> /master/findings/new
+127.0.0.1 - - [01/Jan/2017 02:45:37] "GET /css/bootstrap-suggest.css HTTP/1.1" 200 496 0.0045
+Owner-PC - - [01/Jan/2017:02:45:37 Malay Peninsula Standard Time] "GET /css/bootstrap-suggest.css HTTP/1.1" 200 496
+https://127.0.0.1:8443/master/findings/new -> /css/bootstrap-suggest.css
+127.0.0.1 - - [01/Jan/2017 02:45:37] "GET /css/bootstrap-responsive.css HTTP/1.1" 200 22843 0.0035
+Owner-PC - - [01/Jan/2017:02:45:37 Malay Peninsula Standard Time] "GET /css/bootstrap-responsive.css HTTP/1.1" 200 22843
+https://127.0.0.1:8443/master/findings/new -> /css/bootstrap-responsive.css
+127.0.0.1 - - [01/Jan/2017 02:45:37] "GET /js/bootstrap-suggest.js HTTP/1.1" 200 17798 0.0010
+Owner-PC - - [01/Jan/2017:02:45:37 Malay Peninsula Standard Time] "GET /js/bootstrap-suggest.js HTTP/1.1" 200 17798
+https://127.0.0.1:8443/master/findings/new -> /js/bootstrap-suggest.js
+127.0.0.1 - - [01/Jan/2017 02:45:37] "GET /css/bootstrap.css HTTP/1.1" 200 130262 0.0050
+Owner-PC - - [01/Jan/2017:02:45:37 Malay Peninsula Standard Time] "GET /css/bootstrap.css HTTP/1.1" 200 130262
+https://127.0.0.1:8443/master/findings/new -> /css/bootstrap.css
+127.0.0.1 - - [01/Jan/2017 02:45:44] "POST /master/findings/new HTTP/1.1" 303 - 0.0040
+C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/server.rb:170:in `select': Interrupt
+	from C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/server.rb:170:in `block in start'
+	from C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/server.rb:32:in `start'
+	from C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/server.rb:160:in `start'
+	from C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/rack-1.5.5/lib/rack/handler/webrick.rb:14:in `run'
+	from serpico.rb:30:in `<main>'
+{"title"=>"123", "type"=>"Network Services", "effort"=>"Planned", "risk"=>"2", "overview"=>"<paragraph>123</paragraph>", "poc"=>"<paragraph>123</paragraph>", "remediation"=>"<paragraph>123</paragraph>", "references"=>"<paragraph>123</paragraph>"}
+Owner-PC - - [01/Jan/2017:02:45:44 Malay Peninsula Standard Time] "POST /master/findings/new HTTP/1.1" 303 0
+https://127.0.0.1:8443/master/findings/new -> /master/findings/new
+Sinatra::Base#options is deprecated and will be removed, use #settings instead.
+127.0.0.1 - - [01/Jan/2017 02:45:44] "GET /master/findings HTTP/1.1" 200 11773 0.0530
+Owner-PC - - [01/Jan/2017:02:45:44 Malay Peninsula Standard Time] "GET /master/findings HTTP/1.1" 200 11773
+https://127.0.0.1:8443/master/findings/new -> /master/findings
+127.0.0.1 - - [01/Jan/2017 02:45:44] "GET /css/bootstrap-responsive.css HTTP/1.1" 200 22843 0.0015
+Owner-PC - - [01/Jan/2017:02:45:44 Malay Peninsula Standard Time] "GET /css/bootstrap-responsive.css HTTP/1.1" 200 22843
+https://127.0.0.1:8443/master/findings -> /css/bootstrap-responsive.css
+127.0.0.1 - - [01/Jan/2017 02:45:44] "GET /css/bootstrap.css HTTP/1.1" 200 130262 0.0065
+Owner-PC - - [01/Jan/2017:02:45:44 Malay Peninsula Standard Time] "GET /css/bootstrap.css HTTP/1.1" 200 130262
+https://127.0.0.1:8443/master/findings -> /css/bootstrap.css
+[2017-01-01 02:45:51] FATAL Interrupt: 
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/server.rb:170:in `select'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/server.rb:170:in `block in start'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/server.rb:32:in `start'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/server.rb:160:in `start'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/rack-1.5.5/lib/rack/handler/webrick.rb:14:in `run'
+	serpico.rb:30:in `<main>'
+[2017-01-01 02:45:51] INFO  going to shutdown ...
+[2017-01-01 02:45:52] INFO  WEBrick::HTTPServer#start done.
+DL is deprecated, please use Fiddle
+[2017-01-01 03:49:59] INFO  WEBrick 1.3.1
+[2017-01-01 03:49:59] INFO  ruby 2.1.8 (2015-12-16) [i386-mingw32]
+[2017-01-01 03:49:59] INFO  
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 1490952327 (0x58de2087)
+    Signature Algorithm: sha1WithRSAEncryption
+        Issuer: C=US, ST=MD, L=MD, O=MD, CN=serpico
+        Validity
+            Not Before: Dec 30 08:57:48 2016 GMT
+            Not After : Dec 30 08:57:48 2017 GMT
+        Subject: C=US, ST=MD, L=MD, O=MD, CN=serpico
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                Public-Key: (1024 bit)
+                Modulus:
+                    00:d6:63:c8:8f:23:fe:80:31:55:61:b0:bd:00:1c:
+                    61:f3:b3:3a:c4:2d:68:e0:32:ab:4c:69:af:07:cc:
+                    3f:d6:24:11:06:ba:8e:d4:b0:cd:9b:ae:6e:fe:b3:
+                    e1:4d:d4:8b:25:ff:4e:ce:b9:f6:3e:94:93:af:b4:
+                    78:48:9b:50:ef:a4:20:a9:87:90:5e:29:82:fe:22:
+                    db:4e:05:52:dd:f2:48:6d:20:4f:a6:b6:a2:6e:80:
+                    be:75:98:07:2d:27:25:92:75:b1:ce:58:40:75:3e:
+                    85:d6:8c:dd:82:7c:b0:49:40:1b:66:0d:e8:e2:57:
+                    bc:f5:5b:5c:cc:e2:f9:0f:23
+                Exponent: 65537 (0x10001)
+        X509v3 extensions:
+            X509v3 Basic Constraints: critical
+                CA:TRUE
+            X509v3 Subject Key Identifier: 
+                0A:4D:41:64:36:DD:1A:8F:EA:6A:5D:1C:B8:CE:B7:12:BC:4E:72:78
+            X509v3 Authority Key Identifier: 
+                keyid:0A:4D:41:64:36:DD:1A:8F:EA:6A:5D:1C:B8:CE:B7:12:BC:4E:72:78
+                DirName:/C=US/ST=MD/L=MD/O=MD/CN=serpico
+                serial:58:DE:20:87
+
+    Signature Algorithm: sha1WithRSAEncryption
+         5a:85:08:0d:79:40:f3:24:c7:c9:33:35:e7:8e:39:f6:7a:f1:
+         a9:bd:85:55:9f:28:4a:bc:98:24:39:ec:fa:a1:ad:bf:3d:f9:
+         83:78:44:b9:38:35:c9:7b:7e:80:3e:05:d0:7e:99:d8:fe:7e:
+         0f:98:6d:39:a3:d3:40:eb:e3:15:46:b9:8b:9e:a3:7c:c7:a9:
+         62:fd:5e:51:bd:bd:80:e7:ac:ea:ff:1c:f5:c7:dd:a9:d3:c7:
+         bb:72:3a:0e:53:87:48:1e:8a:44:d5:ba:1c:9c:1b:e1:eb:2a:
+         25:96:b8:30:4b:d7:fc:5a:e2:bf:5d:f8:b5:dd:df:b2:ea:ca:
+         07:a8
+[2017-01-01 03:49:59] INFO  WEBrick::HTTPServer#start: pid=51448 port=8443
+127.0.0.1 - - [01/Jan/2017 03:50:00] "GET /master/findings/new HTTP/1.1" 302 - 0.0075
+Owner-PC - - [01/Jan/2017:03:50:00 Malay Peninsula Standard Time] "GET /master/findings/new HTTP/1.1" 302 0
+- -> /master/findings/new
+127.0.0.1 - - [01/Jan/2017 03:50:00] "GET /no_access HTTP/1.1" 200 47 0.0015
+Owner-PC - - [01/Jan/2017:03:50:00 Malay Peninsula Standard Time] "GET /no_access HTTP/1.1" 200 47
+- -> /no_access
+127.0.0.1 - - [01/Jan/2017 03:50:03] "GET / HTTP/1.1" 302 - 0.0020
+Owner-PC - - [01/Jan/2017:03:50:03 Malay Peninsula Standard Time] "GET / HTTP/1.1" 302 0
+- -> /
+WARN: tilt autoloading 'tilt/haml' in a non thread-safe way; explicit require 'tilt/haml' suggested.
+127.0.0.1 - - [01/Jan/2017 03:50:03] "GET /reports/list HTTP/1.1" 200 2147 0.1917
+Owner-PC - - [01/Jan/2017:03:50:03 Malay Peninsula Standard Time] "GET /reports/list HTTP/1.1" 200 2147
+- -> /reports/list
+127.0.0.1 - - [01/Jan/2017 03:50:03] "GET /js/jquery-3.1.1.js HTTP/1.1" 200 277414 0.0035
+Owner-PC - - [01/Jan/2017:03:50:03 Malay Peninsula Standard Time] "GET /js/jquery-3.1.1.js HTTP/1.1" 200 277414
+https://127.0.0.1:8443/reports/list -> /js/jquery-3.1.1.js
+127.0.0.1 - - [01/Jan/2017 03:50:03] "GET /js/jquery-migrate-3.0.0.min.js HTTP/1.1" 200 7084 0.0040
+Owner-PC - - [01/Jan/2017:03:50:03 Malay Peninsula Standard Time] "GET /js/jquery-migrate-3.0.0.min.js HTTP/1.1" 200 7084
+https://127.0.0.1:8443/reports/list -> /js/jquery-migrate-3.0.0.min.js
+127.0.0.1 - - [01/Jan/2017 03:50:03] "GET /js/bootstrap-collapse.js HTTP/1.1" 200 4784 0.0030
+Owner-PC - - [01/Jan/2017:03:50:03 Malay Peninsula Standard Time] "GET /js/bootstrap-collapse.js HTTP/1.1" 200 4784
+https://127.0.0.1:8443/reports/list -> /js/bootstrap-collapse.js
+127.0.0.1 - - [01/Jan/2017 03:50:03] "GET /js/bootstrap-transition.js HTTP/1.1" 200 1815 0.0015
+Owner-PC - - [01/Jan/2017:03:50:03 Malay Peninsula Standard Time] "GET /js/bootstrap-transition.js HTTP/1.1" 200 1815
+https://127.0.0.1:8443/reports/list -> /js/bootstrap-transition.js
+127.0.0.1 - - [01/Jan/2017 03:50:03] "GET /js/bootstrap-alert.js HTTP/1.1" 200 2622 0.0020
+Owner-PC - - [01/Jan/2017:03:50:03 Malay Peninsula Standard Time] "GET /js/bootstrap-alert.js HTTP/1.1" 200 2622
+https://127.0.0.1:8443/reports/list -> /js/bootstrap-alert.js
+127.0.0.1 - - [01/Jan/2017 03:50:03] "GET /js/bootstrap-modal.js HTTP/1.1" 200 6824 0.0025
+Owner-PC - - [01/Jan/2017:03:50:03 Malay Peninsula Standard Time] "GET /js/bootstrap-modal.js HTTP/1.1" 200 6824
+https://127.0.0.1:8443/reports/list -> /js/bootstrap-modal.js
+127.0.0.1 - - [01/Jan/2017 03:50:03] "GET /js/bootstrap-dropdown.js HTTP/1.1" 200 4396 0.0090
+Owner-PC - - [01/Jan/2017:03:50:03 Malay Peninsula Standard Time] "GET /js/bootstrap-dropdown.js HTTP/1.1" 200 4396
+https://127.0.0.1:8443/reports/list -> /js/bootstrap-dropdown.js
+127.0.0.1 - - [01/Jan/2017 03:50:03] "GET /js/bootstrap-scrollspy.js HTTP/1.1" 200 4771 0.0020
+Owner-PC - - [01/Jan/2017:03:50:03 Malay Peninsula Standard Time] "GET /js/bootstrap-scrollspy.js HTTP/1.1" 200 4771
+https://127.0.0.1:8443/reports/list -> /js/bootstrap-scrollspy.js
+127.0.0.1 - - [01/Jan/2017 03:50:03] "GET /js/bootstrap-tab.js HTTP/1.1" 200 3639 0.0015
+Owner-PC - - [01/Jan/2017:03:50:03 Malay Peninsula Standard Time] "GET /js/bootstrap-tab.js HTTP/1.1" 200 3639
+https://127.0.0.1:8443/reports/list -> /js/bootstrap-tab.js
+127.0.0.1 - - [01/Jan/2017 03:50:04] "GET /js/bootstrap-tooltip.js HTTP/1.1" 200 8207 0.0015
+Owner-PC - - [01/Jan/2017:03:50:04 Malay Peninsula Standard Time] "GET /js/bootstrap-tooltip.js HTTP/1.1" 200 8207
+https://127.0.0.1:8443/reports/list -> /js/bootstrap-tooltip.js
+127.0.0.1 - - [01/Jan/2017 03:50:04] "GET /js/bootstrap-popover.js HTTP/1.1" 200 3260 0.0015
+Owner-PC - - [01/Jan/2017:03:50:04 Malay Peninsula Standard Time] "GET /js/bootstrap-popover.js HTTP/1.1" 200 3260
+https://127.0.0.1:8443/reports/list -> /js/bootstrap-popover.js
+127.0.0.1 - - [01/Jan/2017 03:50:04] "GET /js/bootstrap-button.js HTTP/1.1" 200 2945 0.0020
+Owner-PC - - [01/Jan/2017:03:50:04 Malay Peninsula Standard Time] "GET /js/bootstrap-button.js HTTP/1.1" 200 2945
+https://127.0.0.1:8443/reports/list -> /js/bootstrap-button.js
+127.0.0.1 - - [01/Jan/2017 03:50:04] "GET /js/bootstrap-carousel.js HTTP/1.1" 200 5504 0.0015
+Owner-PC - - [01/Jan/2017:03:50:04 Malay Peninsula Standard Time] "GET /js/bootstrap-carousel.js HTTP/1.1" 200 5504
+https://127.0.0.1:8443/reports/list -> /js/bootstrap-carousel.js
+127.0.0.1 - - [01/Jan/2017 03:50:04] "GET /js/bootstrap-typeahead.js HTTP/1.1" 200 8308 0.0025
+Owner-PC - - [01/Jan/2017:03:50:04 Malay Peninsula Standard Time] "GET /js/bootstrap-typeahead.js HTTP/1.1" 200 8308
+https://127.0.0.1:8443/reports/list -> /js/bootstrap-typeahead.js
+127.0.0.1 - - [01/Jan/2017 03:50:04] "GET /css/bootstrap.css HTTP/1.1" 200 130262 0.0030
+Owner-PC - - [01/Jan/2017:03:50:04 Malay Peninsula Standard Time] "GET /css/bootstrap.css HTTP/1.1" 200 130262
+https://127.0.0.1:8443/reports/list -> /css/bootstrap.css
+127.0.0.1 - - [01/Jan/2017 03:50:04] "GET /css/font-awesome.css HTTP/1.1" 200 20769 0.0020
+Owner-PC - - [01/Jan/2017:03:50:04 Malay Peninsula Standard Time] "GET /css/font-awesome.css HTTP/1.1" 200 20769
+https://127.0.0.1:8443/reports/list -> /css/font-awesome.css
+127.0.0.1 - - [01/Jan/2017 03:50:04] "GET /css/bootstrap-responsive.css HTTP/1.1" 200 22843 0.0020
+Owner-PC - - [01/Jan/2017:03:50:04 Malay Peninsula Standard Time] "GET /css/bootstrap-responsive.css HTTP/1.1" 200 22843
+https://127.0.0.1:8443/reports/list -> /css/bootstrap-responsive.css
+127.0.0.1 - - [01/Jan/2017 03:50:04] "GET /img/logo_1.svg HTTP/1.1" 200 16690 0.0020
+Owner-PC - - [01/Jan/2017:03:50:04 Malay Peninsula Standard Time] "GET /img/logo_1.svg HTTP/1.1" 200 16690
+https://127.0.0.1:8443/reports/list -> /img/logo_1.svg
+127.0.0.1 - - [01/Jan/2017 03:50:04] "GET /css/signin.css HTTP/1.1" 200 1145 0.0025
+Owner-PC - - [01/Jan/2017:03:50:04 Malay Peninsula Standard Time] "GET /css/signin.css HTTP/1.1" 200 1145
+C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/server.rb:170:in `select': Interrupt
+	from C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/server.rb:170:in `block in start'
+	from C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/server.rb:32:in `start'
+	from C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/server.rb:160:in `start'
+	from C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/rack-1.5.5/lib/rack/handler/webrick.rb:14:in `run'
+	from serpico.rb:30:in `<main>'
+https://127.0.0.1:8443/reports/list -> /css/signin.css
+127.0.0.1 - - [01/Jan/2017 03:50:06] "POST /login HTTP/1.1" 303 - 0.0415
+Owner-PC - - [01/Jan/2017:03:50:06 Malay Peninsula Standard Time] "POST /login HTTP/1.1" 303 0
+https://127.0.0.1:8443/reports/list -> /login
+127.0.0.1 - - [01/Jan/2017 03:50:06] "GET / HTTP/1.1" 302 - 0.0020
+Owner-PC - - [01/Jan/2017:03:50:06 Malay Peninsula Standard Time] "GET / HTTP/1.1" 302 0
+https://127.0.0.1:8443/reports/list -> /
+127.0.0.1 - - [01/Jan/2017 03:50:06] "GET /reports/list HTTP/1.1" 200 8084 0.0330
+Owner-PC - - [01/Jan/2017:03:50:06 Malay Peninsula Standard Time] "GET /reports/list HTTP/1.1" 200 8084
+https://127.0.0.1:8443/reports/list -> /reports/list
+127.0.0.1 - - [01/Jan/2017 03:50:06] "GET /css/bootstrap.css HTTP/1.1" 200 130262 0.0015
+Owner-PC - - [01/Jan/2017:03:50:06 Malay Peninsula Standard Time] "GET /css/bootstrap.css HTTP/1.1" 200 130262
+https://127.0.0.1:8443/reports/list -> /css/bootstrap.css
+127.0.0.1 - - [01/Jan/2017 03:50:06] "GET /css/font-awesome.css HTTP/1.1" 200 20769 0.0015
+Owner-PC - - [01/Jan/2017:03:50:06 Malay Peninsula Standard Time] "GET /css/font-awesome.css HTTP/1.1" 200 20769
+https://127.0.0.1:8443/reports/list -> /css/font-awesome.css
+127.0.0.1 - - [01/Jan/2017 03:50:06] "GET /css/bootstrap-responsive.css HTTP/1.1" 200 22843 0.0015
+Owner-PC - - [01/Jan/2017:03:50:06 Malay Peninsula Standard Time] "GET /css/bootstrap-responsive.css HTTP/1.1" 200 22843
+https://127.0.0.1:8443/reports/list -> /css/bootstrap-responsive.css
+127.0.0.1 - - [01/Jan/2017 03:50:06] "GET /fonts/fontawesome-webfont.woff?v=4.1.0 HTTP/1.1" 200 83760 0.0020
+Owner-PC - - [01/Jan/2017:03:50:06 Malay Peninsula Standard Time] "GET /fonts/fontawesome-webfont.woff?v=4.1.0 HTTP/1.1" 200 83760
+https://127.0.0.1:8443/css/font-awesome.css -> /fonts/fontawesome-webfont.woff?v=4.1.0
+127.0.0.1 - - [01/Jan/2017 03:50:06] "GET /img/glyphicons-halflings-white.png HTTP/1.1" 200 4352 0.0020
+Owner-PC - - [01/Jan/2017:03:50:06 Malay Peninsula Standard Time] "GET /img/glyphicons-halflings-white.png HTTP/1.1" 200 4352
+https://127.0.0.1:8443/css/bootstrap.css -> /img/glyphicons-halflings-white.png
+Sinatra::Base#options is deprecated and will be removed, use #settings instead.
+127.0.0.1 - - [01/Jan/2017 03:50:10] "GET /master/findings HTTP/1.1" 200 11773 0.0415
+Owner-PC - - [01/Jan/2017:03:50:10 Malay Peninsula Standard Time] "GET /master/findings HTTP/1.1" 200 11773
+https://127.0.0.1:8443/reports/list -> /master/findings
+127.0.0.1 - - [01/Jan/2017 03:50:10] "GET /css/font-awesome.css HTTP/1.1" 200 20769 0.0035
+Owner-PC - - [01/Jan/2017:03:50:10 Malay Peninsula Standard Time] "GET /css/font-awesome.css HTTP/1.1" 200 20769
+https://127.0.0.1:8443/master/findings -> /css/font-awesome.css
+127.0.0.1 - - [01/Jan/2017 03:50:10] "GET /css/bootstrap-responsive.css HTTP/1.1" 200 22843 0.0030
+Owner-PC - - [01/Jan/2017:03:50:10 Malay Peninsula Standard Time] "GET /css/bootstrap-responsive.css HTTP/1.1" 200 22843
+https://127.0.0.1:8443/master/findings -> /css/bootstrap-responsive.css
+127.0.0.1 - - [01/Jan/2017 03:50:10] "GET /css/bootstrap.css HTTP/1.1" 200 130262 0.0100
+Owner-PC - - [01/Jan/2017:03:50:10 Malay Peninsula Standard Time] "GET /css/bootstrap.css HTTP/1.1" 200 130262
+https://127.0.0.1:8443/master/findings -> /css/bootstrap.css
+127.0.0.1 - - [01/Jan/2017 03:50:10] "GET /img/glyphicons-halflings.png HTTP/1.1" 200 4352 0.0020
+Owner-PC - - [01/Jan/2017:03:50:10 Malay Peninsula Standard Time] "GET /img/glyphicons-halflings.png HTTP/1.1" 200 4352
+https://127.0.0.1:8443/css/bootstrap.css -> /img/glyphicons-halflings.png
+Sinatra::Base#options is deprecated and will be removed, use #settings instead.
+Sinatra::Base#options is deprecated and will be removed, use #settings instead.
+127.0.0.1 - - [01/Jan/2017 03:50:11] "GET /master/findings/new HTTP/1.1" 200 10450 0.0536
+Owner-PC - - [01/Jan/2017:03:50:11 Malay Peninsula Standard Time] "GET /master/findings/new HTTP/1.1" 200 10450
+https://127.0.0.1:8443/master/findings -> /master/findings/new
+127.0.0.1 - - [01/Jan/2017 03:50:11] "GET /css/bootstrap.css HTTP/1.1" 200 130262 0.0015
+Owner-PC - - [01/Jan/2017:03:50:11 Malay Peninsula Standard Time] "GET /css/bootstrap.css HTTP/1.1" 200 130262
+https://127.0.0.1:8443/master/findings/new -> /css/bootstrap.css
+127.0.0.1 - - [01/Jan/2017 03:50:11] "GET /css/bootstrap-suggest.css HTTP/1.1" 200 496 0.0070
+Owner-PC - - [01/Jan/2017:03:50:11 Malay Peninsula Standard Time] "GET /css/bootstrap-suggest.css HTTP/1.1" 200 496
+https://127.0.0.1:8443/master/findings/new -> /css/bootstrap-suggest.css
+127.0.0.1 - - [01/Jan/2017 03:50:11] "GET /css/font-awesome.css HTTP/1.1" 200 20769 0.0100
+Owner-PC - - [01/Jan/2017:03:50:11 Malay Peninsula Standard Time] "GET /css/font-awesome.css HTTP/1.1" 200 20769
+https://127.0.0.1:8443/master/findings/new -> /css/font-awesome.css
+127.0.0.1 - - [01/Jan/2017 03:50:11] "GET /js/bootstrap-suggest.js HTTP/1.1" 200 17798 0.0040
+Owner-PC - - [01/Jan/2017:03:50:11 Malay Peninsula Standard Time] "GET /js/bootstrap-suggest.js HTTP/1.1" 200 17798
+https://127.0.0.1:8443/master/findings/new -> /js/bootstrap-suggest.js
+127.0.0.1 - - [01/Jan/2017 03:50:11] "GET /css/bootstrap-responsive.css HTTP/1.1" 200 22843 0.0070
+Owner-PC - - [01/Jan/2017:03:50:11 Malay Peninsula Standard Time] "GET /css/bootstrap-responsive.css HTTP/1.1" 200 22843
+https://127.0.0.1:8443/master/findings/new -> /css/bootstrap-responsive.css
+[2017-01-01 04:19:35] FATAL Interrupt: 
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/server.rb:170:in `select'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/server.rb:170:in `block in start'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/server.rb:32:in `start'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/server.rb:160:in `start'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/rack-1.5.5/lib/rack/handler/webrick.rb:14:in `run'
+	serpico.rb:30:in `<main>'
+[2017-01-01 04:19:35] INFO  going to shutdown ...
+[2017-01-01 04:19:35] INFO  WEBrick::HTTPServer#start done.
+DL is deprecated, please use Fiddle
+[2017-01-01 04:19:40] INFO  WEBrick 1.3.1
+[2017-01-01 04:19:40] INFO  ruby 2.1.8 (2015-12-16) [i386-mingw32]
+[2017-01-01 04:19:40] INFO  
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 1490952327 (0x58de2087)
+    Signature Algorithm: sha1WithRSAEncryption
+        Issuer: C=US, ST=MD, L=MD, O=MD, CN=serpico
+        Validity
+            Not Before: Dec 30 08:57:48 2016 GMT
+            Not After : Dec 30 08:57:48 2017 GMT
+        Subject: C=US, ST=MD, L=MD, O=MD, CN=serpico
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                Public-Key: (1024 bit)
+                Modulus:
+                    00:d6:63:c8:8f:23:fe:80:31:55:61:b0:bd:00:1c:
+                    61:f3:b3:3a:c4:2d:68:e0:32:ab:4c:69:af:07:cc:
+                    3f:d6:24:11:06:ba:8e:d4:b0:cd:9b:ae:6e:fe:b3:
+                    e1:4d:d4:8b:25:ff:4e:ce:b9:f6:3e:94:93:af:b4:
+                    78:48:9b:50:ef:a4:20:a9:87:90:5e:29:82:fe:22:
+                    db:4e:05:52:dd:f2:48:6d:20:4f:a6:b6:a2:6e:80:
+                    be:75:98:07:2d:27:25:92:75:b1:ce:58:40:75:3e:
+                    85:d6:8c:dd:82:7c:b0:49:40:1b:66:0d:e8:e2:57:
+                    bc:f5:5b:5c:cc:e2:f9:0f:23
+                Exponent: 65537 (0x10001)
+        X509v3 extensions:
+            X509v3 Basic Constraints: critical
+                CA:TRUE
+            X509v3 Subject Key Identifier: 
+                0A:4D:41:64:36:DD:1A:8F:EA:6A:5D:1C:B8:CE:B7:12:BC:4E:72:78
+            X509v3 Authority Key Identifier: 
+                keyid:0A:4D:41:64:36:DD:1A:8F:EA:6A:5D:1C:B8:CE:B7:12:BC:4E:72:78
+                DirName:/C=US/ST=MD/L=MD/O=MD/CN=serpico
+                serial:58:DE:20:87
+
+    Signature Algorithm: sha1WithRSAEncryption
+         5a:85:08:0d:79:40:f3:24:c7:c9:33:35:e7:8e:39:f6:7a:f1:
+         a9:bd:85:55:9f:28:4a:bc:98:24:39:ec:fa:a1:ad:bf:3d:f9:
+         83:78:44:b9:38:35:c9:7b:7e:80:3e:05:d0:7e:99:d8:fe:7e:
+         0f:98:6d:39:a3:d3:40:eb:e3:15:46:b9:8b:9e:a3:7c:c7:a9:
+         62:fd:5e:51:bd:bd:80:e7:ac:ea:ff:1c:f5:c7:dd:a9:d3:c7:
+         bb:72:3a:0e:53:87:48:1e:8a:44:d5:ba:1c:9c:1b:e1:eb:2a:
+         25:96:b8:30:4b:d7:fc:5a:e2:bf:5d:f8:b5:dd:df:b2:ea:ca:
+         07:a8
+[2017-01-01 04:19:40] INFO  WEBrick::HTTPServer#start: pid=52200 port=8443
+127.0.0.1 - - [01/Jan/2017 04:19:44] "GET / HTTP/1.1" 302 - 0.0065
+Owner-PC - - [01/Jan/2017:04:19:44 Malay Peninsula Standard Time] "GET / HTTP/1.1" 302 0
+- -> /
+WARN: tilt autoloading 'tilt/haml' in a non thread-safe way; explicit require 'tilt/haml' suggested.
+127.0.0.1 - - [01/Jan/2017 04:19:44] "GET /reports/list HTTP/1.1" 200 2147 0.1862
+Owner-PC - - [01/Jan/2017:04:19:44 Malay Peninsula Standard Time] "GET /reports/list HTTP/1.1" 200 2147
+- -> /reports/list
+127.0.0.1 - - [01/Jan/2017 04:19:44] "GET /js/jquery-3.1.1.js HTTP/1.1" 200 277414 0.0025
+Owner-PC - - [01/Jan/2017:04:19:44 Malay Peninsula Standard Time] "GET /js/jquery-3.1.1.js HTTP/1.1" 200 277414
+https://127.0.0.1:8443/reports/list -> /js/jquery-3.1.1.js
+127.0.0.1 - - [01/Jan/2017 04:19:44] "GET /js/jquery-migrate-3.0.0.min.js HTTP/1.1" 200 7084 0.0010
+Owner-PC - - [01/Jan/2017:04:19:44 Malay Peninsula Standard Time] "GET /js/jquery-migrate-3.0.0.min.js HTTP/1.1" 200 7084
+https://127.0.0.1:8443/reports/list -> /js/jquery-migrate-3.0.0.min.js
+127.0.0.1 - - [01/Jan/2017 04:19:44] "GET /js/bootstrap-collapse.js HTTP/1.1" 200 4784 0.0015
+Owner-PC - - [01/Jan/2017:04:19:44 Malay Peninsula Standard Time] "GET /js/bootstrap-collapse.js HTTP/1.1" 200 4784
+https://127.0.0.1:8443/reports/list -> /js/bootstrap-collapse.js
+127.0.0.1 - - [01/Jan/2017 04:19:44] "GET /js/bootstrap-transition.js HTTP/1.1" 200 1815 0.0015
+Owner-PC - - [01/Jan/2017:04:19:44 Malay Peninsula Standard Time] "GET /js/bootstrap-transition.js HTTP/1.1" 200 1815
+https://127.0.0.1:8443/reports/list -> /js/bootstrap-transition.js
+127.0.0.1 - - [01/Jan/2017 04:19:44] "GET /js/bootstrap-alert.js HTTP/1.1" 200 2622 0.0015
+Owner-PC - - [01/Jan/2017:04:19:44 Malay Peninsula Standard Time] "GET /js/bootstrap-alert.js HTTP/1.1" 200 2622
+https://127.0.0.1:8443/reports/list -> /js/bootstrap-alert.js
+127.0.0.1 - - [01/Jan/2017 04:19:44] "GET /js/bootstrap-modal.js HTTP/1.1" 200 6824 0.0015
+Owner-PC - - [01/Jan/2017:04:19:44 Malay Peninsula Standard Time] "GET /js/bootstrap-modal.js HTTP/1.1" 200 6824
+https://127.0.0.1:8443/reports/list -> /js/bootstrap-modal.js
+127.0.0.1 - - [01/Jan/2017 04:19:44] "GET /js/bootstrap-dropdown.js HTTP/1.1" 200 4396 0.0015
+Owner-PC - - [01/Jan/2017:04:19:44 Malay Peninsula Standard Time] "GET /js/bootstrap-dropdown.js HTTP/1.1" 200 4396
+https://127.0.0.1:8443/reports/list -> /js/bootstrap-dropdown.js
+127.0.0.1 - - [01/Jan/2017 04:19:44] "GET /js/bootstrap-scrollspy.js HTTP/1.1" 200 4771 0.0015
+Owner-PC - - [01/Jan/2017:04:19:44 Malay Peninsula Standard Time] "GET /js/bootstrap-scrollspy.js HTTP/1.1" 200 4771
+https://127.0.0.1:8443/reports/list -> /js/bootstrap-scrollspy.js
+127.0.0.1 - - [01/Jan/2017 04:19:44] "GET /js/bootstrap-tab.js HTTP/1.1" 200 3639 0.0015
+Owner-PC - - [01/Jan/2017:04:19:44 Malay Peninsula Standard Time] "GET /js/bootstrap-tab.js HTTP/1.1" 200 3639
+https://127.0.0.1:8443/reports/list -> /js/bootstrap-tab.js
+127.0.0.1 - - [01/Jan/2017 04:19:44] "GET /js/bootstrap-tooltip.js HTTP/1.1" 200 8207 0.0015
+Owner-PC - - [01/Jan/2017:04:19:44 Malay Peninsula Standard Time] "GET /js/bootstrap-tooltip.js HTTP/1.1" 200 8207
+https://127.0.0.1:8443/reports/list -> /js/bootstrap-tooltip.js
+127.0.0.1 - - [01/Jan/2017 04:19:44] "GET /js/bootstrap-popover.js HTTP/1.1" 200 3260 0.0015
+Owner-PC - - [01/Jan/2017:04:19:44 Malay Peninsula Standard Time] "GET /js/bootstrap-popover.js HTTP/1.1" 200 3260
+https://127.0.0.1:8443/reports/list -> /js/bootstrap-popover.js
+127.0.0.1 - - [01/Jan/2017 04:19:44] "GET /js/bootstrap-button.js HTTP/1.1" 200 2945 0.0015
+Owner-PC - - [01/Jan/2017:04:19:44 Malay Peninsula Standard Time] "GET /js/bootstrap-button.js HTTP/1.1" 200 2945
+https://127.0.0.1:8443/reports/list -> /js/bootstrap-button.js
+127.0.0.1 - - [01/Jan/2017 04:19:44] "GET /js/bootstrap-carousel.js HTTP/1.1" 200 5504 0.0010
+Owner-PC - - [01/Jan/2017:04:19:44 Malay Peninsula Standard Time] "GET /js/bootstrap-carousel.js HTTP/1.1" 200 5504
+https://127.0.0.1:8443/reports/list -> /js/bootstrap-carousel.js
+127.0.0.1 - - [01/Jan/2017 04:19:44] "GET /js/bootstrap-typeahead.js HTTP/1.1" 200 8308 0.0015
+Owner-PC - - [01/Jan/2017:04:19:44 Malay Peninsula Standard Time] "GET /js/bootstrap-typeahead.js HTTP/1.1" 200 8308
+https://127.0.0.1:8443/reports/list -> /js/bootstrap-typeahead.js
+127.0.0.1 - - [01/Jan/2017 04:19:44] "GET /css/bootstrap.css HTTP/1.1" 200 130262 0.0020
+Owner-PC - - [01/Jan/2017:04:19:44 Malay Peninsula Standard Time] "GET /css/bootstrap.css HTTP/1.1" 200 130262
+https://127.0.0.1:8443/reports/list -> /css/bootstrap.css
+127.0.0.1 - - [01/Jan/2017 04:19:44] "GET /css/signin.css HTTP/1.1" 200 1145 0.0015
+Owner-PC - - [01/Jan/2017:04:19:44 Malay Peninsula Standard Time] "GET /css/signin.css HTTP/1.1" 200 1145
+https://127.0.0.1:8443/reports/list -> /css/signin.css
+127.0.0.1 - - [01/Jan/2017 04:19:44] "GET /css/bootstrap-responsive.css HTTP/1.1" 200 22843 0.0015
+Owner-PC - - [01/Jan/2017:04:19:44 Malay Peninsula Standard Time] "GET /css/bootstrap-responsive.css HTTP/1.1" 200 22843
+https://127.0.0.1:8443/reports/list -> /css/bootstrap-responsive.css
+127.0.0.1 - - [01/Jan/2017 04:19:44] "GET /css/font-awesome.css HTTP/1.1" 200 20769 0.0040
+Owner-PC - - [01/Jan/2017:04:19:44 Malay Peninsula Standard Time] "GET /css/font-awesome.css HTTP/1.1" 200 20769
+https://127.0.0.1:8443/reports/list -> /css/font-awesome.css
+127.0.0.1 - - [01/Jan/2017 04:19:44] "GET /img/logo_1.svg HTTP/1.1" 200 16690 0.0015
+Owner-PC - - [01/Jan/2017:04:19:44 Malay Peninsula Standard Time] "GET /img/logo_1.svg HTTP/1.1" 200 16690
+https://127.0.0.1:8443/reports/list -> /img/logo_1.svg
+127.0.0.1 - - [01/Jan/2017 04:19:47] "POST /login HTTP/1.1" 303 - 0.0340
+Owner-PC - - [01/Jan/2017:04:19:47 Malay Peninsula Standard Time] "POST /login HTTP/1.1" 303 0
+https://127.0.0.1:8443/reports/list -> /login
+127.0.0.1 - - [01/Jan/2017 04:19:47] "GET / HTTP/1.1" 302 - 0.0015
+Owner-PC - - [01/Jan/2017:04:19:47 Malay Peninsula Standard Time] "GET / HTTP/1.1" 302 0
+https://127.0.0.1:8443/reports/list -> /
+127.0.0.1 - - [01/Jan/2017 04:19:48] "GET /reports/list HTTP/1.1" 200 8084 0.0306
+Owner-PC - - [01/Jan/2017:04:19:48 Malay Peninsula Standard Time] "GET /reports/list HTTP/1.1" 200 8084
+https://127.0.0.1:8443/reports/list -> /reports/list
+127.0.0.1 - - [01/Jan/2017 04:19:48] "GET /css/font-awesome.css HTTP/1.1" 200 20769 0.0020
+Owner-PC - - [01/Jan/2017:04:19:48 Malay Peninsula Standard Time] "GET /css/font-awesome.css HTTP/1.1" 200 20769
+https://127.0.0.1:8443/reports/list -> /css/font-awesome.css
+127.0.0.1 - - [01/Jan/2017 04:19:48] "GET /css/bootstrap-responsive.css HTTP/1.1" 200 22843 0.0020
+Owner-PC - - [01/Jan/2017:04:19:48 Malay Peninsula Standard Time] "GET /css/bootstrap-responsive.css HTTP/1.1" 200 22843
+https://127.0.0.1:8443/reports/list -> /css/bootstrap-responsive.css
+127.0.0.1 - - [01/Jan/2017 04:19:48] "GET /css/bootstrap.css HTTP/1.1" 200 130262 0.0055
+Owner-PC - - [01/Jan/2017:04:19:48 Malay Peninsula Standard Time] "GET /css/bootstrap.css HTTP/1.1" 200 130262
+https://127.0.0.1:8443/reports/list -> /css/bootstrap.css
+127.0.0.1 - - [01/Jan/2017 04:19:48] "GET /fonts/fontawesome-webfont.woff?v=4.1.0 HTTP/1.1" 200 83760 0.0015
+Owner-PC - - [01/Jan/2017:04:19:48 Malay Peninsula Standard Time] "GET /fonts/fontawesome-webfont.woff?v=4.1.0 HTTP/1.1" 200 83760
+https://127.0.0.1:8443/css/font-awesome.css -> /fonts/fontawesome-webfont.woff?v=4.1.0
+127.0.0.1 - - [01/Jan/2017 04:19:48] "GET /img/glyphicons-halflings-white.png HTTP/1.1" 200 4352 0.0015
+Owner-PC - - [01/Jan/2017:04:19:48 Malay Peninsula Standard Time] "GET /img/glyphicons-halflings-white.png HTTP/1.1" 200 4352
+https://127.0.0.1:8443/css/bootstrap.css -> /img/glyphicons-halflings-white.png
+Sinatra::Base#options is deprecated and will be removed, use #settings instead.
+127.0.0.1 - - [01/Jan/2017 04:19:51] "GET /master/findings HTTP/1.1" 200 11773 0.0405
+Owner-PC - - [01/Jan/2017:04:19:51 Malay Peninsula Standard Time] "GET /master/findings HTTP/1.1" 200 11773
+https://127.0.0.1:8443/reports/list -> /master/findings
+127.0.0.1 - - [01/Jan/2017 04:19:51] "GET /css/bootstrap.css HTTP/1.1" 200 130262 0.0020
+Owner-PC - - [01/Jan/2017:04:19:51 Malay Peninsula Standard Time] "GET /css/bootstrap.css HTTP/1.1" 200 130262
+https://127.0.0.1:8443/master/findings -> /css/bootstrap.css
+127.0.0.1 - - [01/Jan/2017 04:19:51] "GET /css/font-awesome.css HTTP/1.1" 200 20769 0.0035
+Owner-PC - - [01/Jan/2017:04:19:51 Malay Peninsula Standard Time] "GET /css/font-awesome.css HTTP/1.1" 200 20769
+https://127.0.0.1:8443/master/findings -> /css/font-awesome.css
+127.0.0.1 - - [01/Jan/2017 04:19:51] "GET /css/bootstrap-responsive.css HTTP/1.1" 200 22843 0.0020
+Owner-PC - - [01/Jan/2017:04:19:51 Malay Peninsula Standard Time] "GET /css/bootstrap-responsive.css HTTP/1.1" 200 22843
+https://127.0.0.1:8443/master/findings -> /css/bootstrap-responsive.css
+127.0.0.1 - - [01/Jan/2017 04:19:51] "GET /img/glyphicons-halflings.png HTTP/1.1" 200 4352 0.0015
+Owner-PC - - [01/Jan/2017:04:19:51 Malay Peninsula Standard Time] "GET /img/glyphicons-halflings.png HTTP/1.1" 200 4352
+https://127.0.0.1:8443/css/bootstrap.css -> /img/glyphicons-halflings.png
+Sinatra::Base#options is deprecated and will be removed, use #settings instead.
+Sinatra::Base#options is deprecated and will be removed, use #settings instead.
+127.0.0.1 - - [01/Jan/2017 04:19:52] "GET /master/findings/new HTTP/1.1" 200 11020 0.0581
+Owner-PC - - [01/Jan/2017:04:19:52 Malay Peninsula Standard Time] "GET /master/findings/new HTTP/1.1" 200 11020
+https://127.0.0.1:8443/master/findings -> /master/findings/new
+127.0.0.1 - - [01/Jan/2017 04:19:52] "GET /css/bootstrap.css HTTP/1.1" 200 130262 0.0015
+Owner-PC - - [01/Jan/2017:04:19:52 Malay Peninsula Standard Time] "GET /css/bootstrap.css HTTP/1.1" 200 130262
+https://127.0.0.1:8443/master/findings/new -> /css/bootstrap.css
+127.0.0.1 - - [01/Jan/2017 04:19:52] "GET /css/bootstrap-suggest.css HTTP/1.1" 200 496 0.0045
+Owner-PC - - [01/Jan/2017:04:19:52 Malay Peninsula Standard Time] "GET /css/bootstrap-suggest.css HTTP/1.1" 200 496
+https://127.0.0.1:8443/master/findings/new -> /css/bootstrap-suggest.css
+127.0.0.1 - - [01/Jan/2017 04:19:52] "GET /css/font-awesome.css HTTP/1.1" 200 20769 0.0099
+Owner-PC - - [01/Jan/2017:04:19:52 Malay Peninsula Standard Time] "GET /css/font-awesome.css HTTP/1.1" 200 20769
+https://127.0.0.1:8443/master/findings/new -> /css/font-awesome.css
+127.0.0.1 - - [01/Jan/2017 04:19:52] "GET /css/bootstrap-responsive.css HTTP/1.1" 200 22843 0.0094
+Owner-PC - - [01/Jan/2017:04:19:52 Malay Peninsula Standard Time] "GET /css/bootstrap-responsive.css HTTP/1.1" 200 22843
+https://127.0.0.1:8443/master/findings/new -> /css/bootstrap-responsive.css
+127.0.0.1 - - [01/Jan/2017 04:19:52] "GET /js/bootstrap-suggest.js HTTP/1.1" 200 17798 0.0050
+Owner-PC - - [01/Jan/2017:04:19:52 Malay Peninsula Standard Time] "GET /js/bootstrap-suggest.js HTTP/1.1" 200 17798
+https://127.0.0.1:8443/master/findings/new -> /js/bootstrap-suggest.js
+127.0.0.1 - - [01/Jan/2017 04:23:19] "GET / HTTP/1.1" 302 - 0.0050
+Owner-PC - - [01/Jan/2017:04:23:19 Malay Peninsula Standard Time] "GET / HTTP/1.1" 302 0
+- -> /
+127.0.0.1 - - [01/Jan/2017 04:23:19] "GET /reports/list HTTP/1.1" 200 8084 0.0330
+Owner-PC - - [01/Jan/2017:04:23:19 Malay Peninsula Standard Time] "GET /reports/list HTTP/1.1" 200 8084
+- -> /reports/list
+127.0.0.1 - - [01/Jan/2017 04:23:19] "GET /css/bootstrap.css HTTP/1.1" 200 130262 0.0020
+Owner-PC - - [01/Jan/2017:04:23:19 Malay Peninsula Standard Time] "GET /css/bootstrap.css HTTP/1.1" 200 130262
+https://127.0.0.1:8443/reports/list -> /css/bootstrap.css
+127.0.0.1 - - [01/Jan/2017 04:23:19] "GET /css/bootstrap-responsive.css HTTP/1.1" 200 22843 0.0015
+Owner-PC - - [01/Jan/2017:04:23:19 Malay Peninsula Standard Time] "GET /css/bootstrap-responsive.css HTTP/1.1" 200 22843
+https://127.0.0.1:8443/reports/list -> /css/bootstrap-responsive.css
+127.0.0.1 - - [01/Jan/2017 04:23:19] "GET /css/font-awesome.css HTTP/1.1" 200 20769 0.0010
+Owner-PC - - [01/Jan/2017:04:23:19 Malay Peninsula Standard Time] "GET /css/font-awesome.css HTTP/1.1" 200 20769
+https://127.0.0.1:8443/reports/list -> /css/font-awesome.css
+127.0.0.1 - - [01/Jan/2017 04:23:19] "GET /img/glyphicons-halflings-white.png HTTP/1.1" 200 4352 0.0025
+Owner-PC - - [01/Jan/2017:04:23:19 Malay Peninsula Standard Time] "GET /img/glyphicons-halflings-white.png HTTP/1.1" 200 4352
+https://127.0.0.1:8443/css/bootstrap.css -> /img/glyphicons-halflings-white.png
+Sinatra::Base#options is deprecated and will be removed, use #settings instead.
+127.0.0.1 - - [01/Jan/2017 04:23:24] "GET /master/findings HTTP/1.1" 200 11773 0.0450
+Owner-PC - - [01/Jan/2017:04:23:24 Malay Peninsula Standard Time] "GET /master/findings HTTP/1.1" 200 11773
+https://127.0.0.1:8443/reports/list -> /master/findings
+127.0.0.1 - - [01/Jan/2017 04:23:24] "GET /css/bootstrap.css HTTP/1.1" 200 130262 0.0020
+Owner-PC - - [01/Jan/2017:04:23:24 Malay Peninsula Standard Time] "GET /css/bootstrap.css HTTP/1.1" 200 130262
+https://127.0.0.1:8443/master/findings -> /css/bootstrap.css
+127.0.0.1 - - [01/Jan/2017 04:23:24] "GET /css/bootstrap-responsive.css HTTP/1.1" 200 22843 0.0010
+Owner-PC - - [01/Jan/2017:04:23:24 Malay Peninsula Standard Time] "GET /css/bootstrap-responsive.css HTTP/1.1" 200 22843
+https://127.0.0.1:8443/master/findings -> /css/bootstrap-responsive.css
+127.0.0.1 - - [01/Jan/2017 04:23:24] "GET /css/font-awesome.css HTTP/1.1" 200 20769 0.0015
+Owner-PC - - [01/Jan/2017:04:23:24 Malay Peninsula Standard Time] "GET /css/font-awesome.css HTTP/1.1" 200 20769
+https://127.0.0.1:8443/master/findings -> /css/font-awesome.css
+127.0.0.1 - - [01/Jan/2017 04:23:24] "GET /img/glyphicons-halflings.png HTTP/1.1" 200 4352 0.0040
+Owner-PC - - [01/Jan/2017:04:23:24 Malay Peninsula Standard Time] "GET /img/glyphicons-halflings.png HTTP/1.1" 200 4352
+https://127.0.0.1:8443/css/bootstrap.css -> /img/glyphicons-halflings.png
+Sinatra::Base#options is deprecated and will be removed, use #settings instead.
+Sinatra::Base#options is deprecated and will be removed, use #settings instead.
+127.0.0.1 - - [01/Jan/2017 04:23:25] "GET /master/findings/new HTTP/1.1" 200 11020 0.0520
+C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/server.rb:170:in `select': Interrupt
+	from C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/server.rb:170:in `block in start'
+	from C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/server.rb:32:in `start'
+	from C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/server.rb:160:in `start'
+	from C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/rack-1.5.5/lib/rack/handler/webrick.rb:14:in `run'
+	from serpico.rb:30:in `<main>'
+Owner-PC - - [01/Jan/2017:04:23:25 Malay Peninsula Standard Time] "GET /master/findings/new HTTP/1.1" 200 11020
+https://127.0.0.1:8443/master/findings -> /master/findings/new
+127.0.0.1 - - [01/Jan/2017 04:23:25] "GET /css/bootstrap.css HTTP/1.1" 200 130262 0.0015
+Owner-PC - - [01/Jan/2017:04:23:25 Malay Peninsula Standard Time] "GET /css/bootstrap.css HTTP/1.1" 200 130262
+https://127.0.0.1:8443/master/findings/new -> /css/bootstrap.css
+127.0.0.1 - - [01/Jan/2017 04:23:25] "GET /css/bootstrap-responsive.css HTTP/1.1" 200 22843 0.0015
+Owner-PC - - [01/Jan/2017:04:23:25 Malay Peninsula Standard Time] "GET /css/bootstrap-responsive.css HTTP/1.1" 200 22843
+https://127.0.0.1:8443/master/findings/new -> /css/bootstrap-responsive.css
+127.0.0.1 - - [01/Jan/2017 04:23:25] "GET /css/font-awesome.css HTTP/1.1" 200 20769 0.0015
+Owner-PC - - [01/Jan/2017:04:23:25 Malay Peninsula Standard Time] "GET /css/font-awesome.css HTTP/1.1" 200 20769
+https://127.0.0.1:8443/master/findings/new -> /css/font-awesome.css
+127.0.0.1 - - [01/Jan/2017 04:23:25] "GET /css/bootstrap-suggest.css HTTP/1.1" 200 496 0.0020
+Owner-PC - - [01/Jan/2017:04:23:25 Malay Peninsula Standard Time] "GET /css/bootstrap-suggest.css HTTP/1.1" 200 496
+https://127.0.0.1:8443/master/findings/new -> /css/bootstrap-suggest.css
+[2017-01-01 04:29:30] FATAL Interrupt: 
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/server.rb:170:in `select'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/server.rb:170:in `block in start'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/server.rb:32:in `start'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/server.rb:160:in `start'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/rack-1.5.5/lib/rack/handler/webrick.rb:14:in `run'
+	serpico.rb:30:in `<main>'
+[2017-01-01 04:29:30] INFO  going to shutdown ...
+[2017-01-01 04:29:30] INFO  WEBrick::HTTPServer#start done.
+DL is deprecated, please use Fiddle
+[2017-01-01 04:38:30] INFO  WEBrick 1.3.1
+[2017-01-01 04:38:30] INFO  ruby 2.1.8 (2015-12-16) [i386-mingw32]
+[2017-01-01 04:38:30] INFO  
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 1490952327 (0x58de2087)
+    Signature Algorithm: sha1WithRSAEncryption
+        Issuer: C=US, ST=MD, L=MD, O=MD, CN=serpico
+        Validity
+            Not Before: Dec 30 08:57:48 2016 GMT
+            Not After : Dec 30 08:57:48 2017 GMT
+        Subject: C=US, ST=MD, L=MD, O=MD, CN=serpico
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                Public-Key: (1024 bit)
+                Modulus:
+                    00:d6:63:c8:8f:23:fe:80:31:55:61:b0:bd:00:1c:
+                    61:f3:b3:3a:c4:2d:68:e0:32:ab:4c:69:af:07:cc:
+                    3f:d6:24:11:06:ba:8e:d4:b0:cd:9b:ae:6e:fe:b3:
+                    e1:4d:d4:8b:25:ff:4e:ce:b9:f6:3e:94:93:af:b4:
+                    78:48:9b:50:ef:a4:20:a9:87:90:5e:29:82:fe:22:
+                    db:4e:05:52:dd:f2:48:6d:20:4f:a6:b6:a2:6e:80:
+                    be:75:98:07:2d:27:25:92:75:b1:ce:58:40:75:3e:
+                    85:d6:8c:dd:82:7c:b0:49:40:1b:66:0d:e8:e2:57:
+                    bc:f5:5b:5c:cc:e2:f9:0f:23
+                Exponent: 65537 (0x10001)
+        X509v3 extensions:
+            X509v3 Basic Constraints: critical
+                CA:TRUE
+            X509v3 Subject Key Identifier: 
+                0A:4D:41:64:36:DD:1A:8F:EA:6A:5D:1C:B8:CE:B7:12:BC:4E:72:78
+            X509v3 Authority Key Identifier: 
+                keyid:0A:4D:41:64:36:DD:1A:8F:EA:6A:5D:1C:B8:CE:B7:12:BC:4E:72:78
+                DirName:/C=US/ST=MD/L=MD/O=MD/CN=serpico
+                serial:58:DE:20:87
+
+    Signature Algorithm: sha1WithRSAEncryption
+         5a:85:08:0d:79:40:f3:24:c7:c9:33:35:e7:8e:39:f6:7a:f1:
+         a9:bd:85:55:9f:28:4a:bc:98:24:39:ec:fa:a1:ad:bf:3d:f9:
+         83:78:44:b9:38:35:c9:7b:7e:80:3e:05:d0:7e:99:d8:fe:7e:
+         0f:98:6d:39:a3:d3:40:eb:e3:15:46:b9:8b:9e:a3:7c:c7:a9:
+         62:fd:5e:51:bd:bd:80:e7:ac:ea:ff:1c:f5:c7:dd:a9:d3:c7:
+         bb:72:3a:0e:53:87:48:1e:8a:44:d5:ba:1c:9c:1b:e1:eb:2a:
+         25:96:b8:30:4b:d7:fc:5a:e2:bf:5d:f8:b5:dd:df:b2:ea:ca:
+         07:a8
+[2017-01-01 04:38:30] INFO  WEBrick::HTTPServer#start: pid=56200 port=8443
+127.0.0.1 - - [01/Jan/2017 04:38:32] "GET /master/findings/new HTTP/1.1" 302 - 0.0100
+Owner-PC - - [01/Jan/2017:04:38:32 Malay Peninsula Standard Time] "GET /master/findings/new HTTP/1.1" 302 0
+https://127.0.0.1:8443/master/findings -> /master/findings/new
+127.0.0.1 - - [01/Jan/2017 04:38:32] "GET /no_access HTTP/1.1" 200 47 0.0015
+Owner-PC - - [01/Jan/2017:04:38:32 Malay Peninsula Standard Time] "GET /no_access HTTP/1.1" 200 47
+https://127.0.0.1:8443/master/findings -> /no_access
+127.0.0.1 - - [01/Jan/2017 04:38:35] "GET / HTTP/1.1" 302 - 0.0020
+Owner-PC - - [01/Jan/2017:04:38:35 Malay Peninsula Standard Time] "GET / HTTP/1.1" 302 0
+- -> /
+WARN: tilt autoloading 'tilt/haml' in a non thread-safe way; explicit require 'tilt/haml' suggested.
+127.0.0.1 - - [01/Jan/2017 04:38:35] "GET /reports/list HTTP/1.1" 200 2147 0.2052
+Owner-PC - - [01/Jan/2017:04:38:35 Malay Peninsula Standard Time] "GET /reports/list HTTP/1.1" 200 2147
+- -> /reports/list
+127.0.0.1 - - [01/Jan/2017 04:38:35] "GET /js/jquery-3.1.1.js HTTP/1.1" 200 277414 0.0025
+Owner-PC - - [01/Jan/2017:04:38:35 Malay Peninsula Standard Time] "GET /js/jquery-3.1.1.js HTTP/1.1" 200 277414
+https://127.0.0.1:8443/reports/list -> /js/jquery-3.1.1.js
+127.0.0.1 - - [01/Jan/2017 04:38:35] "GET /css/bootstrap-responsive.css HTTP/1.1" 200 22843 0.0015
+Owner-PC - - [01/Jan/2017:04:38:35 Malay Peninsula Standard Time] "GET /css/bootstrap-responsive.css HTTP/1.1" 200 22843
+https://127.0.0.1:8443/reports/list -> /css/bootstrap-responsive.css
+127.0.0.1 - - [01/Jan/2017 04:38:35] "GET /css/font-awesome.css HTTP/1.1" 200 20769 0.0020
+Owner-PC - - [01/Jan/2017:04:38:35 Malay Peninsula Standard Time] "GET /css/font-awesome.css HTTP/1.1" 200 20769
+https://127.0.0.1:8443/reports/list -> /css/font-awesome.css
+127.0.0.1 - - [01/Jan/2017 04:38:35] "GET /css/signin.css HTTP/1.1" 200 1145 0.0030
+Owner-PC - - [01/Jan/2017:04:38:35 Malay Peninsula Standard Time] "GET /css/signin.css HTTP/1.1" 200 1145
+https://127.0.0.1:8443/reports/list -> /css/signin.css
+127.0.0.1 - - [01/Jan/2017 04:38:35] "GET /css/bootstrap.css HTTP/1.1" 200 130262 0.0025
+Owner-PC - - [01/Jan/2017:04:38:35 Malay Peninsula Standard Time] "GET /css/bootstrap.css HTTP/1.1" 200 130262
+https://127.0.0.1:8443/reports/list -> /css/bootstrap.css
+127.0.0.1 - - [01/Jan/2017 04:38:38] "POST /login HTTP/1.1" 303 - 0.0415
+Owner-PC - - [01/Jan/2017:04:38:38 Malay Peninsula Standard Time] "POST /login HTTP/1.1" 303 0
+https://127.0.0.1:8443/reports/list -> /login
+127.0.0.1 - - [01/Jan/2017 04:38:38] "GET / HTTP/1.1" 302 - 0.0020
+Owner-PC - - [01/Jan/2017:04:38:38 Malay Peninsula Standard Time] "GET / HTTP/1.1" 302 0
+https://127.0.0.1:8443/reports/list -> /
+127.0.0.1 - - [01/Jan/2017 04:38:38] "GET /reports/list HTTP/1.1" 200 8084 0.0345
+Owner-PC - - [01/Jan/2017:04:38:38 Malay Peninsula Standard Time] "GET /reports/list HTTP/1.1" 200 8084
+https://127.0.0.1:8443/reports/list -> /reports/list
+127.0.0.1 - - [01/Jan/2017 04:38:38] "GET /img/glyphicons-halflings-white.png HTTP/1.1" 200 4352 0.0015
+Owner-PC - - [01/Jan/2017:04:38:38 Malay Peninsula Standard Time] "GET /img/glyphicons-halflings-white.png HTTP/1.1" 200 4352
+https://127.0.0.1:8443/css/bootstrap.css -> /img/glyphicons-halflings-white.png
+Sinatra::Base#options is deprecated and will be removed, use #settings instead.
+127.0.0.1 - - [01/Jan/2017 04:38:41] "GET /master/findings HTTP/1.1" 200 11773 0.0430
+Owner-PC - - [01/Jan/2017:04:38:41 Malay Peninsula Standard Time] "GET /master/findings HTTP/1.1" 200 11773
+https://127.0.0.1:8443/reports/list -> /master/findings
+127.0.0.1 - - [01/Jan/2017 04:38:41] "GET /js/jquery-3.1.1.js HTTP/1.1" 200 277414 0.0075
+127.0.0.1 - - [01/Jan/2017 04:38:41] "GET /css/bootstrap-responsive.css HTTP/1.1" 200 22843 0.0090
+Owner-PC - - [01/Jan/2017:04:38:41 Malay Peninsula Standard Time] "GET /css/bootstrap-responsive.css HTTP/1.1" 200 22843
+https://127.0.0.1:8443/master/findings -> /css/bootstrap-responsive.css
+Owner-PC - - [01/Jan/2017:04:38:41 Malay Peninsula Standard Time] "GET /js/jquery-3.1.1.js HTTP/1.1" 200 277414
+https://127.0.0.1:8443/master/findings -> /js/jquery-3.1.1.js
+127.0.0.1 - - [01/Jan/2017 04:38:41] "GET /css/bootstrap.css HTTP/1.1" 200 130262 0.0085
+Owner-PC - - [01/Jan/2017:04:38:41 Malay Peninsula Standard Time] "GET /css/bootstrap.css HTTP/1.1" 200 130262
+https://127.0.0.1:8443/master/findings -> /css/bootstrap.css
+127.0.0.1 - - [01/Jan/2017 04:38:41] "GET /img/glyphicons-halflings.png HTTP/1.1" 200 4352 0.0015
+Owner-PC - - [01/Jan/2017:04:38:41 Malay Peninsula Standard Time] "GET /img/glyphicons-halflings.png HTTP/1.1" 200 4352
+https://127.0.0.1:8443/css/bootstrap.css -> /img/glyphicons-halflings.png
+Sinatra::Base#options is deprecated and will be removed, use #settings instead.
+Sinatra::Base#options is deprecated and will be removed, use #settings instead.
+127.0.0.1 - - [01/Jan/2017 04:38:42] "GET /master/findings/new HTTP/1.1" 200 11025 0.0606
+Owner-PC - - [01/Jan/2017:04:38:42 Malay Peninsula Standard Time] "GET /master/findings/new HTTP/1.1" 200 11025
+https://127.0.0.1:8443/master/findings -> /master/findings/new
+127.0.0.1 - - [01/Jan/2017 04:38:42] "GET /css/bootstrap-suggest.css HTTP/1.1" 200 496 0.0015
+Owner-PC - - [01/Jan/2017:04:38:42 Malay Peninsula Standard Time] "GET /css/bootstrap-suggest.css HTTP/1.1" 200 496
+https://127.0.0.1:8443/master/findings/new -> /css/bootstrap-suggest.css
+127.0.0.1 - - [01/Jan/2017 04:38:42] "GET /js/bootstrap-suggest.js HTTP/1.1" 200 17798 0.0020
+Owner-PC - - [01/Jan/2017:04:38:42 Malay Peninsula Standard Time] "GET /js/bootstrap-suggest.js HTTP/1.1" 200 17798
+https://127.0.0.1:8443/master/findings/new -> /js/bootstrap-suggest.js
+127.0.0.1 - - [01/Jan/2017 04:38:51] "POST /master/findings/new HTTP/1.1" 303 - 0.0045
+Owner-PC - - [01/Jan/2017:04:38:51 Malay Peninsula Standard Time] "POST /master/findings/new HTTP/1.1" 303 0
+https://127.0.0.1:8443/master/findings/new -> /master/findings/new
+C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/server.rb:170:in `select': Interrupt
+	from C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/server.rb:170:in `block in start'
+	from C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/server.rb:32:in `start'
+	from C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/server.rb:160:in `start'
+	from C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/rack-1.5.5/lib/rack/handler/webrick.rb:14:in `run'
+	from serpico.rb:30:in `<main>'
+{"title"=>"123", "type"=>"Web Application", "effort"=>"Quick", "risk_rating"=>"1", "overview"=>"<paragraph>123</paragraph>", "poc"=>"<paragraph>123</paragraph>", "observation"=>"123", "likelihood"=>"123", "recommendation"=>"123", "references"=>"<paragraph></paragraph>"}
+Sinatra::Base#options is deprecated and will be removed, use #settings instead.
+127.0.0.1 - - [01/Jan/2017 04:38:51] "GET /master/findings HTTP/1.1" 200 11773 0.0420
+Owner-PC - - [01/Jan/2017:04:38:51 Malay Peninsula Standard Time] "GET /master/findings HTTP/1.1" 200 11773
+https://127.0.0.1:8443/master/findings/new -> /master/findings
+127.0.0.1 - - [01/Jan/2017 04:38:51] "GET /css/bootstrap-responsive.css HTTP/1.1" 200 22843 0.0025
+Owner-PC - - [01/Jan/2017:04:38:51 Malay Peninsula Standard Time] "GET /css/bootstrap-responsive.css HTTP/1.1" 200 22843
+https://127.0.0.1:8443/master/findings -> /css/bootstrap-responsive.css
+127.0.0.1 - - [01/Jan/2017 04:38:51] "GET /css/bootstrap.css HTTP/1.1" 200 130262 0.0015
+Owner-PC - - [01/Jan/2017:04:38:51 Malay Peninsula Standard Time] "GET /css/bootstrap.css HTTP/1.1" 200 130262
+https://127.0.0.1:8443/master/findings -> /css/bootstrap.css
+[2017-01-01 04:38:54] FATAL Interrupt: 
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/server.rb:170:in `select'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/server.rb:170:in `block in start'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/server.rb:32:in `start'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/server.rb:160:in `start'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/rack-1.5.5/lib/rack/handler/webrick.rb:14:in `run'
+	serpico.rb:30:in `<main>'
+[2017-01-01 04:38:54] INFO  going to shutdown ...
+[2017-01-01 04:38:55] INFO  WEBrick::HTTPServer#start done.
+DL is deprecated, please use Fiddle
+[2017-01-01 04:53:17] INFO  WEBrick 1.3.1
+[2017-01-01 04:53:17] INFO  ruby 2.1.8 (2015-12-16) [i386-mingw32]
+[2017-01-01 04:53:17] INFO  
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 1490952327 (0x58de2087)
+    Signature Algorithm: sha1WithRSAEncryption
+        Issuer: C=US, ST=MD, L=MD, O=MD, CN=serpico
+        Validity
+            Not Before: Dec 30 08:57:48 2016 GMT
+            Not After : Dec 30 08:57:48 2017 GMT
+        Subject: C=US, ST=MD, L=MD, O=MD, CN=serpico
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                Public-Key: (1024 bit)
+                Modulus:
+                    00:d6:63:c8:8f:23:fe:80:31:55:61:b0:bd:00:1c:
+                    61:f3:b3:3a:c4:2d:68:e0:32:ab:4c:69:af:07:cc:
+                    3f:d6:24:11:06:ba:8e:d4:b0:cd:9b:ae:6e:fe:b3:
+                    e1:4d:d4:8b:25:ff:4e:ce:b9:f6:3e:94:93:af:b4:
+                    78:48:9b:50:ef:a4:20:a9:87:90:5e:29:82:fe:22:
+                    db:4e:05:52:dd:f2:48:6d:20:4f:a6:b6:a2:6e:80:
+                    be:75:98:07:2d:27:25:92:75:b1:ce:58:40:75:3e:
+                    85:d6:8c:dd:82:7c:b0:49:40:1b:66:0d:e8:e2:57:
+                    bc:f5:5b:5c:cc:e2:f9:0f:23
+                Exponent: 65537 (0x10001)
+        X509v3 extensions:
+            X509v3 Basic Constraints: critical
+                CA:TRUE
+            X509v3 Subject Key Identifier: 
+                0A:4D:41:64:36:DD:1A:8F:EA:6A:5D:1C:B8:CE:B7:12:BC:4E:72:78
+            X509v3 Authority Key Identifier: 
+                keyid:0A:4D:41:64:36:DD:1A:8F:EA:6A:5D:1C:B8:CE:B7:12:BC:4E:72:78
+                DirName:/C=US/ST=MD/L=MD/O=MD/CN=serpico
+                serial:58:DE:20:87
+
+    Signature Algorithm: sha1WithRSAEncryption
+         5a:85:08:0d:79:40:f3:24:c7:c9:33:35:e7:8e:39:f6:7a:f1:
+         a9:bd:85:55:9f:28:4a:bc:98:24:39:ec:fa:a1:ad:bf:3d:f9:
+         83:78:44:b9:38:35:c9:7b:7e:80:3e:05:d0:7e:99:d8:fe:7e:
+         0f:98:6d:39:a3:d3:40:eb:e3:15:46:b9:8b:9e:a3:7c:c7:a9:
+         62:fd:5e:51:bd:bd:80:e7:ac:ea:ff:1c:f5:c7:dd:a9:d3:c7:
+         bb:72:3a:0e:53:87:48:1e:8a:44:d5:ba:1c:9c:1b:e1:eb:2a:
+         25:96:b8:30:4b:d7:fc:5a:e2:bf:5d:f8:b5:dd:df:b2:ea:ca:
+         07:a8
+[2017-01-01 04:53:17] INFO  WEBrick::HTTPServer#start: pid=57312 port=8443
+127.0.0.1 - - [01/Jan/2017 04:53:23] "GET / HTTP/1.1" 302 - 0.0105
+Owner-PC - - [01/Jan/2017:04:53:23 Malay Peninsula Standard Time] "GET / HTTP/1.1" 302 0
+- -> /
+[2017-01-01 04:53:23] ERROR Errno::ECONNABORTED: An established connection was aborted by the software in your host machine.
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/openssl/buffering.rb:61:in `sysread'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/openssl/buffering.rb:61:in `fill_rbuff'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/openssl/buffering.rb:301:in `eof?'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:80:in `run'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+127.0.0.1 - - [01/Jan/2017 04:53:23] "GET / HTTP/1.1" 302 - 0.0025
+Owner-PC - - [01/Jan/2017:04:53:23 Malay Peninsula Standard Time] "GET / HTTP/1.1" 302 0
+- -> /
+WARN: tilt autoloading 'tilt/haml' in a non thread-safe way; explicit require 'tilt/haml' suggested.
+127.0.0.1 - - [01/Jan/2017 04:53:24] "GET /reports/list HTTP/1.1" 200 2147 0.2302
+Owner-PC - - [01/Jan/2017:04:53:23 Malay Peninsula Standard Time] "GET /reports/list HTTP/1.1" 200 2147
+- -> /reports/list
+127.0.0.1 - - [01/Jan/2017 04:53:24] "GET /js/jquery-3.1.1.js HTTP/1.1" 200 277414 0.0040
+Owner-PC - - [01/Jan/2017:04:53:24 Malay Peninsula Standard Time] "GET /js/jquery-3.1.1.js HTTP/1.1" 200 277414
+https://127.0.0.1:8443/reports/list -> /js/jquery-3.1.1.js
+127.0.0.1 - - [01/Jan/2017 04:53:24] "GET /css/bootstrap-responsive.css HTTP/1.1" 200 22843 0.0015
+Owner-PC - - [01/Jan/2017:04:53:24 Malay Peninsula Standard Time] "GET /css/bootstrap-responsive.css HTTP/1.1" 200 22843
+https://127.0.0.1:8443/reports/list -> /css/bootstrap-responsive.css
+127.0.0.1 - - [01/Jan/2017 04:53:24] "GET /css/signin.css HTTP/1.1" 200 1145 0.0130
+Owner-PC - - [01/Jan/2017:04:53:24 Malay Peninsula Standard Time] "GET /css/signin.css HTTP/1.1" 200 1145
+https://127.0.0.1:8443/reports/list -> /css/signin.css
+127.0.0.1 - - [01/Jan/2017 04:53:24] "GET /css/bootstrap.css HTTP/1.1" 200 130262 0.0050
+Owner-PC - - [01/Jan/2017:04:53:24 Malay Peninsula Standard Time] "GET /css/bootstrap.css HTTP/1.1" 200 130262
+https://127.0.0.1:8443/reports/list -> /css/bootstrap.css
+127.0.0.1 - - [01/Jan/2017 04:53:24] "GET /js/bootstrap-modal.js HTTP/1.1" 200 6824 0.0035
+Owner-PC - - [01/Jan/2017:04:53:24 Malay Peninsula Standard Time] "GET /js/bootstrap-modal.js HTTP/1.1" 200 6824
+https://127.0.0.1:8443/reports/list -> /js/bootstrap-modal.js
+127.0.0.1 - - [01/Jan/2017 04:53:24] "GET /js/bootstrap-transition.js HTTP/1.1" 200 1815 0.0040
+Owner-PC - - [01/Jan/2017:04:53:24 Malay Peninsula Standard Time] "GET /js/bootstrap-transition.js HTTP/1.1" 200 1815
+https://127.0.0.1:8443/reports/list -> /js/bootstrap-transition.js
+127.0.0.1 - - [01/Jan/2017 04:53:24] "GET /js/bootstrap-dropdown.js HTTP/1.1" 200 4396 0.0020
+Owner-PC - - [01/Jan/2017:04:53:24 Malay Peninsula Standard Time] "GET /js/bootstrap-dropdown.js HTTP/1.1" 200 4396
+https://127.0.0.1:8443/reports/list -> /js/bootstrap-dropdown.js
+127.0.0.1 - - [01/Jan/2017 04:53:24] "GET /js/bootstrap-scrollspy.js HTTP/1.1" 200 4771 0.0120
+Owner-PC - - [01/Jan/2017:04:53:24 Malay Peninsula Standard Time] "GET /js/bootstrap-scrollspy.js HTTP/1.1" 200 4771
+https://127.0.0.1:8443/reports/list -> /js/bootstrap-scrollspy.js
+127.0.0.1 - - [01/Jan/2017 04:53:24] "GET /js/bootstrap-popover.js HTTP/1.1" 200 3260 0.0025
+Owner-PC - - [01/Jan/2017:04:53:24 Malay Peninsula Standard Time] "GET /js/bootstrap-popover.js HTTP/1.1" 200 3260
+https://127.0.0.1:8443/reports/list -> /js/bootstrap-popover.js
+127.0.0.1 - - [01/Jan/2017 04:53:24] "GET /js/bootstrap-carousel.js HTTP/1.1" 200 5504 0.0025
+Owner-PC - - [01/Jan/2017:04:53:24 Malay Peninsula Standard Time] "GET /js/bootstrap-carousel.js HTTP/1.1" 200 5504
+https://127.0.0.1:8443/reports/list -> /js/bootstrap-carousel.js
+127.0.0.1 - - [01/Jan/2017 04:53:24] "GET /js/bootstrap-typeahead.js HTTP/1.1" 200 8308 0.0045
+Owner-PC - - [01/Jan/2017:04:53:24 Malay Peninsula Standard Time] "GET /js/bootstrap-typeahead.js HTTP/1.1" 200 8308
+https://127.0.0.1:8443/reports/list -> /js/bootstrap-typeahead.js
+127.0.0.1 - - [01/Jan/2017 04:53:24] "GET /js/bootstrap-collapse.js HTTP/1.1" 200 4784 0.0030
+Owner-PC - - [01/Jan/2017:04:53:24 Malay Peninsula Standard Time] "GET /js/bootstrap-collapse.js HTTP/1.1" 200 4784
+https://127.0.0.1:8443/reports/list -> /js/bootstrap-collapse.js
+127.0.0.1 - - [01/Jan/2017 04:53:24] "GET /js/bootstrap-tab.js HTTP/1.1" 200 3639 0.0075
+Owner-PC - - [01/Jan/2017:04:53:24 Malay Peninsula Standard Time] "GET /js/bootstrap-tab.js HTTP/1.1" 200 3639
+https://127.0.0.1:8443/reports/list -> /js/bootstrap-tab.js
+127.0.0.1 - - [01/Jan/2017 04:53:24] "GET /js/bootstrap-button.js HTTP/1.1" 200 2945 0.0035
+Owner-PC - - [01/Jan/2017:04:53:24 Malay Peninsula Standard Time] "GET /js/bootstrap-button.js HTTP/1.1" 200 2945
+https://127.0.0.1:8443/reports/list -> /js/bootstrap-button.js
+127.0.0.1 - - [01/Jan/2017 04:53:24] "GET /js/bootstrap-alert.js HTTP/1.1" 200 2622 0.0070
+Owner-PC - - [01/Jan/2017:04:53:24 Malay Peninsula Standard Time] "GET /js/bootstrap-alert.js HTTP/1.1" 200 2622
+https://127.0.0.1:8443/reports/list -> /js/bootstrap-alert.js
+127.0.0.1 - - [01/Jan/2017 04:53:24] "GET /js/bootstrap-tooltip.js HTTP/1.1" 200 8207 0.0045
+Owner-PC - - [01/Jan/2017:04:53:24 Malay Peninsula Standard Time] "GET /js/bootstrap-tooltip.js HTTP/1.1" 200 8207
+https://127.0.0.1:8443/reports/list -> /js/bootstrap-tooltip.js
+127.0.0.1 - - [01/Jan/2017 04:53:24] "GET /js/jquery-migrate-3.0.0.min.js HTTP/1.1" 200 7084 0.0020
+Owner-PC - - [01/Jan/2017:04:53:24 Malay Peninsula Standard Time] "GET /js/jquery-migrate-3.0.0.min.js HTTP/1.1" 200 7084
+https://127.0.0.1:8443/reports/list -> /js/jquery-migrate-3.0.0.min.js
+127.0.0.1 - - [01/Jan/2017 04:53:27] "POST /login HTTP/1.1" 303 - 0.0325
+Owner-PC - - [01/Jan/2017:04:53:27 Malay Peninsula Standard Time] "POST /login HTTP/1.1" 303 0
+https://127.0.0.1:8443/reports/list -> /login
+127.0.0.1 - - [01/Jan/2017 04:53:27] "GET / HTTP/1.1" 302 - 0.0020
+Owner-PC - - [01/Jan/2017:04:53:27 Malay Peninsula Standard Time] "GET / HTTP/1.1" 302 0
+https://127.0.0.1:8443/reports/list -> /
+127.0.0.1 - - [01/Jan/2017 04:53:27] "GET /reports/list HTTP/1.1" 200 8084 0.0345
+Owner-PC - - [01/Jan/2017:04:53:27 Malay Peninsula Standard Time] "GET /reports/list HTTP/1.1" 200 8084
+https://127.0.0.1:8443/reports/list -> /reports/list
+127.0.0.1 - - [01/Jan/2017 04:53:27] "GET /img/glyphicons-halflings-white.png HTTP/1.1" 200 4352 0.0020
+Owner-PC - - [01/Jan/2017:04:53:27 Malay Peninsula Standard Time] "GET /img/glyphicons-halflings-white.png HTTP/1.1" 200 4352
+https://127.0.0.1:8443/css/bootstrap.css -> /img/glyphicons-halflings-white.png
+Sinatra::Base#options is deprecated and will be removed, use #settings instead.
+127.0.0.1 - - [01/Jan/2017 04:53:28] "GET /master/findings HTTP/1.1" 200 11773 0.0485
+Owner-PC - - [01/Jan/2017:04:53:28 Malay Peninsula Standard Time] "GET /master/findings HTTP/1.1" 200 11773
+https://127.0.0.1:8443/reports/list -> /master/findings
+127.0.0.1 - - [01/Jan/2017 04:53:28] "GET /css/bootstrap.css HTTP/1.1" 200 130262 0.0020
+Owner-PC - - [01/Jan/2017:04:53:28 Malay Peninsula Standard Time] "GET /css/bootstrap.css HTTP/1.1" 200 130262
+https://127.0.0.1:8443/master/findings -> /css/bootstrap.css
+127.0.0.1 - - [01/Jan/2017 04:53:28] "GET /css/bootstrap-responsive.css HTTP/1.1" 200 22843 0.0025
+Owner-PC - - [01/Jan/2017:04:53:28 Malay Peninsula Standard Time] "GET /css/bootstrap-responsive.css HTTP/1.1" 200 22843
+https://127.0.0.1:8443/master/findings -> /css/bootstrap-responsive.css
+2017-01-01 04:53:30 - SyntaxError - C:/Users/Owner/Desktop/P/Serpico/views/create_finding.haml:289: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+...xxlarge', :name => pLikelihood')}></textarea>\n      </div>\...
+...                               ^
+C:/Users/Owner/Desktop/P/Serpico/views/create_finding.haml:289: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+...</div>\n    <div class='control-group'>\n      <label class=...
+...                               ^
+C:/Users/Owner/Desktop/P/Serpico/views/create_finding.haml:289: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+...n    <div class='control-group'>\n      <label class='contro...
+...                               ^
+C:/Users/Owner/Desktop/P/Serpico/views/create_finding.haml:289: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+...'>\n      <label class='control-label' for='recommendation'>...
+...                               ^
+C:/Users/Owner/Desktop/P/Serpico/views/create_finding.haml:289: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+...   <label class='control-label' for='recommendation'>Recomme...
+...                               ^
+C:/Users/Owner/Desktop/P/Serpico/views/create_finding.haml:289: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+...trol-label' for='recommendation'>Recommendation</label>\n   ...
+...                               ^
+C:/Users/Owner/Desktop/P/Serpico/views/create_finding.haml:289: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+...el>\n      <div class='controls'>\n        <textarea class='...
+...                               ^
+C:/Users/Owner/Desktop/P/Serpico/views/create_finding.haml:289: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+...n        <textarea class='input-xxlarge' name='pRecommendati...
+...                               ^
+C:/Users/Owner/Desktop/P/Serpico/views/create_finding.haml:289: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+...<textarea class='input-xxlarge' name='pRecommendation' rows=...
+...                               ^
+C:/Users/Owner/Desktop/P/Serpico/views/create_finding.haml:289: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+...-xxlarge' name='pRecommendation' rows='10'></textarea>\n    ...
+...                               ^
+C:/Users/Owner/Desktop/P/Serpico/views/create_finding.haml:289: syntax error, unexpected tINTEGER, expecting tSTRING_DEND
+...name='pRecommendation' rows='10'></textarea>\n      </div>\n...
+...                               ^
+C:/Users/Owner/Desktop/P/Serpico/views/create_finding.haml:289: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+...</div>\n    <div class='control-group'>\n      <label class=...
+...                               ^
+C:/Users/Owner/Desktop/P/Serpico/views/create_finding.haml:289: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+...n    <div class='control-group'>\n      <label class='contro...
+...                               ^
+C:/Users/Owner/Desktop/P/Serpico/views/create_finding.haml:289: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+...'>\n      <label class='control-label' for='references'>Refe...
+...                               ^
+C:/Users/Owner/Desktop/P/Serpico/views/create_finding.haml:289: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+...   <label class='control-label' for='references'>References ...
+...                               ^
+C:/Users/Owner/Desktop/P/Serpico/views/create_finding.haml:289: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+...'control-label' for='references'>References (One Per Line)</...
+...                               ^
+C:/Users/Owner/Desktop/P/Serpico/views/create_finding.haml:289: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+...el>\n      <div class='controls'>\n        <textarea class='...
+...                               ^
+C:/Users/Owner/Desktop/P/Serpico/views/create_finding.haml:289: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+...n        <textarea class='input-xxlarge' name='pReferences' ...
+...                               ^
+C:/Users/Owner/Desktop/P/Serpico/views/create_finding.haml:289: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+...<textarea class='input-xxlarge' name='pReferences' rows='5'>...
+...                               ^
+C:/Users/Owner/Desktop/P/Serpico/views/create_finding.haml:289: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+...nput-xxlarge' name='pReferences' rows='5'></textarea>\n     ...
+...                               ^
+C:/Users/Owner/Desktop/P/Serpico/views/create_finding.haml:289: syntax error, unexpected tINTEGER, expecting tSTRING_DEND
+...rge' name='pReferences' rows='5'></textarea>\n      </div>\n...
+...                               ^
+C:/Users/Owner/Desktop/P/Serpico/views/create_finding.haml:299: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+...h_text("    <div class='control-group'>\n      <label class=...
+...                               ^
+C:/Users/Owner/Desktop/P/Serpico/views/create_finding.haml:299: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+..."    <div class='control-group'>\n      <label class='contro...
+...                               ^
+C:/Users/Owner/Desktop/P/Serpico/views/create_finding.haml:299: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+...'>\n      <label class='control-label' for='notes'>Notes</la...
+...                               ^
+C:/Users/Owner/Desktop/P/Serpico/views/create_finding.haml:299: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+...   <label class='control-label' for='notes'>Notes</label>\n ...
+...                               ^
+C:/Users/Owner/Desktop/P/Serpico/views/create_finding.haml:299: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+...lass='control-label' for='notes'>Notes</label>\n      <div c...
+...                               ^
+C:/Users/Owner/Desktop/P/Serpico/views/create_finding.haml:299: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+...el>\n      <div class='controls'>\n        <textarea class='...
+...                               ^
+C:/Users/Owner/Desktop/P/Serpico/views/create_finding.haml:299: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+...n        <textarea class='input-xxlarge' id='notes' name='no...
+...                               ^
+C:/Users/Owner/Desktop/P/Serpico/views/create_finding.haml:299: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+...<textarea class='input-xxlarge' id='notes' name='notes' rows...
+...                               ^
+C:/Users/Owner/Desktop/P/Serpico/views/create_finding.haml:299: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+...class='input-xxlarge' id='notes' name='notes' rows='10'></te...
+...                               ^
+C:/Users/Owner/Desktop/P/Serpico/views/create_finding.haml:299: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+...xxlarge' id='notes' name='notes' rows='10'></textarea>\n    ...
+...                               ^
+C:/Users/Owner/Desktop/P/Serpico/views/create_finding.haml:299: syntax error, unexpected tINTEGER, expecting tSTRING_DEND
+...d='notes' name='notes' rows='10'></textarea>\n      </div>\n...
+...                               ^
+C:/Users/Owner/Desktop/P/Serpico/views/create_finding.haml:305: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+_hamlout.push_text("    <input type='submit' value='Save'>\n    <a#{
+                                           ^
+C:/Users/Owner/Desktop/P/Serpico/views/create_finding.haml:305: syntax error, unexpected tCONSTANT, expecting tSTRING_DEND
+_hamlout.push_text("    <input type='submit' value='Save'>\n    <a#{
+                                                        ^
+C:/Users/Owner/Desktop/P/Serpico/views/create_finding.haml:306: syntax error, unexpected tIDENTIFIER, expecting tSTRING_DEND
+...")}>\n      <input type='button' value='Cancel'>\n    </a>\n...
+...                               ^
+C:/Users/Owner/Desktop/P/Serpico/views/create_finding.haml:306: syntax error, unexpected tCONSTANT, expecting tSTRING_DEND
+...put type='button' value='Cancel'>\n    </a>\n  </form>\n</di...
+...                               ^
+C:/Users/Owner/Desktop/P/Serpico/views/create_finding.haml:306: unterminated string meets end of file
+C:/Users/Owner/Desktop/P/Serpico/views/create_finding.haml:306: syntax error, unexpected end-of-input, expecting tSTRING_DEND
+end;end;end;end
+               ^:
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/tilt-2.0.1/lib/tilt/template.rb:258:in `class_eval'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/tilt-2.0.1/lib/tilt/template.rb:258:in `compile_template_method'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/tilt-2.0.1/lib/tilt/template.rb:221:in `block in compiled_method'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/tilt-2.0.1/lib/tilt/template.rb:220:in `synchronize'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/tilt-2.0.1/lib/tilt/template.rb:220:in `compiled_method'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/tilt-2.0.1/lib/tilt/template.rb:154:in `evaluate'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/tilt-2.0.1/lib/tilt/haml.rb:17:in `evaluate'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/tilt-2.0.1/lib/tilt/template.rb:96:in `render'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/sinatra-1.4.6/lib/sinatra/base.rb:822:in `render'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/sinatra-1.4.6/lib/sinatra/base.rb:676:in `haml'
+	C:/Users/Owner/Desktop/P/Serpico/routes/finding/finding.rb:29:in `block in <top (required)>'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/sinatra-1.4.6/lib/sinatra/base.rb:1610:in `call'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/sinatra-1.4.6/lib/sinatra/base.rb:1610:in `block in compile!'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/sinatra-1.4.6/lib/sinatra/base.rb:974:in `[]'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/sinatra-1.4.6/lib/sinatra/base.rb:974:in `block (3 levels) in route!'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/sinatra-1.4.6/lib/sinatra/base.rb:993:in `route_eval'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/sinatra-1.4.6/lib/sinatra/base.rb:974:in `block (2 levels) in route!'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/sinatra-1.4.6/lib/sinatra/base.rb:1014:in `block in process_route'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/sinatra-1.4.6/lib/sinatra/base.rb:1012:in `catch'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/sinatra-1.4.6/lib/sinatra/base.rb:1012:in `process_route'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/sinatra-1.4.6/lib/sinatra/base.rb:972:in `block in route!'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/sinatra-1.4.6/lib/sinatra/base.rb:971:in `each'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/sinatra-1.4.6/lib/sinatra/base.rb:971:in `route!'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/sinatra-1.4.6/lib/sinatra/base.rb:984:in `route!'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/sinatra-1.4.6/lib/sinatra/base.rb:1084:in `block in dispatch!'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/sinatra-1.4.6/lib/sinatra/base.rb:1066:in `block in invoke'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/sinatra-1.4.6/lib/sinatra/base.rb:1066:in `catch'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/sinatra-1.4.6/lib/sinatra/base.rb:1066:in `invoke'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/sinatra-1.4.6/lib/sinatra/base.rb:1081:in `dispatch!'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/sinatra-1.4.6/lib/sinatra/base.rb:906:in `block in call!'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/sinatra-1.4.6/lib/sinatra/base.rb:1066:in `block in invoke'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/sinatra-1.4.6/lib/sinatra/base.rb:1066:in `catch'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/sinatra-1.4.6/lib/sinatra/base.rb:1066:in `invoke'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/sinatra-1.4.6/lib/sinatra/base.rb:906:in `call!'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/sinatra-1.4.6/lib/sinatra/base.rb:894:in `call'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/rack-protection-1.5.3/lib/rack/protection/xss_header.rb:18:in `call'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/rack-protection-1.5.3/lib/rack/protection/base.rb:49:in `call'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/rack-protection-1.5.3/lib/rack/protection/base.rb:49:in `call'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/rack-protection-1.5.3/lib/rack/protection/path_traversal.rb:16:in `call'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/rack-protection-1.5.3/lib/rack/protection/json_csrf.rb:18:in `call'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/rack-protection-1.5.3/lib/rack/protection/base.rb:49:in `call'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/rack-protection-1.5.3/lib/rack/protection/base.rb:49:in `call'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/rack-protection-1.5.3/lib/rack/protection/frame_options.rb:31:in `call'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/rack-1.5.5/lib/rack/session/abstract/id.rb:225:in `context'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/rack-1.5.5/lib/rack/session/abstract/id.rb:220:in `call'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/rack-1.5.5/lib/rack/logger.rb:15:in `call'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/rack-1.5.5/lib/rack/commonlogger.rb:33:in `call'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/sinatra-1.4.6/lib/sinatra/base.rb:218:in `call'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/sinatra-1.4.6/lib/sinatra/base.rb:211:in `call'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/rack-1.5.5/lib/rack/head.rb:11:in `call'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/rack-1.5.5/lib/rack/methodoverride.rb:21:in `call'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/sinatra-1.4.6/lib/sinatra/show_exceptions.rb:21:in `call'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/sinatra-1.4.6/lib/sinatra/base.rb:181:in `call'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/sinatra-1.4.6/lib/sinatra/base.rb:2021:in `call'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/sinatra-1.4.6/lib/sinatra/base.rb:1486:in `block in call'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/sinatra-1.4.6/lib/sinatra/base.rb:1795:in `synchronize'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/sinatra-1.4.6/lib/sinatra/base.rb:1486:in `call'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/rack-1.5.5/lib/rack/handler/webrick.rb:60:in `service'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/server.rb:170:in `select': Interrupt
+	from C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/server.rb:170:in `block in start'
+	from C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/server.rb:32:in `start'
+	from C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/server.rb:160:in `start'
+	from C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/rack-1.5.5/lib/rack/handler/webrick.rb:14:in `run'
+	from serpico.rb:30:in `<main>'
+
+Owner-PC - - [01/Jan/2017:04:53:30 Malay Peninsula Standard Time] "GET /master/findings/new HTTP/1.1" 500 201227
+https://127.0.0.1:8443/master/findings -> /master/findings/new
+127.0.0.1 - - [01/Jan/2017 04:53:30] "GET /__sinatra__/500.png HTTP/1.1" 200 24378 0.0025
+Owner-PC - - [01/Jan/2017:04:53:30 Malay Peninsula Standard Time] "GET /__sinatra__/500.png HTTP/1.1" 200 24378
+https://127.0.0.1:8443/master/findings/new -> /__sinatra__/500.png
+[2017-01-01 04:55:25] FATAL Interrupt: 
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/server.rb:170:in `select'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/server.rb:170:in `block in start'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/server.rb:32:in `start'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/server.rb:160:in `start'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/rack-1.5.5/lib/rack/handler/webrick.rb:14:in `run'
+	serpico.rb:30:in `<main>'
+[2017-01-01 04:55:25] INFO  going to shutdown ...
+[2017-01-01 04:55:25] INFO  WEBrick::HTTPServer#start done.
+DL is deprecated, please use Fiddle
+[2017-01-01 04:55:30] INFO  WEBrick 1.3.1
+[2017-01-01 04:55:30] INFO  ruby 2.1.8 (2015-12-16) [i386-mingw32]
+[2017-01-01 04:55:30] INFO  
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 1490952327 (0x58de2087)
+    Signature Algorithm: sha1WithRSAEncryption
+        Issuer: C=US, ST=MD, L=MD, O=MD, CN=serpico
+        Validity
+            Not Before: Dec 30 08:57:48 2016 GMT
+            Not After : Dec 30 08:57:48 2017 GMT
+        Subject: C=US, ST=MD, L=MD, O=MD, CN=serpico
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                Public-Key: (1024 bit)
+                Modulus:
+                    00:d6:63:c8:8f:23:fe:80:31:55:61:b0:bd:00:1c:
+                    61:f3:b3:3a:c4:2d:68:e0:32:ab:4c:69:af:07:cc:
+                    3f:d6:24:11:06:ba:8e:d4:b0:cd:9b:ae:6e:fe:b3:
+                    e1:4d:d4:8b:25:ff:4e:ce:b9:f6:3e:94:93:af:b4:
+                    78:48:9b:50:ef:a4:20:a9:87:90:5e:29:82:fe:22:
+                    db:4e:05:52:dd:f2:48:6d:20:4f:a6:b6:a2:6e:80:
+                    be:75:98:07:2d:27:25:92:75:b1:ce:58:40:75:3e:
+                    85:d6:8c:dd:82:7c:b0:49:40:1b:66:0d:e8:e2:57:
+                    bc:f5:5b:5c:cc:e2:f9:0f:23
+                Exponent: 65537 (0x10001)
+        X509v3 extensions:
+            X509v3 Basic Constraints: critical
+                CA:TRUE
+            X509v3 Subject Key Identifier: 
+                0A:4D:41:64:36:DD:1A:8F:EA:6A:5D:1C:B8:CE:B7:12:BC:4E:72:78
+            X509v3 Authority Key Identifier: 
+                keyid:0A:4D:41:64:36:DD:1A:8F:EA:6A:5D:1C:B8:CE:B7:12:BC:4E:72:78
+                DirName:/C=US/ST=MD/L=MD/O=MD/CN=serpico
+                serial:58:DE:20:87
+
+    Signature Algorithm: sha1WithRSAEncryption
+         5a:85:08:0d:79:40:f3:24:c7:c9:33:35:e7:8e:39:f6:7a:f1:
+         a9:bd:85:55:9f:28:4a:bc:98:24:39:ec:fa:a1:ad:bf:3d:f9:
+         83:78:44:b9:38:35:c9:7b:7e:80:3e:05:d0:7e:99:d8:fe:7e:
+         0f:98:6d:39:a3:d3:40:eb:e3:15:46:b9:8b:9e:a3:7c:c7:a9:
+         62:fd:5e:51:bd:bd:80:e7:ac:ea:ff:1c:f5:c7:dd:a9:d3:c7:
+         bb:72:3a:0e:53:87:48:1e:8a:44:d5:ba:1c:9c:1b:e1:eb:2a:
+         25:96:b8:30:4b:d7:fc:5a:e2:bf:5d:f8:b5:dd:df:b2:ea:ca:
+         07:a8
+[2017-01-01 04:55:30] INFO  WEBrick::HTTPServer#start: pid=57000 port=8443
+127.0.0.1 - - [01/Jan/2017 04:55:34] "GET / HTTP/1.1" 302 - 0.0060
+Owner-PC - - [01/Jan/2017:04:55:33 Malay Peninsula Standard Time] "GET / HTTP/1.1" 302 0
+- -> /
+127.0.0.1 - - [01/Jan/2017 04:55:34] "GET / HTTP/1.1" 302 - 0.0020
+Owner-PC - - [01/Jan/2017:04:55:34 Malay Peninsula Standard Time] "GET / HTTP/1.1" 302 0
+- -> /
+WARN: tilt autoloading 'tilt/haml' in a non thread-safe way; explicit require 'tilt/haml' suggested.
+WARN: tilt autoloading 'tilt/haml' in a non thread-safe way; explicit require 'tilt/haml' suggested.
+127.0.0.1 - - [01/Jan/2017 04:55:34] "GET /reports/list HTTP/1.1" 200 2147 0.2347
+[2017-01-01 04:55:34] ERROR Errno::ECONNABORTED: An established connection was aborted by the software in your host machine.
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/openssl/buffering.rb:326:in `syswrite'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/openssl/buffering.rb:326:in `do_write'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/openssl/buffering.rb:391:in `<<'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/httpresponse.rb:460:in `_write_data'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/httpresponse.rb:432:in `send_body_string'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/httpresponse.rb:306:in `send_body'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/httpresponse.rb:208:in `send_response'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:110:in `run'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+Owner-PC - - [01/Jan/2017:04:55:34 Malay Peninsula Standard Time] "GET /reports/list HTTP/1.1" 200 0
+- -> /reports/list
+127.0.0.1 - - [01/Jan/2017 04:55:34] "GET /reports/list HTTP/1.1" 200 2147 0.1967
+Owner-PC - - [01/Jan/2017:04:55:34 Malay Peninsula Standard Time] "GET /reports/list HTTP/1.1" 200 2147
+- -> /reports/list
+127.0.0.1 - - [01/Jan/2017 04:55:34] "GET /css/bootstrap.css HTTP/1.1" 200 130262 0.0045
+Owner-PC - - [01/Jan/2017:04:55:34 Malay Peninsula Standard Time] "GET /css/bootstrap.css HTTP/1.1" 200 130262
+https://127.0.0.1:8443/reports/list -> /css/bootstrap.css
+127.0.0.1 - - [01/Jan/2017 04:55:34] "GET /css/bootstrap-responsive.css HTTP/1.1" 200 22843 0.0010
+Owner-PC - - [01/Jan/2017:04:55:34 Malay Peninsula Standard Time] "GET /css/bootstrap-responsive.css HTTP/1.1" 200 22843
+https://127.0.0.1:8443/reports/list -> /css/bootstrap-responsive.css
+127.0.0.1 - - [01/Jan/2017 04:55:34] "GET /css/signin.css HTTP/1.1" 200 1145 0.0015
+Owner-PC - - [01/Jan/2017:04:55:34 Malay Peninsula Standard Time] "GET /css/signin.css HTTP/1.1" 200 1145
+https://127.0.0.1:8443/reports/list -> /css/signin.css
+127.0.0.1 - - [01/Jan/2017 04:55:37] "POST /login HTTP/1.1" 303 - 0.0260
+Owner-PC - - [01/Jan/2017:04:55:37 Malay Peninsula Standard Time] "POST /login HTTP/1.1" 303 0
+https://127.0.0.1:8443/reports/list -> /login
+127.0.0.1 - - [01/Jan/2017 04:55:37] "GET / HTTP/1.1" 302 - 0.0020
+Owner-PC - - [01/Jan/2017:04:55:37 Malay Peninsula Standard Time] "GET / HTTP/1.1" 302 0
+https://127.0.0.1:8443/reports/list -> /
+127.0.0.1 - - [01/Jan/2017 04:55:37] "GET /reports/list HTTP/1.1" 200 8084 0.0355
+Owner-PC - - [01/Jan/2017:04:55:37 Malay Peninsula Standard Time] "GET /reports/list HTTP/1.1" 200 8084
+https://127.0.0.1:8443/reports/list -> /reports/list
+127.0.0.1 - - [01/Jan/2017 04:55:37] "GET /img/glyphicons-halflings-white.png HTTP/1.1" 200 4352 0.0015
+Owner-PC - - [01/Jan/2017:04:55:37 Malay Peninsula Standard Time] "GET /img/glyphicons-halflings-white.png HTTP/1.1" 200 4352
+https://127.0.0.1:8443/css/bootstrap.css -> /img/glyphicons-halflings-white.png
+Sinatra::Base#options is deprecated and will be removed, use #settings instead.
+127.0.0.1 - - [01/Jan/2017 04:55:40] "GET /master/findings HTTP/1.1" 200 11773 0.0415
+Owner-PC - - [01/Jan/2017:04:55:40 Malay Peninsula Standard Time] "GET /master/findings HTTP/1.1" 200 11773
+https://127.0.0.1:8443/reports/list -> /master/findings
+127.0.0.1 - - [01/Jan/2017 04:55:40] "GET /css/bootstrap-responsive.css HTTP/1.1" 200 22843 0.0015
+Owner-PC - - [01/Jan/2017:04:55:40 Malay Peninsula Standard Time] "GET /css/bootstrap-responsive.css HTTP/1.1" 200 22843
+https://127.0.0.1:8443/master/findings -> /css/bootstrap-responsive.css
+127.0.0.1 - - [01/Jan/2017 04:55:40] "GET /css/bootstrap.css HTTP/1.1" 200 130262 0.0055
+Owner-PC - - [01/Jan/2017:04:55:40 Malay Peninsula Standard Time] "GET /css/bootstrap.css HTTP/1.1" 200 130262
+https://127.0.0.1:8443/master/findings -> /css/bootstrap.css
+127.0.0.1 - - [01/Jan/2017 04:55:40] "GET /img/glyphicons-halflings.png HTTP/1.1" 200 4352 0.0015
+Owner-PC - - [01/Jan/2017:04:55:40 Malay Peninsula Standard Time] "GET /img/glyphicons-halflings.png HTTP/1.1" 200 4352
+https://127.0.0.1:8443/css/bootstrap.css -> /img/glyphicons-halflings.png
+Sinatra::Base#options is deprecated and will be removed, use #settings instead.
+Sinatra::Base#options is deprecated and will be removed, use #settings instead.
+127.0.0.1 - - [01/Jan/2017 04:55:42] "GET /master/findings/new HTTP/1.1" 200 11026 0.0586
+Owner-PC - - [01/Jan/2017:04:55:41 Malay Peninsula Standard Time] "GET /master/findings/new HTTP/1.1" 200 11026
+https://127.0.0.1:8443/master/findings -> /master/findings/new
+127.0.0.1 - - [01/Jan/2017 04:55:42] "GET /css/bootstrap-suggest.css HTTP/1.1" 200 496 0.0015
+Owner-PC - - [01/Jan/2017:04:55:42 Malay Peninsula Standard Time] "GET /css/bootstrap-suggest.css HTTP/1.1" 200 496
+https://127.0.0.1:8443/master/findings/new -> /css/bootstrap-suggest.css
+127.0.0.1 - - [01/Jan/2017 04:55:42] "GET /js/bootstrap-suggest.js HTTP/1.1" 200 17798 0.0015
+Owner-PC - - [01/Jan/2017:04:55:42 Malay Peninsula Standard Time] "GET /js/bootstrap-suggest.js HTTP/1.1" 200 17798
+https://127.0.0.1:8443/master/findings/new -> /js/bootstrap-suggest.js
+127.0.0.1 - - [01/Jan/2017 04:55:50] "POST /master/findings/new HTTP/1.1" 303 - 0.0050
+Owner-PC - - [01/Jan/2017:04:55:50 Malay Peninsula Standard Time] "POST /master/findings/new HTTP/1.1" 303 0
+C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/server.rb:170:in `select': Interrupt
+	from C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/server.rb:170:in `block in start'
+	from C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/server.rb:32:in `start'
+	from C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/server.rb:160:in `start'
+	from C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/rack-1.5.5/lib/rack/handler/webrick.rb:14:in `run'
+	from serpico.rb:30:in `<main>'
+{"title"=>"123", "type"=>"Web Application", "effort"=>"Quick", "risk_rating"=>"1", "overview"=>"<paragraph>123123</paragraph>", "poc"=>"<paragraph>123</paragraph>", "observation"=>"123", "likelihood"=>"123", "recommendation"=>"123", "references"=>"<paragraph>123</paragraph>"}
+https://127.0.0.1:8443/master/findings/new -> /master/findings/new
+Sinatra::Base#options is deprecated and will be removed, use #settings instead.
+127.0.0.1 - - [01/Jan/2017 04:55:50] "GET /master/findings HTTP/1.1" 200 11773 0.0561
+Owner-PC - - [01/Jan/2017:04:55:50 Malay Peninsula Standard Time] "GET /master/findings HTTP/1.1" 200 11773
+https://127.0.0.1:8443/master/findings/new -> /master/findings
+127.0.0.1 - - [01/Jan/2017 04:55:50] "GET /css/bootstrap-responsive.css HTTP/1.1" 200 22843 0.0025
+Owner-PC - - [01/Jan/2017:04:55:50 Malay Peninsula Standard Time] "GET /css/bootstrap-responsive.css HTTP/1.1" 200 22843
+https://127.0.0.1:8443/master/findings -> /css/bootstrap-responsive.css
+127.0.0.1 - - [01/Jan/2017 04:55:50] "GET /css/bootstrap.css HTTP/1.1" 200 130262 0.0015
+Owner-PC - - [01/Jan/2017:04:55:50 Malay Peninsula Standard Time] "GET /css/bootstrap.css HTTP/1.1" 200 130262
+https://127.0.0.1:8443/master/findings -> /css/bootstrap.css
+127.0.0.1 - - [01/Jan/2017 04:55:50] "GET /img/glyphicons-halflings.png HTTP/1.1" 200 4352 0.0015
+Owner-PC - - [01/Jan/2017:04:55:50 Malay Peninsula Standard Time] "GET /img/glyphicons-halflings.png HTTP/1.1" 200 4352
+https://127.0.0.1:8443/css/bootstrap.css -> /img/glyphicons-halflings.png
+[2017-01-01 04:55:52] FATAL Interrupt: 
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/server.rb:170:in `select'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/server.rb:170:in `block in start'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/server.rb:32:in `start'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/server.rb:160:in `start'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/rack-1.5.5/lib/rack/handler/webrick.rb:14:in `run'
+	serpico.rb:30:in `<main>'
+[2017-01-01 04:55:52] INFO  going to shutdown ...
+[2017-01-01 04:55:53] INFO  WEBrick::HTTPServer#start done.
+DL is deprecated, please use Fiddle
+[2017-01-02 18:29:18] INFO  WEBrick 1.3.1
+[2017-01-02 18:29:18] INFO  ruby 2.1.8 (2015-12-16) [i386-mingw32]
+[2017-01-02 18:29:18] INFO  
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 1490952327 (0x58de2087)
+    Signature Algorithm: sha1WithRSAEncryption
+        Issuer: C=US, ST=MD, L=MD, O=MD, CN=serpico
+        Validity
+            Not Before: Dec 30 08:57:48 2016 GMT
+            Not After : Dec 30 08:57:48 2017 GMT
+        Subject: C=US, ST=MD, L=MD, O=MD, CN=serpico
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                Public-Key: (1024 bit)
+                Modulus:
+                    00:d6:63:c8:8f:23:fe:80:31:55:61:b0:bd:00:1c:
+                    61:f3:b3:3a:c4:2d:68:e0:32:ab:4c:69:af:07:cc:
+                    3f:d6:24:11:06:ba:8e:d4:b0:cd:9b:ae:6e:fe:b3:
+                    e1:4d:d4:8b:25:ff:4e:ce:b9:f6:3e:94:93:af:b4:
+                    78:48:9b:50:ef:a4:20:a9:87:90:5e:29:82:fe:22:
+                    db:4e:05:52:dd:f2:48:6d:20:4f:a6:b6:a2:6e:80:
+                    be:75:98:07:2d:27:25:92:75:b1:ce:58:40:75:3e:
+                    85:d6:8c:dd:82:7c:b0:49:40:1b:66:0d:e8:e2:57:
+                    bc:f5:5b:5c:cc:e2:f9:0f:23
+                Exponent: 65537 (0x10001)
+        X509v3 extensions:
+            X509v3 Basic Constraints: critical
+                CA:TRUE
+            X509v3 Subject Key Identifier: 
+                0A:4D:41:64:36:DD:1A:8F:EA:6A:5D:1C:B8:CE:B7:12:BC:4E:72:78
+            X509v3 Authority Key Identifier: 
+                keyid:0A:4D:41:64:36:DD:1A:8F:EA:6A:5D:1C:B8:CE:B7:12:BC:4E:72:78
+                DirName:/C=US/ST=MD/L=MD/O=MD/CN=serpico
+                serial:58:DE:20:87
+
+    Signature Algorithm: sha1WithRSAEncryption
+         5a:85:08:0d:79:40:f3:24:c7:c9:33:35:e7:8e:39:f6:7a:f1:
+         a9:bd:85:55:9f:28:4a:bc:98:24:39:ec:fa:a1:ad:bf:3d:f9:
+         83:78:44:b9:38:35:c9:7b:7e:80:3e:05:d0:7e:99:d8:fe:7e:
+         0f:98:6d:39:a3:d3:40:eb:e3:15:46:b9:8b:9e:a3:7c:c7:a9:
+         62:fd:5e:51:bd:bd:80:e7:ac:ea:ff:1c:f5:c7:dd:a9:d3:c7:
+         bb:72:3a:0e:53:87:48:1e:8a:44:d5:ba:1c:9c:1b:e1:eb:2a:
+         25:96:b8:30:4b:d7:fc:5a:e2:bf:5d:f8:b5:dd:df:b2:ea:ca:
+         07:a8
+[2017-01-02 18:29:18] INFO  WEBrick::HTTPServer#start: pid=148124 port=8443
+127.0.0.1 - - [02/Jan/2017 18:29:24] "GET /master/findings HTTP/1.1" 302 - 0.0080
+Owner-PC - - [02/Jan/2017:18:29:24 Malay Peninsula Standard Time] "GET /master/findings HTTP/1.1" 302 0
+https://127.0.0.1:8443/master/findings/new -> /master/findings
+127.0.0.1 - - [02/Jan/2017 18:29:24] "GET /no_access HTTP/1.1" 200 47 0.0015
+Owner-PC - - [02/Jan/2017:18:29:24 Malay Peninsula Standard Time] "GET /no_access HTTP/1.1" 200 47
+https://127.0.0.1:8443/master/findings/new -> /no_access
+127.0.0.1 - - [02/Jan/2017 18:29:29] "GET / HTTP/1.1" 302 - 0.0030
+Owner-PC - - [02/Jan/2017:18:29:29 Malay Peninsula Standard Time] "GET / HTTP/1.1" 302 0
+- -> /
+WARN: tilt autoloading 'tilt/haml' in a non thread-safe way; explicit require 'tilt/haml' suggested.
+127.0.0.1 - - [02/Jan/2017 18:29:29] "GET /reports/list HTTP/1.1" 200 2147 0.1992
+Owner-PC - - [02/Jan/2017:18:29:29 Malay Peninsula Standard Time] "GET /reports/list HTTP/1.1" 200 2147
+- -> /reports/list
+127.0.0.1 - - [02/Jan/2017 18:29:29] "GET /js/jquery-3.1.1.js HTTP/1.1" 200 277414 0.0060
+Owner-PC - - [02/Jan/2017:18:29:29 Malay Peninsula Standard Time] "GET /js/jquery-3.1.1.js HTTP/1.1" 200 277414
+https://127.0.0.1:8443/reports/list -> /js/jquery-3.1.1.js
+127.0.0.1 - - [02/Jan/2017 18:29:29] "GET /css/bootstrap-responsive.css HTTP/1.1" 200 22843 0.0030
+Owner-PC - - [02/Jan/2017:18:29:29 Malay Peninsula Standard Time] "GET /css/bootstrap-responsive.css HTTP/1.1" 200 22843
+https://127.0.0.1:8443/reports/list -> /css/bootstrap-responsive.css
+127.0.0.1 - - [02/Jan/2017 18:29:29] "GET /css/bootstrap.css HTTP/1.1" 200 130262 0.0050
+Owner-PC - - [02/Jan/2017:18:29:29 Malay Peninsula Standard Time] "GET /css/bootstrap.css HTTP/1.1" 200 130262
+https://127.0.0.1:8443/reports/list -> /css/bootstrap.css
+127.0.0.1 - - [02/Jan/2017 18:29:29] "GET /css/font-awesome.css HTTP/1.1" 304 - 0.0015
+Owner-PC - - [02/Jan/2017:18:29:29 Malay Peninsula Standard Time] "GET /css/font-awesome.css HTTP/1.1" 304 0
+https://127.0.0.1:8443/reports/list -> /css/font-awesome.css
+127.0.0.1 - - [02/Jan/2017 18:29:29] "GET /css/signin.css HTTP/1.1" 200 1145 0.0025
+Owner-PC - - [02/Jan/2017:18:29:29 Malay Peninsula Standard Time] "GET /css/signin.css HTTP/1.1" 200 1145
+https://127.0.0.1:8443/reports/list -> /css/signin.css
+127.0.0.1 - - [02/Jan/2017 18:29:29] "GET /js/bootstrap-collapse.js HTTP/1.1" 200 4784 0.0020
+Owner-PC - - [02/Jan/2017:18:29:29 Malay Peninsula Standard Time] "GET /js/bootstrap-collapse.js HTTP/1.1" 200 4784
+https://127.0.0.1:8443/reports/list -> /js/bootstrap-collapse.js
+127.0.0.1 - - [02/Jan/2017 18:29:29] "GET /js/bootstrap-transition.js HTTP/1.1" 200 1815 0.0140
+Owner-PC - - [02/Jan/2017:18:29:29 Malay Peninsula Standard Time] "GET /js/bootstrap-transition.js HTTP/1.1" 200 1815
+https://127.0.0.1:8443/reports/list -> /js/bootstrap-transition.js
+127.0.0.1 - - [02/Jan/2017 18:29:29] "GET /js/bootstrap-modal.js HTTP/1.1" 200 6824 0.0050
+Owner-PC - - [02/Jan/2017:18:29:29 Malay Peninsula Standard Time] "GET /js/bootstrap-modal.js HTTP/1.1" 200 6824
+https://127.0.0.1:8443/reports/list -> /js/bootstrap-modal.js
+127.0.0.1 - - [02/Jan/2017 18:29:29] "GET /js/bootstrap-scrollspy.js HTTP/1.1" 200 4771 0.0055
+Owner-PC - - [02/Jan/2017:18:29:29 Malay Peninsula Standard Time] "GET /js/bootstrap-scrollspy.js HTTP/1.1" 200 4771
+https://127.0.0.1:8443/reports/list -> /js/bootstrap-scrollspy.js
+127.0.0.1 - - [02/Jan/2017 18:29:29] "GET /js/bootstrap-alert.js HTTP/1.1" 200 2622 0.0055
+Owner-PC - - [02/Jan/2017:18:29:29 Malay Peninsula Standard Time] "GET /js/bootstrap-alert.js HTTP/1.1" 200 2622
+https://127.0.0.1:8443/reports/list -> /js/bootstrap-alert.js
+127.0.0.1 - - [02/Jan/2017 18:29:29] "GET /js/bootstrap-dropdown.js HTTP/1.1" 200 4396 0.0035
+Owner-PC - - [02/Jan/2017:18:29:29 Malay Peninsula Standard Time] "GET /js/bootstrap-dropdown.js HTTP/1.1" 200 4396
+https://127.0.0.1:8443/reports/list -> /js/bootstrap-dropdown.js
+127.0.0.1 - - [02/Jan/2017 18:29:29] "GET /js/bootstrap-tab.js HTTP/1.1" 200 3639 0.0045
+Owner-PC - - [02/Jan/2017:18:29:29 Malay Peninsula Standard Time] "GET /js/bootstrap-tab.js HTTP/1.1" 200 3639
+https://127.0.0.1:8443/reports/list -> /js/bootstrap-tab.js
+127.0.0.1 - - [02/Jan/2017 18:29:29] "GET /js/bootstrap-button.js HTTP/1.1" 200 2945 0.0040
+Owner-PC - - [02/Jan/2017:18:29:29 Malay Peninsula Standard Time] "GET /js/bootstrap-button.js HTTP/1.1" 200 2945
+https://127.0.0.1:8443/reports/list -> /js/bootstrap-button.js
+127.0.0.1 - - [02/Jan/2017 18:29:29] "GET /js/bootstrap-popover.js HTTP/1.1" 200 3260 0.0120
+Owner-PC - - [02/Jan/2017:18:29:29 Malay Peninsula Standard Time] "GET /js/bootstrap-popover.js HTTP/1.1" 200 3260
+https://127.0.0.1:8443/reports/list -> /js/bootstrap-popover.js
+127.0.0.1 - - [02/Jan/2017 18:29:29] "GET /js/jquery-migrate-3.0.0.min.js HTTP/1.1" 200 7084 0.0105
+Owner-PC - - [02/Jan/2017:18:29:29 Malay Peninsula Standard Time] "GET /js/jquery-migrate-3.0.0.min.js HTTP/1.1" 200 7084
+https://127.0.0.1:8443/reports/list -> /js/jquery-migrate-3.0.0.min.js
+127.0.0.1 - - [02/Jan/2017 18:29:29] "GET /js/bootstrap-carousel.js HTTP/1.1" 200 5504 0.0080
+Owner-PC - - [02/Jan/2017:18:29:29 Malay Peninsula Standard Time] "GET /js/bootstrap-carousel.js HTTP/1.1" 200 5504
+https://127.0.0.1:8443/reports/list -> /js/bootstrap-carousel.js
+127.0.0.1 - - [02/Jan/2017 18:29:29] "GET /js/bootstrap-tooltip.js HTTP/1.1" 200 8207 0.0050
+Owner-PC - - [02/Jan/2017:18:29:29 Malay Peninsula Standard Time] "GET /js/bootstrap-tooltip.js HTTP/1.1" 200 8207
+https://127.0.0.1:8443/reports/list -> /js/bootstrap-tooltip.js
+127.0.0.1 - - [02/Jan/2017 18:29:29] "GET /js/bootstrap-typeahead.js HTTP/1.1" 200 8308 0.0125
+Owner-PC - - [02/Jan/2017:18:29:29 Malay Peninsula Standard Time] "GET /js/bootstrap-typeahead.js HTTP/1.1" 200 8308
+https://127.0.0.1:8443/reports/list -> /js/bootstrap-typeahead.js
+127.0.0.1 - - [02/Jan/2017 18:29:29] "GET /img/logo_1.svg HTTP/1.1" 304 - 0.0035
+Owner-PC - - [02/Jan/2017:18:29:29 Malay Peninsula Standard Time] "GET /img/logo_1.svg HTTP/1.1" 304 0
+https://127.0.0.1:8443/reports/list -> /img/logo_1.svg
+127.0.0.1 - - [02/Jan/2017 18:29:32] "POST /login HTTP/1.1" 303 - 0.0040
+Owner-PC - - [02/Jan/2017:18:29:32 Malay Peninsula Standard Time] "POST /login HTTP/1.1" 303 0
+https://127.0.0.1:8443/reports/list -> /login
+127.0.0.1 - - [02/Jan/2017 18:29:32] "GET / HTTP/1.1" 302 - 0.0020
+Owner-PC - - [02/Jan/2017:18:29:32 Malay Peninsula Standard Time] "GET / HTTP/1.1" 302 0
+https://127.0.0.1:8443/reports/list -> /
+127.0.0.1 - - [02/Jan/2017 18:29:32] "GET /reports/list HTTP/1.1" 200 2147 0.0310
+Owner-PC - - [02/Jan/2017:18:29:32 Malay Peninsula Standard Time] "GET /reports/list HTTP/1.1" 200 2147
+https://127.0.0.1:8443/reports/list -> /reports/list
+127.0.0.1 - - [02/Jan/2017 18:29:36] "POST /login HTTP/1.1" 303 - 0.0270
+Owner-PC - - [02/Jan/2017:18:29:36 Malay Peninsula Standard Time] "POST /login HTTP/1.1" 303 0
+https://127.0.0.1:8443/reports/list -> /login
+127.0.0.1 - - [02/Jan/2017 18:29:36] "GET / HTTP/1.1" 302 - 0.0030
+Owner-PC - - [02/Jan/2017:18:29:36 Malay Peninsula Standard Time] "GET / HTTP/1.1" 302 0
+https://127.0.0.1:8443/reports/list -> /
+127.0.0.1 - - [02/Jan/2017 18:29:36] "GET /reports/list HTTP/1.1" 200 8084 0.0340
+Owner-PC - - [02/Jan/2017:18:29:36 Malay Peninsula Standard Time] "GET /reports/list HTTP/1.1" 200 8084
+https://127.0.0.1:8443/reports/list -> /reports/list
+127.0.0.1 - - [02/Jan/2017 18:29:36] "GET /css/bootstrap-responsive.css HTTP/1.1" 200 22843 0.0015
+Owner-PC - - [02/Jan/2017:18:29:36 Malay Peninsula Standard Time] "GET /css/bootstrap-responsive.css HTTP/1.1" 200 22843
+https://127.0.0.1:8443/reports/list -> /css/bootstrap-responsive.css
+127.0.0.1 - - [02/Jan/2017 18:29:36] "GET /css/bootstrap.css HTTP/1.1" 200 130262 0.0015
+Owner-PC - - [02/Jan/2017:18:29:36 Malay Peninsula Standard Time] "GET /css/bootstrap.css HTTP/1.1" 200 130262
+https://127.0.0.1:8443/reports/list -> /css/bootstrap.css
+127.0.0.1 - - [02/Jan/2017 18:29:36] "GET /img/glyphicons-halflings-white.png HTTP/1.1" 200 4352 0.0035
+Owner-PC - - [02/Jan/2017:18:29:36 Malay Peninsula Standard Time] "GET /img/glyphicons-halflings-white.png HTTP/1.1" 200 4352
+https://127.0.0.1:8443/css/bootstrap.css -> /img/glyphicons-halflings-white.png
+Sinatra::Base#options is deprecated and will be removed, use #settings instead.
+127.0.0.1 - - [02/Jan/2017 18:29:38] "GET /master/findings HTTP/1.1" 200 11773 0.0606
+Owner-PC - - [02/Jan/2017:18:29:38 Malay Peninsula Standard Time] "GET /master/findings HTTP/1.1" 200 11773
+https://127.0.0.1:8443/reports/list -> /master/findings
+127.0.0.1 - - [02/Jan/2017 18:29:38] "GET /img/glyphicons-halflings.png HTTP/1.1" 200 4352 0.0030
+Owner-PC - - [02/Jan/2017:18:29:38 Malay Peninsula Standard Time] "GET /img/glyphicons-halflings.png HTTP/1.1" 200 4352
+https://127.0.0.1:8443/css/bootstrap.css -> /img/glyphicons-halflings.png
+Sinatra::Base#options is deprecated and will be removed, use #settings instead.
+Sinatra::Base#options is deprecated and will be removed, use #settings instead.
+127.0.0.1 - - [02/Jan/2017 18:29:39] "GET /master/findings/new HTTP/1.1" 200 11032 0.0566
+Owner-PC - - [02/Jan/2017:18:29:39 Malay Peninsula Standard Time] "GET /master/findings/new HTTP/1.1" 200 11032
+https://127.0.0.1:8443/master/findings -> /master/findings/new
+127.0.0.1 - - [02/Jan/2017 18:29:39] "GET /js/bootstrap-suggest.js HTTP/1.1" 200 17798 0.0055
+127.0.0.1 - - [02/Jan/2017 18:29:39] "GET /css/bootstrap-suggest.css HTTP/1.1" 200 496 0.0035
+Owner-PC - - [02/Jan/2017:18:29:39 Malay Peninsula Standard Time] "GET /css/bootstrap-suggest.css HTTP/1.1" 200 496
+https://127.0.0.1:8443/master/findings/new -> /css/bootstrap-suggest.css
+Owner-PC - - [02/Jan/2017:18:29:39 Malay Peninsula Standard Time] "GET /js/bootstrap-suggest.js HTTP/1.1" 200 17798
+https://127.0.0.1:8443/master/findings/new -> /js/bootstrap-suggest.js
+127.0.0.1 - - [02/Jan/2017 18:29:49] "GET /css/bootstrap-responsive.css HTTP/1.1" 200 22843 0.0015
+Owner-PC - - [02/Jan/2017:18:29:49 Malay Peninsula Standard Time] "GET /css/bootstrap-responsive.css HTTP/1.1" 200 22843
+https://127.0.0.1:8443/master/findings/new -> /css/bootstrap-responsive.css
+127.0.0.1 - - [02/Jan/2017 18:29:49] "GET /css/bootstrap-suggest.css HTTP/1.1" 200 496 0.0020
+Owner-PC - - [02/Jan/2017:18:29:49 Malay Peninsula Standard Time] "GET /css/bootstrap-suggest.css HTTP/1.1" 200 496
+https://127.0.0.1:8443/master/findings/new -> /css/bootstrap-suggest.css
+127.0.0.1 - - [02/Jan/2017 18:29:49] "GET /css/bootstrap.css HTTP/1.1" 200 130262 0.0100
+Owner-PC - - [02/Jan/2017:18:29:49 Malay Peninsula Standard Time] "GET /css/bootstrap.css HTTP/1.1" 200 130262
+https://127.0.0.1:8443/master/findings/new -> /css/bootstrap.css
+127.0.0.1 - - [02/Jan/2017 18:29:55] "POST /master/findings/new HTTP/1.1" 303 - 0.0055
+Owner-PC - - [02/Jan/2017:18:29:55 Malay Peninsula Standard Time] "POST /master/findings/new HTTP/1.1" 303 0
+https://127.0.0.1:8443/master/findings/new -> /master/findings/new
+Sinatra::Base#options is deprecated and will be removed, use #settings instead.
+127.0.0.1 - - [02/Jan/2017 18:29:56] "GET /master/findings HTTP/1.1" 200 11773 0.0536
+Owner-PC - - [02/Jan/2017:18:29:56 Malay Peninsula Standard Time] "GET /master/findings HTTP/1.1" 200 11773
+https://127.0.0.1:8443/master/findings/new -> /master/findings
+127.0.0.1 - - [02/Jan/2017 18:29:56] "GET /img/glyphicons-halflings.png HTTP/1.1" 200 4352 0.0015
+Owner-PC - - [02/Jan/2017:18:29:56 Malay Peninsula Standard Time] "GET /img/glyphicons-halflings.png HTTP/1.1" 200 4352
+https://127.0.0.1:8443/css/bootstrap.css -> /img/glyphicons-halflings.png
+Sinatra::Base#options is deprecated and will be removed, use #settings instead.
+Sinatra::Base#options is deprecated and will be removed, use #settings instead.
+127.0.0.1 - - [02/Jan/2017 18:30:01] "GET /master/findings/new HTTP/1.1" 200 11032 0.0621
+Owner-PC - - [02/Jan/2017:18:30:01 Malay Peninsula Standard Time] "GET /master/findings/new HTTP/1.1" 200 11032
+- -> /master/findings/new
+127.0.0.1 - - [02/Jan/2017 18:30:01] "GET /js/jquery-migrate-3.0.0.min.js HTTP/1.1" 200 7084 0.0040
+Owner-PC - - [02/Jan/2017:18:30:01 Malay Peninsula Standard Time] "GET /js/jquery-migrate-3.0.0.min.js HTTP/1.1" 200 7084
+https://127.0.0.1:8443/master/findings/new -> /js/jquery-migrate-3.0.0.min.js
+127.0.0.1 - - [02/Jan/2017 18:30:01] "GET /js/bootstrap-collapse.js HTTP/1.1" 200 4784 0.0020
+Owner-PC - - [02/Jan/2017:18:30:01 Malay Peninsula Standard Time] "GET /js/bootstrap-collapse.js HTTP/1.1" 200 4784
+https://127.0.0.1:8443/master/findings/new -> /js/bootstrap-collapse.js
+127.0.0.1 - - [02/Jan/2017 18:30:01] "GET /js/jquery-3.1.1.js HTTP/1.1" 200 277414 0.0095
+Owner-PC - - [02/Jan/2017:18:30:01 Malay Peninsula Standard Time] "GET /js/jquery-3.1.1.js HTTP/1.1" 200 277414
+https://127.0.0.1:8443/master/findings/new -> /js/jquery-3.1.1.js
+127.0.0.1 - - [02/Jan/2017 18:30:01] "GET /css/bootstrap-responsive.css HTTP/1.1" 200 22843 0.0040
+Owner-PC - - [02/Jan/2017:18:30:01 Malay Peninsula Standard Time] "GET /css/bootstrap-responsive.css HTTP/1.1" 200 22843
+https://127.0.0.1:8443/master/findings/new -> /css/bootstrap-responsive.css
+127.0.0.1 - - [02/Jan/2017 18:30:01] "GET /css/font-awesome.css HTTP/1.1" 200 20769 0.0055
+Owner-PC - - [02/Jan/2017:18:30:01 Malay Peninsula Standard Time] "GET /css/font-awesome.css HTTP/1.1" 200 20769
+https://127.0.0.1:8443/master/findings/new -> /css/font-awesome.css
+127.0.0.1 - - [02/Jan/2017 18:30:01] "GET /css/bootstrap.css HTTP/1.1" 200 130262 0.0145
+Owner-PC - - [02/Jan/2017:18:30:01 Malay Peninsula Standard Time] "GET /css/bootstrap.css HTTP/1.1" 200 130262
+https://127.0.0.1:8443/master/findings/new -> /css/bootstrap.css
+127.0.0.1 - - [02/Jan/2017 18:30:01] "GET /css/bootstrap-suggest.css HTTP/1.1" 200 496 0.0015
+Owner-PC - - [02/Jan/2017:18:30:01 Malay Peninsula Standard Time] "GET /css/bootstrap-suggest.css HTTP/1.1" 200 496
+https://127.0.0.1:8443/master/findings/new -> /css/bootstrap-suggest.css
+127.0.0.1 - - [02/Jan/2017 18:30:01] "GET /js/bootstrap-transition.js HTTP/1.1" 200 1815 0.0030
+Owner-PC - - [02/Jan/2017:18:30:01 Malay Peninsula Standard Time] "GET /js/bootstrap-transition.js HTTP/1.1" 200 1815
+C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/server.rb:170:in `select': Interrupt
+	from C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/server.rb:170:in `block in start'
+	from C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/server.rb:32:in `start'
+	from C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/server.rb:160:in `start'
+	from C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/rack-1.5.5/lib/rack/handler/webrick.rb:14:in `run'
+	from serpico.rb:30:in `<main>'
+{"title"=>"123", "type"=>"Web Application", "effort"=>"Quick", "risk_rating"=>"1", "overview"=>"<paragraph>123</paragraph>", "poc"=>"<paragraph>123</paragraph>", "likelihood"=>"123", "recommendation"=>"123", "references"=>"<paragraph></paragraph>"}
+https://127.0.0.1:8443/master/findings/new -> /js/bootstrap-transition.js
+127.0.0.1 - - [02/Jan/2017 18:30:01] "GET /js/bootstrap-modal.js HTTP/1.1" 200 6824 0.0025
+Owner-PC - - [02/Jan/2017:18:30:01 Malay Peninsula Standard Time] "GET /js/bootstrap-modal.js HTTP/1.1" 200 6824
+https://127.0.0.1:8443/master/findings/new -> /js/bootstrap-modal.js
+127.0.0.1 - - [02/Jan/2017 18:30:01] "GET /js/bootstrap-dropdown.js HTTP/1.1" 200 4396 0.0045
+Owner-PC - - [02/Jan/2017:18:30:01 Malay Peninsula Standard Time] "GET /js/bootstrap-dropdown.js HTTP/1.1" 200 4396
+https://127.0.0.1:8443/master/findings/new -> /js/bootstrap-dropdown.js
+127.0.0.1 - - [02/Jan/2017 18:30:01] "GET /js/bootstrap-tooltip.js HTTP/1.1" 200 8207 0.0025
+Owner-PC - - [02/Jan/2017:18:30:01 Malay Peninsula Standard Time] "GET /js/bootstrap-tooltip.js HTTP/1.1" 200 8207
+https://127.0.0.1:8443/master/findings/new -> /js/bootstrap-tooltip.js
+127.0.0.1 - - [02/Jan/2017 18:30:01] "GET /js/bootstrap-carousel.js HTTP/1.1" 200 5504 0.0035
+Owner-PC - - [02/Jan/2017:18:30:01 Malay Peninsula Standard Time] "GET /js/bootstrap-carousel.js HTTP/1.1" 200 5504
+https://127.0.0.1:8443/master/findings/new -> /js/bootstrap-carousel.js
+127.0.0.1 - - [02/Jan/2017 18:30:01] "GET /js/bootstrap-tab.js HTTP/1.1" 200 3639 0.0020
+Owner-PC - - [02/Jan/2017:18:30:01 Malay Peninsula Standard Time] "GET /js/bootstrap-tab.js HTTP/1.1" 200 3639
+https://127.0.0.1:8443/master/findings/new -> /js/bootstrap-tab.js
+127.0.0.1 - - [02/Jan/2017 18:30:01] "GET /js/bootstrap-popover.js HTTP/1.1" 200 3260 0.0020
+Owner-PC - - [02/Jan/2017:18:30:01 Malay Peninsula Standard Time] "GET /js/bootstrap-popover.js HTTP/1.1" 200 3260
+https://127.0.0.1:8443/master/findings/new -> /js/bootstrap-popover.js
+127.0.0.1 - - [02/Jan/2017 18:30:01] "GET /js/bootstrap-button.js HTTP/1.1" 200 2945 0.0015
+Owner-PC - - [02/Jan/2017:18:30:01 Malay Peninsula Standard Time] "GET /js/bootstrap-button.js HTTP/1.1" 200 2945
+https://127.0.0.1:8443/master/findings/new -> /js/bootstrap-button.js
+127.0.0.1 - - [02/Jan/2017 18:30:01] "GET /js/bootstrap-typeahead.js HTTP/1.1" 200 8308 0.0025
+Owner-PC - - [02/Jan/2017:18:30:01 Malay Peninsula Standard Time] "GET /js/bootstrap-typeahead.js HTTP/1.1" 200 8308
+https://127.0.0.1:8443/master/findings/new -> /js/bootstrap-typeahead.js
+127.0.0.1 - - [02/Jan/2017 18:30:01] "GET /js/bootstrap-alert.js HTTP/1.1" 200 2622 0.0020
+Owner-PC - - [02/Jan/2017:18:30:01 Malay Peninsula Standard Time] "GET /js/bootstrap-alert.js HTTP/1.1" 200 2622
+https://127.0.0.1:8443/master/findings/new -> /js/bootstrap-alert.js
+127.0.0.1 - - [02/Jan/2017 18:30:01] "GET /js/bootstrap-suggest.js HTTP/1.1" 200 17798 0.0050
+Owner-PC - - [02/Jan/2017:18:30:01 Malay Peninsula Standard Time] "GET /js/bootstrap-suggest.js HTTP/1.1" 200 17798
+https://127.0.0.1:8443/master/findings/new -> /js/bootstrap-suggest.js
+127.0.0.1 - - [02/Jan/2017 18:30:01] "GET /js/bootstrap-scrollspy.js HTTP/1.1" 200 4771 0.0020
+Owner-PC - - [02/Jan/2017:18:30:01 Malay Peninsula Standard Time] "GET /js/bootstrap-scrollspy.js HTTP/1.1" 200 4771
+https://127.0.0.1:8443/master/findings/new -> /js/bootstrap-scrollspy.js
+127.0.0.1 - - [02/Jan/2017 18:30:01] "GET /fonts/fontawesome-webfont.woff?v=4.1.0 HTTP/1.1" 200 83760 0.0025
+Owner-PC - - [02/Jan/2017:18:30:01 Malay Peninsula Standard Time] "GET /fonts/fontawesome-webfont.woff?v=4.1.0 HTTP/1.1" 200 83760
+https://127.0.0.1:8443/css/font-awesome.css -> /fonts/fontawesome-webfont.woff?v=4.1.0
+[2017-01-02 19:02:15] FATAL Interrupt: 
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/server.rb:170:in `select'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/server.rb:170:in `block in start'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/server.rb:32:in `start'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/server.rb:160:in `start'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/rack-1.5.5/lib/rack/handler/webrick.rb:14:in `run'
+	serpico.rb:30:in `<main>'
+[2017-01-02 19:02:15] INFO  going to shutdown ...
+[2017-01-02 19:02:15] INFO  WEBrick::HTTPServer#start done.
+DL is deprecated, please use Fiddle
+[2017-01-02 19:02:21] INFO  WEBrick 1.3.1
+[2017-01-02 19:02:21] INFO  ruby 2.1.8 (2015-12-16) [i386-mingw32]
+[2017-01-02 19:02:21] INFO  
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 1490952327 (0x58de2087)
+    Signature Algorithm: sha1WithRSAEncryption
+        Issuer: C=US, ST=MD, L=MD, O=MD, CN=serpico
+        Validity
+            Not Before: Dec 30 08:57:48 2016 GMT
+            Not After : Dec 30 08:57:48 2017 GMT
+        Subject: C=US, ST=MD, L=MD, O=MD, CN=serpico
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                Public-Key: (1024 bit)
+                Modulus:
+                    00:d6:63:c8:8f:23:fe:80:31:55:61:b0:bd:00:1c:
+                    61:f3:b3:3a:c4:2d:68:e0:32:ab:4c:69:af:07:cc:
+                    3f:d6:24:11:06:ba:8e:d4:b0:cd:9b:ae:6e:fe:b3:
+                    e1:4d:d4:8b:25:ff:4e:ce:b9:f6:3e:94:93:af:b4:
+                    78:48:9b:50:ef:a4:20:a9:87:90:5e:29:82:fe:22:
+                    db:4e:05:52:dd:f2:48:6d:20:4f:a6:b6:a2:6e:80:
+                    be:75:98:07:2d:27:25:92:75:b1:ce:58:40:75:3e:
+                    85:d6:8c:dd:82:7c:b0:49:40:1b:66:0d:e8:e2:57:
+                    bc:f5:5b:5c:cc:e2:f9:0f:23
+                Exponent: 65537 (0x10001)
+        X509v3 extensions:
+            X509v3 Basic Constraints: critical
+                CA:TRUE
+            X509v3 Subject Key Identifier: 
+                0A:4D:41:64:36:DD:1A:8F:EA:6A:5D:1C:B8:CE:B7:12:BC:4E:72:78
+            X509v3 Authority Key Identifier: 
+                keyid:0A:4D:41:64:36:DD:1A:8F:EA:6A:5D:1C:B8:CE:B7:12:BC:4E:72:78
+                DirName:/C=US/ST=MD/L=MD/O=MD/CN=serpico
+                serial:58:DE:20:87
+
+    Signature Algorithm: sha1WithRSAEncryption
+         5a:85:08:0d:79:40:f3:24:c7:c9:33:35:e7:8e:39:f6:7a:f1:
+         a9:bd:85:55:9f:28:4a:bc:98:24:39:ec:fa:a1:ad:bf:3d:f9:
+         83:78:44:b9:38:35:c9:7b:7e:80:3e:05:d0:7e:99:d8:fe:7e:
+         0f:98:6d:39:a3:d3:40:eb:e3:15:46:b9:8b:9e:a3:7c:c7:a9:
+         62:fd:5e:51:bd:bd:80:e7:ac:ea:ff:1c:f5:c7:dd:a9:d3:c7:
+         bb:72:3a:0e:53:87:48:1e:8a:44:d5:ba:1c:9c:1b:e1:eb:2a:
+         25:96:b8:30:4b:d7:fc:5a:e2:bf:5d:f8:b5:dd:df:b2:ea:ca:
+         07:a8
+[2017-01-02 19:02:21] INFO  WEBrick::HTTPServer#start: pid=148740 port=8443
+127.0.0.1 - - [02/Jan/2017 19:02:23] "GET /master/findings HTTP/1.1" 302 - 0.0080
+Owner-PC - - [02/Jan/2017:19:02:23 Malay Peninsula Standard Time] "GET /master/findings HTTP/1.1" 302 0
+https://127.0.0.1:8443/master/findings/new -> /master/findings
+127.0.0.1 - - [02/Jan/2017 19:02:23] "GET /no_access HTTP/1.1" 200 47 0.0015
+Owner-PC - - [02/Jan/2017:19:02:23 Malay Peninsula Standard Time] "GET /no_access HTTP/1.1" 200 47
+https://127.0.0.1:8443/master/findings/new -> /no_access
+127.0.0.1 - - [02/Jan/2017 19:02:26] "GET / HTTP/1.1" 302 - 0.0015
+Owner-PC - - [02/Jan/2017:19:02:26 Malay Peninsula Standard Time] "GET / HTTP/1.1" 302 0
+- -> /
+WARN: tilt autoloading 'tilt/haml' in a non thread-safe way; explicit require 'tilt/haml' suggested.
+127.0.0.1 - - [02/Jan/2017 19:02:26] "GET /reports/list HTTP/1.1" 200 2147 0.2898
+Owner-PC - - [02/Jan/2017:19:02:26 Malay Peninsula Standard Time] "GET /reports/list HTTP/1.1" 200 2147
+- -> /reports/list
+127.0.0.1 - - [02/Jan/2017 19:02:26] "GET /css/bootstrap.css HTTP/1.1" 200 130262 0.0135
+Owner-PC - - [02/Jan/2017:19:02:26 Malay Peninsula Standard Time] "GET /css/bootstrap.css HTTP/1.1" 200 130262
+https://127.0.0.1:8443/reports/list -> /css/bootstrap.css
+127.0.0.1 - - [02/Jan/2017 19:02:26] "GET /css/bootstrap-responsive.css HTTP/1.1" 200 22843 0.0020
+Owner-PC - - [02/Jan/2017:19:02:26 Malay Peninsula Standard Time] "GET /css/bootstrap-responsive.css HTTP/1.1" 200 22843
+https://127.0.0.1:8443/reports/list -> /css/bootstrap-responsive.css
+127.0.0.1 - - [02/Jan/2017 19:02:31] "POST /login HTTP/1.1" 303 - 0.0325
+Owner-PC - - [02/Jan/2017:19:02:31 Malay Peninsula Standard Time] "POST /login HTTP/1.1" 303 0
+https://127.0.0.1:8443/reports/list -> /login
+127.0.0.1 - - [02/Jan/2017 19:02:31] "GET / HTTP/1.1" 302 - 0.0050
+Owner-PC - - [02/Jan/2017:19:02:31 Malay Peninsula Standard Time] "GET / HTTP/1.1" 302 0
+https://127.0.0.1:8443/reports/list -> /
+127.0.0.1 - - [02/Jan/2017 19:02:31] "GET /reports/list HTTP/1.1" 200 8084 0.0475
+Owner-PC - - [02/Jan/2017:19:02:31 Malay Peninsula Standard Time] "GET /reports/list HTTP/1.1" 200 8084
+https://127.0.0.1:8443/reports/list -> /reports/list
+127.0.0.1 - - [02/Jan/2017 19:02:31] "GET /css/bootstrap-responsive.css HTTP/1.1" 200 22843 0.0015
+Owner-PC - - [02/Jan/2017:19:02:31 Malay Peninsula Standard Time] "GET /css/bootstrap-responsive.css HTTP/1.1" 200 22843
+https://127.0.0.1:8443/reports/list -> /css/bootstrap-responsive.css
+127.0.0.1 - - [02/Jan/2017 19:02:31] "GET /css/bootstrap.css HTTP/1.1" 200 130262 0.0040
+Owner-PC - - [02/Jan/2017:19:02:31 Malay Peninsula Standard Time] "GET /css/bootstrap.css HTTP/1.1" 200 130262
+https://127.0.0.1:8443/reports/list -> /css/bootstrap.css
+127.0.0.1 - - [02/Jan/2017 19:02:31] "GET /img/glyphicons-halflings-white.png HTTP/1.1" 200 4352 0.0025
+Owner-PC - - [02/Jan/2017:19:02:31 Malay Peninsula Standard Time] "GET /img/glyphicons-halflings-white.png HTTP/1.1" 200 4352
+https://127.0.0.1:8443/css/bootstrap.css -> /img/glyphicons-halflings-white.png
+Sinatra::Base#options is deprecated and will be removed, use #settings instead.
+127.0.0.1 - - [02/Jan/2017 19:02:33] "GET /master/findings HTTP/1.1" 200 11773 0.0566
+Owner-PC - - [02/Jan/2017:19:02:33 Malay Peninsula Standard Time] "GET /master/findings HTTP/1.1" 200 11773
+https://127.0.0.1:8443/reports/list -> /master/findings
+127.0.0.1 - - [02/Jan/2017 19:02:33] "GET /css/bootstrap-responsive.css HTTP/1.1" 200 22843 0.0030
+Owner-PC - - [02/Jan/2017:19:02:33 Malay Peninsula Standard Time] "GET /css/bootstrap-responsive.css HTTP/1.1" 200 22843
+https://127.0.0.1:8443/master/findings -> /css/bootstrap-responsive.css
+127.0.0.1 - - [02/Jan/2017 19:02:33] "GET /css/bootstrap.css HTTP/1.1" 200 130262 0.0090
+Owner-PC - - [02/Jan/2017:19:02:33 Malay Peninsula Standard Time] "GET /css/bootstrap.css HTTP/1.1" 200 130262
+https://127.0.0.1:8443/master/findings -> /css/bootstrap.css
+127.0.0.1 - - [02/Jan/2017 19:02:33] "GET /img/glyphicons-halflings.png HTTP/1.1" 200 4352 0.0020
+Owner-PC - - [02/Jan/2017:19:02:33 Malay Peninsula Standard Time] "GET /img/glyphicons-halflings.png HTTP/1.1" 200 4352
+https://127.0.0.1:8443/css/bootstrap.css -> /img/glyphicons-halflings.png
+Sinatra::Base#options is deprecated and will be removed, use #settings instead.
+Sinatra::Base#options is deprecated and will be removed, use #settings instead.
+127.0.0.1 - - [02/Jan/2017 19:02:34] "GET /master/findings/new HTTP/1.1" 200 11027 0.0761
+Owner-PC - - [02/Jan/2017:19:02:34 Malay Peninsula Standard Time] "GET /master/findings/new HTTP/1.1" 200 11027
+https://127.0.0.1:8443/master/findings -> /master/findings/new
+127.0.0.1 - - [02/Jan/2017 19:02:34] "GET /css/bootstrap.css HTTP/1.1" 200 130262 0.0065
+Owner-PC - - [02/Jan/2017:19:02:34 Malay Peninsula Standard Time] "GET /css/bootstrap.css HTTP/1.1" 200 130262
+https://127.0.0.1:8443/master/findings/new -> /css/bootstrap.css
+127.0.0.1 - - [02/Jan/2017 19:02:34] "GET /css/bootstrap-suggest.css HTTP/1.1" 200 496 0.0030
+Owner-PC - - [02/Jan/2017:19:02:34 Malay Peninsula Standard Time] "GET /css/bootstrap-suggest.css HTTP/1.1" 200 496
+https://127.0.0.1:8443/master/findings/new -> /css/bootstrap-suggest.css
+127.0.0.1 - - [02/Jan/2017 19:02:34] "GET /js/bootstrap-suggest.js HTTP/1.1" 200 17798 0.0060
+Owner-PC - - [02/Jan/2017:19:02:34 Malay Peninsula Standard Time] "GET /js/bootstrap-suggest.js HTTP/1.1" 200 17798
+https://127.0.0.1:8443/master/findings/new -> /js/bootstrap-suggest.js
+127.0.0.1 - - [02/Jan/2017 19:02:41] "POST /master/findings/new HTTP/1.1" 303 - 0.0055
+Owner-PC - - [02/Jan/2017:19:02:41 Malay Peninsula Standard Time] "POST /master/findings/new HTTP/1.1" 303 0
+https://127.0.0.1:8443/master/findings/new -> /master/findings/new
+Sinatra::Base#options is deprecated and will be removed, use #settings instead.
+127.0.0.1 - - [02/Jan/2017 19:02:41] "GET /master/findings HTTP/1.1" 200 11773 0.0751
+Owner-PC - - [02/Jan/2017:19:02:41 Malay Peninsula Standard Time] "GET /master/findings HTTP/1.1" 200 11773
+C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/server.rb:170:in `select': Interrupt
+	from C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/server.rb:170:in `block in start'
+	from C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/server.rb:32:in `start'
+	from C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/server.rb:160:in `start'
+	from C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/rack-1.5.5/lib/rack/handler/webrick.rb:14:in `run'
+	from serpico.rb:30:in `<main>'
+{"title"=>"123", "type"=>"Web Application", "effort"=>"Quick", "risk_rating"=>"1", "overview"=>"<paragraph>123</paragraph>", "poc"=>"<paragraph>123</paragraph>", "pObseration"=>"123", "pLikelihood"=>"123", "recommendation"=>"123", "references"=>"<paragraph>123</paragraph>"}
+https://127.0.0.1:8443/master/findings/new -> /master/findings
+127.0.0.1 - - [02/Jan/2017 19:02:41] "GET /css/bootstrap-responsive.css HTTP/1.1" 200 22843 0.0060
+Owner-PC - - [02/Jan/2017:19:02:41 Malay Peninsula Standard Time] "GET /css/bootstrap-responsive.css HTTP/1.1" 200 22843
+https://127.0.0.1:8443/master/findings -> /css/bootstrap-responsive.css
+127.0.0.1 - - [02/Jan/2017 19:02:41] "GET /css/bootstrap.css HTTP/1.1" 200 130262 0.0040
+Owner-PC - - [02/Jan/2017:19:02:41 Malay Peninsula Standard Time] "GET /css/bootstrap.css HTTP/1.1" 200 130262
+https://127.0.0.1:8443/master/findings -> /css/bootstrap.css
+[2017-01-02 19:03:09] FATAL Interrupt: 
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/server.rb:170:in `select'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/server.rb:170:in `block in start'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/server.rb:32:in `start'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/server.rb:160:in `start'
+	C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/rack-1.5.5/lib/rack/handler/webrick.rb:14:in `run'
+	serpico.rb:30:in `<main>'
+[2017-01-02 19:03:09] INFO  going to shutdown ...
+[2017-01-02 19:03:09] INFO  WEBrick::HTTPServer#start done.
+DL is deprecated, please use Fiddle
+[2017-01-02 19:05:51] INFO  WEBrick 1.3.1
+[2017-01-02 19:05:51] INFO  ruby 2.1.8 (2015-12-16) [i386-mingw32]
+[2017-01-02 19:05:51] INFO  
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 1490952327 (0x58de2087)
+    Signature Algorithm: sha1WithRSAEncryption
+        Issuer: C=US, ST=MD, L=MD, O=MD, CN=serpico
+        Validity
+            Not Before: Dec 30 08:57:48 2016 GMT
+            Not After : Dec 30 08:57:48 2017 GMT
+        Subject: C=US, ST=MD, L=MD, O=MD, CN=serpico
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                Public-Key: (1024 bit)
+                Modulus:
+                    00:d6:63:c8:8f:23:fe:80:31:55:61:b0:bd:00:1c:
+                    61:f3:b3:3a:c4:2d:68:e0:32:ab:4c:69:af:07:cc:
+                    3f:d6:24:11:06:ba:8e:d4:b0:cd:9b:ae:6e:fe:b3:
+                    e1:4d:d4:8b:25:ff:4e:ce:b9:f6:3e:94:93:af:b4:
+                    78:48:9b:50:ef:a4:20:a9:87:90:5e:29:82:fe:22:
+                    db:4e:05:52:dd:f2:48:6d:20:4f:a6:b6:a2:6e:80:
+                    be:75:98:07:2d:27:25:92:75:b1:ce:58:40:75:3e:
+                    85:d6:8c:dd:82:7c:b0:49:40:1b:66:0d:e8:e2:57:
+                    bc:f5:5b:5c:cc:e2:f9:0f:23
+                Exponent: 65537 (0x10001)
+        X509v3 extensions:
+            X509v3 Basic Constraints: critical
+                CA:TRUE
+            X509v3 Subject Key Identifier: 
+                0A:4D:41:64:36:DD:1A:8F:EA:6A:5D:1C:B8:CE:B7:12:BC:4E:72:78
+            X509v3 Authority Key Identifier: 
+                keyid:0A:4D:41:64:36:DD:1A:8F:EA:6A:5D:1C:B8:CE:B7:12:BC:4E:72:78
+                DirName:/C=US/ST=MD/L=MD/O=MD/CN=serpico
+                serial:58:DE:20:87
+
+    Signature Algorithm: sha1WithRSAEncryption
+         5a:85:08:0d:79:40:f3:24:c7:c9:33:35:e7:8e:39:f6:7a:f1:
+         a9:bd:85:55:9f:28:4a:bc:98:24:39:ec:fa:a1:ad:bf:3d:f9:
+         83:78:44:b9:38:35:c9:7b:7e:80:3e:05:d0:7e:99:d8:fe:7e:
+         0f:98:6d:39:a3:d3:40:eb:e3:15:46:b9:8b:9e:a3:7c:c7:a9:
+         62:fd:5e:51:bd:bd:80:e7:ac:ea:ff:1c:f5:c7:dd:a9:d3:c7:
+         bb:72:3a:0e:53:87:48:1e:8a:44:d5:ba:1c:9c:1b:e1:eb:2a:
+         25:96:b8:30:4b:d7:fc:5a:e2:bf:5d:f8:b5:dd:df:b2:ea:ca:
+         07:a8
+[2017-01-02 19:05:51] INFO  WEBrick::HTTPServer#start: pid=138020 port=8443
+127.0.0.1 - - [02/Jan/2017 19:06:02] "GET / HTTP/1.1" 302 - 0.0085
+Owner-PC - - [02/Jan/2017:19:06:02 Malay Peninsula Standard Time] "GET / HTTP/1.1" 302 0
+- -> /
+WARN: tilt autoloading 'tilt/haml' in a non thread-safe way; explicit require 'tilt/haml' suggested.
+127.0.0.1 - - [02/Jan/2017 19:06:02] "GET /reports/list HTTP/1.1" 200 2147 0.1927
+Owner-PC - - [02/Jan/2017:19:06:02 Malay Peninsula Standard Time] "GET /reports/list HTTP/1.1" 200 2147
+- -> /reports/list
+127.0.0.1 - - [02/Jan/2017 19:06:02] "GET /js/jquery-3.1.1.js HTTP/1.1" 200 277414 0.0040
+Owner-PC - - [02/Jan/2017:19:06:02 Malay Peninsula Standard Time] "GET /js/jquery-3.1.1.js HTTP/1.1" 200 277414
+https://127.0.0.1:8443/reports/list -> /js/jquery-3.1.1.js
+127.0.0.1 - - [02/Jan/2017 19:06:02] "GET /css/bootstrap-responsive.css HTTP/1.1" 200 22843 0.0030
+Owner-PC - - [02/Jan/2017:19:06:02 Malay Peninsula Standard Time] "GET /css/bootstrap-responsive.css HTTP/1.1" 200 22843
+https://127.0.0.1:8443/reports/list -> /css/bootstrap-responsive.css
+127.0.0.1 - - [02/Jan/2017 19:06:02] "GET /css/signin.css HTTP/1.1" 200 1145 0.0020
+Owner-PC - - [02/Jan/2017:19:06:02 Malay Peninsula Standard Time] "GET /css/signin.css HTTP/1.1" 200 1145
+https://127.0.0.1:8443/reports/list -> /css/signin.css
+127.0.0.1 - - [02/Jan/2017 19:06:02] "GET /css/font-awesome.css HTTP/1.1" 200 20769 0.0025
+Owner-PC - - [02/Jan/2017:19:06:02 Malay Peninsula Standard Time] "GET /css/font-awesome.css HTTP/1.1" 200 20769
+https://127.0.0.1:8443/reports/list -> /css/font-awesome.css
+127.0.0.1 - - [02/Jan/2017 19:06:02] "GET /css/bootstrap.css HTTP/1.1" 200 130262 0.0035
+Owner-PC - - [02/Jan/2017:19:06:02 Malay Peninsula Standard Time] "GET /css/bootstrap.css HTTP/1.1" 200 130262
+https://127.0.0.1:8443/reports/list -> /css/bootstrap.css
+127.0.0.1 - - [02/Jan/2017 19:06:02] "GET /js/bootstrap-collapse.js HTTP/1.1" 200 4784 0.0020
+Owner-PC - - [02/Jan/2017:19:06:02 Malay Peninsula Standard Time] "GET /js/bootstrap-collapse.js HTTP/1.1" 200 4784
+https://127.0.0.1:8443/reports/list -> /js/bootstrap-collapse.js
+127.0.0.1 - - [02/Jan/2017 19:06:02] "GET /js/bootstrap-transition.js HTTP/1.1" 200 1815 0.0025
+Owner-PC - - [02/Jan/2017:19:06:02 Malay Peninsula Standard Time] "GET /js/bootstrap-transition.js HTTP/1.1" 200 1815
+https://127.0.0.1:8443/reports/list -> /js/bootstrap-transition.js
+127.0.0.1 - - [02/Jan/2017 19:06:02] "GET /js/bootstrap-modal.js HTTP/1.1" 200 6824 0.0020
+Owner-PC - - [02/Jan/2017:19:06:02 Malay Peninsula Standard Time] "GET /js/bootstrap-modal.js HTTP/1.1" 200 6824
+https://127.0.0.1:8443/reports/list -> /js/bootstrap-modal.js
+127.0.0.1 - - [02/Jan/2017 19:06:02] "GET /js/bootstrap-tab.js HTTP/1.1" 200 3639 0.0020
+Owner-PC - - [02/Jan/2017:19:06:02 Malay Peninsula Standard Time] "GET /js/bootstrap-tab.js HTTP/1.1" 200 3639
+https://127.0.0.1:8443/reports/list -> /js/bootstrap-tab.js
+127.0.0.1 - - [02/Jan/2017 19:06:02] "GET /js/bootstrap-scrollspy.js HTTP/1.1" 200 4771 0.0015
+Owner-PC - - [02/Jan/2017:19:06:02 Malay Peninsula Standard Time] "GET /js/bootstrap-scrollspy.js HTTP/1.1" 200 4771
+https://127.0.0.1:8443/reports/list -> /js/bootstrap-scrollspy.js
+127.0.0.1 - - [02/Jan/2017 19:06:02] "GET /js/bootstrap-popover.js HTTP/1.1" 200 3260 0.0030
+Owner-PC - - [02/Jan/2017:19:06:02 Malay Peninsula Standard Time] "GET /js/bootstrap-popover.js HTTP/1.1" 200 3260
+https://127.0.0.1:8443/reports/list -> /js/bootstrap-popover.js
+127.0.0.1 - - [02/Jan/2017 19:06:02] "GET /js/bootstrap-alert.js HTTP/1.1" 200 2622 0.0055
+Owner-PC - - [02/Jan/2017:19:06:02 Malay Peninsula Standard Time] "GET /js/bootstrap-alert.js HTTP/1.1" 200 2622
+https://127.0.0.1:8443/reports/list -> /js/bootstrap-alert.js
+127.0.0.1 - - [02/Jan/2017 19:06:02] "GET /js/bootstrap-button.js HTTP/1.1" 200 2945 0.0040
+Owner-PC - - [02/Jan/2017:19:06:02 Malay Peninsula Standard Time] "GET /js/bootstrap-button.js HTTP/1.1" 200 2945
+https://127.0.0.1:8443/reports/list -> /js/bootstrap-button.js
+127.0.0.1 - - [02/Jan/2017 19:06:02] "GET /js/bootstrap-tooltip.js HTTP/1.1" 200 8207 0.0050
+Owner-PC - - [02/Jan/2017:19:06:02 Malay Peninsula Standard Time] "GET /js/bootstrap-tooltip.js HTTP/1.1" 200 8207
+https://127.0.0.1:8443/reports/list -> /js/bootstrap-tooltip.js
+127.0.0.1 - - [02/Jan/2017 19:06:02] "GET /js/bootstrap-typeahead.js HTTP/1.1" 200 8308 0.0030
+Owner-PC - - [02/Jan/2017:19:06:02 Malay Peninsula Standard Time] "GET /js/bootstrap-typeahead.js HTTP/1.1" 200 8308
+https://127.0.0.1:8443/reports/list -> /js/bootstrap-typeahead.js
+127.0.0.1 - - [02/Jan/2017 19:06:02] "GET /js/bootstrap-dropdown.js HTTP/1.1" 200 4396 0.0075
+Owner-PC - - [02/Jan/2017:19:06:02 Malay Peninsula Standard Time] "GET /js/bootstrap-dropdown.js HTTP/1.1" 200 4396
+https://127.0.0.1:8443/reports/list -> /js/bootstrap-dropdown.js
+127.0.0.1 - - [02/Jan/2017 19:06:02] "GET /js/jquery-migrate-3.0.0.min.js HTTP/1.1" 200 7084 0.0025
+Owner-PC - - [02/Jan/2017:19:06:02 Malay Peninsula Standard Time] "GET /js/jquery-migrate-3.0.0.min.js HTTP/1.1" 200 7084
+https://127.0.0.1:8443/reports/list -> /js/jquery-migrate-3.0.0.min.js
+127.0.0.1 - - [02/Jan/2017 19:06:02] "GET /js/bootstrap-carousel.js HTTP/1.1" 200 5504 0.0060
+Owner-PC - - [02/Jan/2017:19:06:02 Malay Peninsula Standard Time] "GET /js/bootstrap-carousel.js HTTP/1.1" 200 5504
+https://127.0.0.1:8443/reports/list -> /js/bootstrap-carousel.js
+127.0.0.1 - - [02/Jan/2017 19:06:02] "GET /img/logo_1.svg HTTP/1.1" 200 16690 0.0020
+Owner-PC - - [02/Jan/2017:19:06:02 Malay Peninsula Standard Time] "GET /img/logo_1.svg HTTP/1.1" 200 16690
+https://127.0.0.1:8443/reports/list -> /img/logo_1.svg
+127.0.0.1 - - [02/Jan/2017 19:06:10] "POST /login HTTP/1.1" 303 - 0.0330
+Owner-PC - - [02/Jan/2017:19:06:10 Malay Peninsula Standard Time] "POST /login HTTP/1.1" 303 0
+https://127.0.0.1:8443/reports/list -> /login
+127.0.0.1 - - [02/Jan/2017 19:06:10] "GET / HTTP/1.1" 302 - 0.0025

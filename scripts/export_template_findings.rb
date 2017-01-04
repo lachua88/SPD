@@ -7,13 +7,13 @@ if ARGV.size > 0
   id = ARGV[0]
   puts "Exporting single finding with id #{id}"
   
-  findings = TemplateFindings.first(:id => id)
+  findings = CL_Library_finding.first(:pId => id)
   
   puts findings.to_json
   
 else
 
-  findings = TemplateFindings.all
+  findings = CL_Library_finding.all
 
   findings.each do |f|  
     puts f.to_json

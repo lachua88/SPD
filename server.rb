@@ -2,6 +2,11 @@ require 'sinatra/base'
 require 'webrick/https'
 require 'openssl'
 require './model/master'
+require './model/user'
+require './model/report'
+#require './model/mapping'
+require './model/finding'
+#require './model/config'
 require 'zip'
 
 class Server < Sinatra::Application
@@ -54,7 +59,11 @@ class Server < Sinatra::Application
     set :session_secret, rand(36**12).to_s(36)
 
     # load the default stuff
- 	Dir[File.join(File.dirname(__FILE__), "routes", "*.rb")].each { |lib| require lib }
+ 	
+    Dir[File.join(File.dirname(__FILE__), "routes/admin", "*.rb")].each { |lib| require lib }
+    Dir[File.join(File.dirname(__FILE__), "routes/common", "*.rb")].each { |lib| require lib }
+    Dir[File.join(File.dirname(__FILE__), "routes/finding", "*.rb")].each { |lib| require lib }
+    Dir[File.join(File.dirname(__FILE__), "routes/reporting", "*.rb")].each { |lib| require lib }
  	Dir[File.join(File.dirname(__FILE__), "helpers", "*.rb")].each { |lib| require lib }
  	Dir[File.join(File.dirname(__FILE__), "lib", "*.rb")].each { |lib| require lib }
 
@@ -94,41 +103,41 @@ end
 
 # Return if the user has a valid session or not
 def valid_session?
-    return Sessions.is_valid?(session[:session_id])
+    return CL_Sessions.is_valid?(session[:session_id])
 end
 
 # Get the current users type
 def user_type
-    return Sessions.type(session[:session_id])
+    return CL_Sessions.type(session[:session_id])
 end
 
 # Get the current users, username
 def get_username
-    return Sessions.get_username(session[:session_id])
+    return CL_Sessions.get_username(session[:session_id])
 end
 
 # Check if the user is an administrator
 def is_administrator?
-    return true if Sessions.type(session[:session_id]) == "Administrator"
+    return true if CL_Sessions.type(session[:session_id]) == "Administrator"
 end
 
 # Check if the user has plugin upload capability
 def is_plugin?
-    return true if (Sessions.type(session[:session_id]) == "Administrator" and Sessions.is_plugin?(session[:session_id]) == true)
+    return true if (CL_Sessions.type(session[:session_id]) == "Administrator" and CL_Sessions.is_plugin?(session[:session_id]) == true)
 end
 
 # authentication method used by API, returns Session Key
 def auth(username,password)
-    user = User.first(:username => username)
+    user = CL_User.first(:pUsername => username)
 
-    if user and user.auth_type == "Local"
-        usern = User.authenticate(username,password)
+    if user and user.pAuth_type == "Local"
+        usern = CL_User.authenticate(username,password)
 
         if usern
             # TODO : This needs an expiration, session fixation
-            @del_session = Sessions.first(:username => "#{usern}")
+            @del_session = CL_Sessions.first(:pUsername => "#{usern}")
             @del_session.destroy if @del_session
-            @curr_session = Sessions.create(:username => "#{usern}",:session_key => "#{session[:session_id]}")
+            @curr_session = CL_Sessions.create(:pUsername => "#{usern}",:pSession_key => "#{session[:session_id]}")
             @curr_session.save
             return @curr_session.session_key
         end
@@ -145,9 +154,9 @@ def auth(username,password)
 
             if ldap.bind
                # replace the session in the session table
-               @del_session = Sessions.first(:username => "#{usern}")
+               @del_session = CL_Sessions.first(:pUsername => "#{usern}")
                @del_session.destroy if @del_session
-               @curr_session = Sessions.create(:username => "#{usern}",:session_key => "#{session[:session_id]}")
+               @curr_session = CL_Sessions.create(:pUsername => "#{usern}",:pSession_key => "#{session[:session_id]}")
                @curr_session.save
                return @curr_session.session_key
             end

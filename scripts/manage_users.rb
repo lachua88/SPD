@@ -1,20 +1,22 @@
 require 'optparse'
-require './model/master.rb'
+require './model/user.rb'
 
 def agree(q)
 	puts q
 	change = gets.chomp.downcase
 
-	if change == "y" or change == ""
-		return true
-	else
-		return false
-	end
+    return change == "y" or change == ""
+#	if change == "y" or change == ""
+#		return true
+#	else
+#		return false
+#	end
+
 end
 
 def find_user(users, user) 
     users.each do |u| 
-        if u.username.include? user 
+        if u.pUsername.include? user 
             puts "\n\033[33mFound acount: #{user} \033[0m\n\n"
             return u  # found user set class
         end 
@@ -25,50 +27,53 @@ end
 
 def print_all_users(users)
     users.each do |u| 
-        printf("%-10s %20s %50s\n", u.username, u.type, u.created_at)
+        printf("%-10s %20s %50s\n", u.pUsername, u.pType, u.pCreated_at)
     end 
 end 
 
 def create_user(username, password)
-    user = User.new # create new user
-    user.username = username
-    if password.nil?
+    user = cl_User.new # create new user
+    user.pUsername = username
+    if password.nil ?
         password = ask("Enter password or leave blank for random password:  ")
-        if password
-            user.password = password
-        else
+        
+        if password.nil
             password = rand(36**10).to_s(36)
-            user.password = password
         end
-
+        
+        user.aPassword = password
+        
         answer = agree("Make this #{ARGV[0]} user Administrator? (Y/n) :")
 
-        if answer
-            user.type = "Administrator"
-        else
-            user.type = "User"
-        end
+        user.pType = answer ? "Administrator" : "User"
+ #       if answer
+ #           user.pType = "Administrator"
+ #       else
+ #           user.pType = "User"
+ #       end
 
         answer = agree("Use Active Directory for this user? No will create local user account. (y/n) :")
 
-        if answer
-            user.auth_type = "AD"
-        else 
-            user.auth_type = "Local"
-        end
+#        if answer
+#            user.pAuth_type = "AD"
+#        else 
+#            user.pAuth_type = "Local"
+#        end
+
+        user.pAuth_type = answer ? "AD" : "Local"
 
     else
-        user.password = password
+        user.aPassword = password
     end
     user.save
-    puts "User #{user.username} successfully created."
+    puts "User #{user.pUsername} successfully created."
 end
 
 def make_admin(user, password)
-    if agree("Would you like to make #{user.username} an administrator (Y/n) :")
-        user.update(:type => "Administrator", :auth_type => "Local", :password => password)
+    if agree("Would you like to make #{user.pUsername} an administrator (Y/n) :")
+        user.update(:pType => "Administrator", :pAuth_type => "Local", :aPassword => password)
     else
-        user.update(:type => "User", :auth_type => "Local", :password => password)
+        user.update(:pType => "User", :pAuth_type => "Local", :aPassword => password)
     end
 end
 
@@ -119,14 +124,14 @@ end
 
 username = options.select{|key,value| key.to_s == "username"}.values.join
 password = options.select{|key,value| key.to_s == "password"}.values.join
-users = User.all
-user = User.first
+users = cl_User.all
+user = cl_User.first
 
 if options[:delete] # list all users in database
     if options[:username]
         if user = find_user(users, username) # does user already exisit?
             user.destroy!
-            puts "User #{user.username} successfully deleted."
+            puts "User #{user.pUsername} successfully deleted."
             exit
         else
             exit
@@ -147,11 +152,11 @@ end
 if options[:random]
     if options[:username]
         if user = find_user(users, username) # does user already exisit?
-            if agree("Are you sure you want to set a random password for #{user.username} (Y/n) :")
+            if agree("Are you sure you want to set a random password for #{user.pUsername} (Y/n) :")
 
                 password = rand(36**10).to_s(36)
                 make_admin(user, password)
-                puts "User #{user.username} successfully updated."
+                puts "User #{user.pUsername} successfully updated."
                 puts "\t\t New password is : #{password} \n\n"
                 exit
 
@@ -179,7 +184,7 @@ elsif options[:password]   # Username and password submitted
         if user = find_user(users, username) # does user already exisit?
             
             make_admin(user, password)
-            puts "User #{user.username} successfully updated."
+            puts "User #{user.pUsername} successfully updated."
 
         elsif agree("The user #{username} doesn't exist would you like to create it? (Y/n) :")
             create_user(username, password)

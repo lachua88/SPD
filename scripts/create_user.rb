@@ -1,25 +1,25 @@
 require 'rubygems'
-require './model/master.rb'
+require './model/user'
 
 if ARGV.size < 3
 	# With no arguments a list of users is dumped
 	puts "\n ****Usage: create_user.rb username password level \n"
 	
-	users = User.all
+	users = CL_User.all
 
-	puts "\n Current Users"
+	puts "\n Current Users asd"
 	puts "Username \t Type \t Created At \n "
 	
 	users.each do |u|
-		puts "#{u.username} \t #{u.type} \t #{u.created_at}"
+		puts "#{u.pUsername} \t #{u.pType} \t #{u.pCreated_at}"
 	end
 	puts "\n"
 	exit
 end
 
-user = User.new
-user.username = ARGV[0]
+user = CL_User.new
+user.pUsername = ARGV[0]
 user.password = ARGV[1]
-user.type = ARGV[2]
-user.auth_type = "Local"
+user.pType = ARGV[2]
+user.pAuth_type = "Local"
 user.save

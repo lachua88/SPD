@@ -1,3 +1,4 @@
+require './model/user.rb'
 require './model/master.rb'
 require './helpers/xslt_generation'
 require 'openssl'
@@ -17,16 +18,16 @@ if !userx
 
 	password = rand(36**10).to_s(36)
 
-	exists = User.first(:username => username)
+	exists = CL_User.first(:pUsername => username)
 
 	if exists
 		puts "That username already exists. Please use reset_pw.rb to reset a password"
 	else
-		user = User.new
-		user.username = username
+		user = CL_User.new
+		user.pUsername = username
 		user.password = password
-		user.type = "Administrator"
-		user.auth_type = "Local"
+		user.pType = "Administrator"
+		user.pAuth_type = "Local"
 		user.save
 
 		puts "Please use the following login credentials"
@@ -53,10 +54,10 @@ if (find_i == "" or find_i.downcase == "y" or find_i.downcase == "yes")
     line.each do |j|
         j["id"] = nil
 
-        finding = TemplateFindings.first(:title => j["title"])
+        finding = CL_Library_finding.first(:pTitle => j["title"])
 
         j["approved"] = true
-        f = TemplateFindings.first_or_create(j)
+        f = CL_Library_finding.first_or_create(j)
         f.save
     end
 else

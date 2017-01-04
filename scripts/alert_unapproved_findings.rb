@@ -1,6 +1,6 @@
 require './model/master.rb'
 
-findings = TemplateFindings.all
+findings = CL_Library_finding.all
 
 fd = false
 findings.each do |finding|

@@ -143,7 +143,7 @@ post '/report/:id/import_autoadd' do
     end
 
     # load all findings
-    @findings = TemplateFindings.all(:order => [:title.asc])
+    @findings = CL_Library_finding.all(:order => [:pTitle.asc])
 
     # parse nessus xml into hash
     #nessus_vulns = parse_nessus_xml(nessus_xml)
@@ -532,7 +532,7 @@ get '/report/:id/status' do
     findings_xml << "<findings_list>"
     @findings.each do |finding|
         ### Let's find the diff between the original and the new overview and remediation
-        master_finding = TemplateFindings.first(:id => finding.master_id)
+        master_finding = CL_Library_finding.first(:pId => finding.master_id)
 
         findings_xml << finding.to_xml
     end
@@ -627,7 +627,7 @@ get '/report/:id/findings_add' do
     end
 
     # Query for all Findings
-    @findings = TemplateFindings.all(:approved => true, :order => [:title.asc])
+    @findings = CL_Library_finding.all(:approved => true, :order => [:pTitle.asc])
 
     haml :findings_add, :encode_html => true
 end
@@ -649,7 +649,7 @@ post '/report/:id/findings_add' do
     redirect to("/report/#{id}/findings") unless params[:finding]
 
 	params[:finding].each do |finding|
-		templated_finding = TemplateFindings.first(:id => finding.to_i)
+		templated_finding = CL_Library_finding.first(:pId => finding.to_i)
 
 		templated_finding.id = nil
 		attr = templated_finding.attributes
@@ -864,7 +864,7 @@ get '/report/:id/findings/:finding_id/upload' do
         return "No Such Finding"
     end
 
-    # We can't create a direct copy b/c TemplateFindings doesn't have everything findings does
+    # We can't create a direct copy b/c CL_Library_finding doesn't have everything findings does
     # Check model/master.rb to compare
     attr = {
                     :title => @finding.title,
@@ -891,7 +891,7 @@ get '/report/:id/findings/:finding_id/upload' do
                     :risk => @finding.risk
                     }
 
-    @new_finding = TemplateFindings.new(attr)
+    @new_finding = CL_Library_finding.new(attr)
     @new_finding.save
 
     redirect to("/report/#{id}/findings")
@@ -944,7 +944,7 @@ get '/report/:id/findings/:finding_id/preview' do
 
     # this flags edited findings
     if @finding.master_id
-        master = TemplateFindings.first(:id => @finding.master_id)
+        master = CL_Library_finding.first(:pId => @finding.master_id)
         @finding.overview = compare_text(@finding.overview, master.overview)
     end
 
@@ -1041,14 +1041,14 @@ get '/report/:id/generate' do
         return "No Such Report"
     end
 
-    user = User.first(:username => get_username)
+    user = CL_User.first(:username => get_username)
 
     if user
-        @report.consultant_name = user.consultant_name
-        @report.consultant_phone = user.consultant_phone
-        @report.consultant_email = user.consultant_email
-        @report.consultant_title = user.consultant_title
-        @report.consultant_company = user.consultant_company
+        @report.consultant_name = user.pConsultant_name
+        @report.consultant_phone = user.pConsultant_phone
+        @report.consultant_email = user.pConsultant_email
+        @report.consultant_title = user.pConsultant_title
+        @report.consultant_company = user.pConsultant_company
 
     else
         @report.consultant_name = ""
@@ -1077,7 +1077,7 @@ get '/report/:id/generate' do
 
         # This flags new or edited findings
         if finding.master_id
-            master = TemplateFindings.first(:id => finding.master_id)
+            master = CL_Library_finding.first(:pId => finding.master_id)
             if master
                 finding.overview = compare_text(finding.overview, master.overview)
                 finding.remediation = compare_text(finding.remediation, master.remediation)
@@ -1483,7 +1483,7 @@ get '/report/:id/import/vulns' do
     vulns = get_vulns_from_msf(rpc, msfsettings.workspace)
 
     # load all findings
-    @findings = TemplateFindings.all(:order => [:title.asc])
+    @findings = CL_Library_finding.all(:order => [:pTitle.asc])
 
     # determine findings to add from vuln data
     # host/ip is key, value is array of vuln ids

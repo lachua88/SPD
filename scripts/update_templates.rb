@@ -1,7 +1,7 @@
 require 'rubygems'
 require './model/master.rb'
 
-findings = TemplateFindings.all
+findings = CL_Library_finding.all
 
 findings.each do |finding|
      finding["approved"] = true

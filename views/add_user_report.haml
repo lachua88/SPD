@@ -25,7 +25,7 @@
       Add Collaborator
       %select{ :name => "author" } 
         - @users.each do |user|
-          %option #{user.username}
+          %option #{user.pUsername}
     %br    
     %input{:type => 'submit', :value => 'Modify' }
   

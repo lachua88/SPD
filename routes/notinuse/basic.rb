@@ -44,13 +44,13 @@ end
 
 # Handles the consultant information settings
 get '/info' do
-    @user = User.first(:username => get_username)
+    @user = CL_User.first(:pUsername => get_username)
 
     if !@user
-        @user = User.new
-        @user.auth_type = "AD"
-        @user.username = get_username
-        @user.type = "User"
+        @user = CL_User.new
+        @user.pAuth_type = "AD"
+        @user.pUsername = get_username
+        @user.pType = "User"
         @user.save
     end
 
@@ -59,20 +59,20 @@ end
 
 # Save the consultant information into the database
 post '/info' do
-    user = User.first(:username => get_username)
+    user = CL_User.first(:username => get_username)
 
     if !user
-        user = User.new
-        user.auth_type = "AD"
-        user.username = get_username
-        user.type = "User"
+        user = CL_User.new
+        user.pAuth_type = "AD"
+        user.pUsername = get_username
+        user.pType = "User"
     end
 
-    user.consultant_email = params[:email]
-    user.consultant_phone = params[:phone]
-    user.consultant_title = params[:title]
-    user.consultant_name = params[:name]
-    user.consultant_company = params[:company]
+    user.pConsultant_email = params[:email]
+    user.pConsultant_phone = params[:phone]
+    user.pConsultant_title = params[:title]
+    user.pConsultant_name = params[:name]
+    user.pConsultant_company = params[:company]
     user.save
 
     redirect to("/info")
@@ -90,10 +90,10 @@ post '/reset' do
     redirect '/reports/list' unless valid_session?
 
     # grab the user info
-    user = User.first(:username => get_username)
+    user = CL_User.first(:username => get_username)
 
     # check if they are an LDAP user
-    if user.auth_type != "Local"
+    if user.pAuth_type != "Local"
         return "You are an LDAP user. You cannot change your password."
     end
 
@@ -107,7 +107,7 @@ post '/reset' do
         return "New password does not match."
     end
 
-    if !(User.authenticate(user.username,params[:old_pass]))
+    if !(CL_User.authenticate(user.pUsername,params[:old_pass]))
         return "Old password is incorrect."
     end
 
@@ -117,18 +117,18 @@ post '/reset' do
 end
 
 post '/login' do
-    user = User.first(:username => params[:username])
+    user = CL_User.first(:pUsername => params[:username])
 
-    if user and user.auth_type == "Local"
+    if user and user.pAuth_type == "Local"
 
-        usern = User.authenticate(params["username"], params["password"])
+        usern = CL_User.authenticate(params["username"], params["password"])
 
         if usern and session[:session_id]
             # replace the session in the session table
             # TODO : This needs an expiration, session fixation
-            @del_session = Sessions.first(:username => "#{usern}")
+            @del_session = CL_Sessions.first(:pUsername => "#{usern}")
             @del_session.destroy if @del_session
-            @curr_session = Sessions.create(:username => "#{usern}",:session_key => "#{session[:session_id]}")
+            @curr_session = CL_Sessions.create(:pUsername => "#{usern}",:pSession_key => "#{session[:session_id]}")
             @curr_session.save
 
         end
@@ -146,9 +146,9 @@ post '/login' do
 
 			if ldap.bind
 			   # replace the session in the session table
-			   @del_session = Sessions.first(:username => "#{usern}")
+			   @del_session = CL_Sessions.first(:username => "#{usern}")
 			   @del_session.destroy if @del_session
-			   @curr_session = Sessions.create(:username => "#{usern}",:session_key => "#{session[:session_id]}")
+			   @curr_session = CL_Sessions.create(:username => "#{usern}",:pSession_key => "#{session[:session_id]}")
 			   @curr_session.save
 			end
 		end
@@ -160,7 +160,7 @@ end
 ## We use a persistent session table, one session per user; no end date
 get '/logout' do
     if session[:session_id]
-        sess = Sessions.first(:session_key => session[:session_id])
+        sess = CL_Sessions.first(:pSession_key => session[:session_id])
         if sess
             sess.destroy
         end
